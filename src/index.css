@@ -1,3 +1,53 @@
 hr{
     color: whitesmoke;
 }
+.sidebar {
+    background-color: #212121;
+
+    .Nav_Link {
+        color: #666666;
+    }
+
+    .Nav_Link:hover {
+        background-color: rgba(61, 210, 204, 0.4);
+        border-right: 8px solid #3DD2CC;
+        color: #fff;
+    }
+}
+
+/* .banner {
+    /* .btn-light-play {
+        border-radius: 15px;
+        background: rgba(232, 232, 232, 0.10);
+        color: #000;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(2.5px);
+        color: #E8E8E8;
+
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 5px 30px;
+
+    } */
+/* } */
+
+/* 
+@media (min-width: 992px) {
+    .col-sid-lg-2 {
+        flex: 0 0 auto;
+        width: 14%;
+    }
+} */
+.movie-card img {
+    border-radius: 12px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movie-card:hover {
+    transform: scale(1.06);
+    transition: 0.3s ease-in;
+
+}
