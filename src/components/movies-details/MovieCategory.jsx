@@ -9,7 +9,8 @@ export default function MovieCategory({ title }) {
         border: '1px solid white',
         color: 'white',
         borderRadius: '15px',
-        textAlign:'center'
+        textAlign: 'center',
+        margin: '0 5px',
       }}
     >
       {title}

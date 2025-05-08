@@ -1,4 +1,4 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import {
   addNewMovie,
   deleteMovie,
@@ -6,15 +6,17 @@ import {
   getMovieById,
   getMovieBySearch,
   updateMovie,
-} from "../Api/MovieApi";
+} from '../Api/MovieApi';
 
 const initialState = {
   movies: [],
+  currentMovie: null,
   loading: false,
   error: null,
 };
+
 export const getAllMoviesAction = createAsyncThunk(
-  "movie/getAllMoviesAction",
+  'movie/getAllMoviesAction',
   async (_, { rejectWithValue }) => {
     try {
       const response = await getAllMovies();
@@ -24,8 +26,9 @@ export const getAllMoviesAction = createAsyncThunk(
     }
   }
 );
+
 export const getAllMovieByIdAction = createAsyncThunk(
-  "movie/getAllMovieByIdAction",
+  'movie/getAllMovieByIdAction',
   async (id, { rejectWithValue }) => {
     try {
       const response = await getMovieById(id);
@@ -35,8 +38,9 @@ export const getAllMovieByIdAction = createAsyncThunk(
     }
   }
 );
+
 export const addMovieAction = createAsyncThunk(
-  "movie/addMovieAction",
+  'movie/addMovieAction',
   async (movie, { rejectWithValue }) => {
     try {
       const response = await addNewMovie(movie);
@@ -46,8 +50,9 @@ export const addMovieAction = createAsyncThunk(
     }
   }
 );
+
 export const editMovieAction = createAsyncThunk(
-  "movie/editMovieAction",
+  'movie/editMovieAction',
   async ({ id, movie }, { rejectWithValue }) => {
     try {
       const response = await updateMovie(id, movie);
@@ -57,8 +62,9 @@ export const editMovieAction = createAsyncThunk(
     }
   }
 );
+
 export const deleteMovieAction = createAsyncThunk(
-  "movie/deleteMovieAction",
+  'movie/deleteMovieAction',
   async (id, { rejectWithValue }) => {
     try {
       const response = await deleteMovie(id);
@@ -69,9 +75,8 @@ export const deleteMovieAction = createAsyncThunk(
   }
 );
 
-// Handle searchMovieAction
 export const searchMovieAction = createAsyncThunk(
-  "movie/searchMovieAction",
+  'movie/searchMovieAction',
   async (search, { rejectWithValue }) => {
     try {
       const response = await getMovieBySearch(search);
@@ -83,85 +88,90 @@ export const searchMovieAction = createAsyncThunk(
 );
 
 const movieSlice = createSlice({
-  name: "movie",
+  name: 'movie',
   initialState,
   extraReducers: (builder) => {
-    builder.addCase(getAllMoviesAction.pending, (state) => {
-      state.loading = true;
-    });
-    builder.addCase(getAllMoviesAction.fulfilled, (state, action) => {
-      state.loading = false;
-      state.movies = action.payload;
-    });
-    builder.addCase(getAllMoviesAction.rejected, (state, action) => {
-      state.loading = false;
-      state.error = action.payload;
-    });
-    // Handle getAllMovieByIdAction
-    builder.addCase(getAllMovieByIdAction.pending, (state) => {
-      state.loading = true;
-    });
-    builder.addCase(getAllMovieByIdAction.fulfilled, (state, action) => {
-      state.loading = false;
-      state.movies = action.payload;
-    });
-    // Handle addMovieAction
-    builder.addCase(addMovieAction.pending, (state) => {
-      state.loading = true;
-    });
-    builder.addCase(addMovieAction.fulfilled, (state, action) => {
-      state.loading = false;
-      state.movies.push(action.payload);
-    });
-    builder.addCase(addMovieAction.rejected, (state, action) => {
-      state.loading = false;
-      state.error = action.payload;
-    });
-    // Handle editMovieAction
-    builder.addCase(editMovieAction.pending, (state) => {
-      state.loading = true;
-    });
-    builder.addCase(editMovieAction.fulfilled, (state, action) => {
-      state.loading = false;
-      const index = state.movies.findIndex(
-        (movie) => movie.id === action.payload.id
-      );
-      if (index !== -1) {
-        state.movies[index] = action.payload;
-      }
-    });
-    builder.addCase(editMovieAction.rejected, (state, action) => {
-      state.loading = false;
-      state.error = action.payload;
-    });
+    builder
+      .addCase(getAllMoviesAction.pending, (state) => {
+        state.loading = true;
+      })
+      .addCase(getAllMoviesAction.fulfilled, (state, action) => {
+        state.loading = false;
+        state.movies = action.payload;
+      })
+      .addCase(getAllMoviesAction.rejected, (state, action) => {
+        state.loading = false;
+        state.error = action.payload;
+      })
 
-    // Handle deleteMovieAction
-    builder.addCase(deleteMovieAction.pending, (state) => {
-      state.loading = true;
-    });
-    builder.addCase(deleteMovieAction.fulfilled, (state, action) => {
-      state.loading = false;
-      state.movies = state.movies.filter(
-        (movie) => movie.id !== action.payload.id
-      );
-    });
-    builder.addCase(deleteMovieAction.rejected, (state, action) => {
-      state.loading = false;
-      state.error = action.payload;
-    });
-    // Handle searchMovieAction
-    builder.addCase(searchMovieAction.pending, (state) => {
-      state.loading = true;
-      state.error = null;
-    });
-    builder.addCase(searchMovieAction.fulfilled, (state, action) => {
-      state.loading = false;
-      state.movies = action.payload; // filtered list
-    });
-    builder.addCase(searchMovieAction.rejected, (state, action) => {
-      state.loading = false;
-      state.error = action.payload;
-    });
+      .addCase(getAllMovieByIdAction.pending, (state) => {
+        state.loading = true;
+        state.currentMovie = null;
+      })
+      .addCase(getAllMovieByIdAction.fulfilled, (state, action) => {
+        state.loading = false;
+        state.currentMovie = action.payload;
+      })
+      .addCase(getAllMovieByIdAction.rejected, (state, action) => {
+        state.loading = false;
+        state.error = action.payload;
+      })
+
+      .addCase(addMovieAction.pending, (state) => {
+        state.loading = true;
+      })
+      .addCase(addMovieAction.fulfilled, (state, action) => {
+        state.loading = false;
+        state.movies.push(action.payload);
+      })
+      .addCase(addMovieAction.rejected, (state, action) => {
+        state.loading = false;
+        state.error = action.payload;
+      })
+
+      .addCase(editMovieAction.pending, (state) => {
+        state.loading = true;
+      })
+      .addCase(editMovieAction.fulfilled, (state, action) => {
+        state.loading = false;
+        const index = state.movies.findIndex(
+          (movie) => movie.id === action.payload.id
+        );
+        if (index !== -1) {
+          state.movies[index] = action.payload;
+        }
+      })
+      .addCase(editMovieAction.rejected, (state, action) => {
+        state.loading = false;
+        state.error = action.payload;
+      })
+
+      .addCase(deleteMovieAction.pending, (state) => {
+        state.loading = true;
+      })
+      .addCase(deleteMovieAction.fulfilled, (state, action) => {
+        state.loading = false;
+        state.movies = state.movies.filter(
+          (movie) => movie.id !== action.payload.id
+        );
+      })
+      .addCase(deleteMovieAction.rejected, (state, action) => {
+        state.loading = false;
+        state.error = action.payload;
+      })
+
+      .addCase(searchMovieAction.pending, (state) => {
+        state.loading = true;
+        state.error = null;
+      })
+      .addCase(searchMovieAction.fulfilled, (state, action) => {
+        state.loading = false;
+        state.movies = action.payload;
+      })
+      .addCase(searchMovieAction.rejected, (state, action) => {
+        state.loading = false;
+        state.error = action.payload;
+      });
   },
 });
 

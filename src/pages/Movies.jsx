@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 import {
   Sidebar,
   Header,
@@ -8,17 +8,17 @@ import {
   MainFilter,
   Loading,
   MovieCard,
-} from "../components/index";
-import { getAllMoviesAction, searchMovieAction } from "../store/movieSlice";
-import { useDispatch, useSelector } from "react-redux";
+} from '../components/index';
+import { getAllMoviesAction, searchMovieAction } from '../store/movieSlice';
+import { useDispatch, useSelector } from 'react-redux';
 
 export default function Movies() {
   const { movies, loading, error } = useSelector((store) => store.movieSlice);
   const dispatch = useDispatch();
   // search term state
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState('');
   useEffect(() => {
-    if (searchTerm.trim() === "") {
+    if (searchTerm.trim() === '') {
       dispatch(getAllMoviesAction());
     } else {
       dispatch(searchMovieAction(searchTerm));
@@ -26,7 +26,7 @@ export default function Movies() {
   }, [searchTerm]);
 
   return (
-    <div className="row p-0 m-0" style={{ backgroundColor: "#191919" }}>
+    <div className="row p-0 m-0" style={{ backgroundColor: '#191919' }}>
       <Sidebar />
       <div className="col-lg-10 p-5 pt-4">
         <Header onSearch={setSearchTerm} />
@@ -38,6 +38,7 @@ export default function Movies() {
               {movies?.length === 0 && !loading && (
                 <div className="text-center text-white">No results found.</div>
               )}
+              {console.log(movies[0])}
               {movies?.map((movie) => (
                 <MovieCard key={movie.id} movies={movie} />
               ))}
