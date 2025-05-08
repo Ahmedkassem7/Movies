@@ -125,3 +125,64 @@ input::placeholder {
 .sec-color {
     color: #ccc8c8;
 }
+
+
+.movie-form-wrapper {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    min-height: 100vh; 
+    background: linear-gradient(135deg, #1c5554, #279c98, #3DD2CC);
+    padding: 20px; 
+  }
+  
+  .movie-form-container {
+    background-color: #343a40; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .form-title {
+    color: #fff; 
+    margin-bottom: 25px;
+  }
+  
+  .form-label {
+    color: #ced4da; 
+  }
+  
+  .form-control, .form-select{
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #495057;
+    background-color: #495057 !important;
+    color: #fff;
+
+    &::placeholder {
+        background-color: #495057 !important;
+    }
+
+    &:focus {
+        color: #fff;
+        background-color: #495057 !important;
+        border-color: #3DD2CC;
+        box-shadow: 0 0 0 0.2rem rgba(72, 240, 234, 0.453);
+      }
+  }
+
+    .form-btn1,
+  .form-btn2 {
+    background-color: #3DD2CC;
+    padding: 10px 20px !important;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
