@@ -15,6 +15,7 @@ import { useDispatch, useSelector } from "react-redux";
 export default function Movies() {
   const { movies, loading, error } = useSelector((store) => store.movieSlice);
   const dispatch = useDispatch();
+  // search term state
   const [searchTerm, setSearchTerm] = useState("");
   useEffect(() => {
     if (searchTerm.trim() === "") {
