@@ -1,14 +1,19 @@
 import React, { useState } from 'react';
 
-export default function MovieTrailer({ videoKey }) {
+export default function MovieTrailer({ trailer, poster }) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
-  if (!videoKey) {
+  if (!trailer) {
     return <p>No trailer available.</p>;
   }
 
-  const videoUrl = `https://www.youtube.com/embed/${videoKey}?autoplay=1`;
+  const getEmbedUrl = (url) => {
+    const videoId = url.split('v=')[1]?.split('&')[0];
+    return `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+  };
+
+  const videoUrl = getEmbedUrl(trailer);
 
   const handlePlay = () => {
     setIsPlaying(true);
@@ -33,12 +38,12 @@ export default function MovieTrailer({ videoKey }) {
       {!isPlaying && (
         <>
           <img
-            src="https://image.tmdb.org/t/p/w500/86z1Yrwj7yN1xehSa0gIwHnR7xl.jpg"
+            src={poster}
             alt="Trailer Poster"
             style={{
               width: '100%',
               height: '100%',
-              objectFit: 'fill',
+              objectFit:'unset'
             }}
           />
           <button

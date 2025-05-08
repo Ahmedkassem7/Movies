@@ -4,12 +4,40 @@ import MovieInfo from '../components/movies-details/MovieInfo';
 import MovieCastInfo from '../components/movies-details/MovieCastInfo';
 import { FaHeart, FaShareAlt, FaBookmark, FaStar } from 'react-icons/fa';
 import { Header, Sidebar } from '../components';
-import { useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { getAllMovieByIdAction } from '../store/movieSlice';
 
 export default function MovieDetails() {
-  const videoKey = 'JYOMf4SS2oA';
+  const { id } = useParams();
+  const dispatch = useDispatch();
+  const { currentMovie, loading, error } = useSelector(
+    (state) => state.movieSlice
+  );
 
-  
+  useEffect(() => {
+    dispatch(getAllMovieByIdAction(id));
+  }, [dispatch, id]);
+
+  if (loading) return <p style={{ color: 'white' }}>Loading...</p>;
+  if (error) return <p style={{ color: 'red' }}>Error: {error}</p>;
+  if (!currentMovie) return null;
+
+  const {
+    Title,
+    Poster,
+    Genre,
+    Plot,
+    Director,
+    Writer,
+    Actors,
+    imdbRating,
+    imdbVotes,
+    Trailer,
+    Year,
+    Runtime,
+  } = currentMovie;
 
   return (
     <div
@@ -20,29 +48,35 @@ export default function MovieDetails() {
       <div className="col-lg-10 p-5 pt-4">
         <Header />
 
-        <div
-          style={{ maxWidth: '1200px', margin: '0 auto' }}
-        >
-          <MovieTrailer videoKey={videoKey} />
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <MovieTrailer trailer={Trailer} poster={Poster} />
 
           <div style={{ display: 'flex', gap: '20px', marginTop: '20px' }}>
             {/* Left column */}
             <div style={{ width: '700px' }}>
-              <MovieInfo />
+              <MovieInfo
+                movieInfo={{
+                  title: Title,
+                  category: Genre,
+                  year: Year,
+                  dureation: Runtime,
+                  plot: Plot,
+                }}
+              />
               <hr />
               <MovieCastInfo
-                data={{ poistions: 'Director', names: 'Joseph Kosinski' }}
+                data={{ poistions: 'Director', names: Director.join(', ') }}
               />
               <MovieCastInfo
                 data={{
                   poistions: 'Writers',
-                  names: 'Jim Cash, Jack Epps Jr, Peter Craig',
+                  names: Writer.join(', '),
                 }}
               />
               <MovieCastInfo
                 data={{
                   poistions: 'Stars',
-                  names: 'Tom Cruise, Jennifer Connelly, Miles Teller',
+                  names: Actors.join(', '),
                 }}
               />
             </div>
