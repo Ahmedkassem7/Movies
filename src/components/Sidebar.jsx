@@ -8,6 +8,7 @@ import {
   Calendar3,
   BoxArrowLeft,
 } from "react-bootstrap-icons";
+import { Link } from "react-router-dom";
 
 export default function Sidebar() {
   return (
@@ -17,23 +18,26 @@ export default function Sidebar() {
           <img src={logoImg} alt="Movie Icon" />
         </div>
         <Nav className="flex-column mt-4 ">
-          <Nav.Link className="Nav_Link ps-4 py-3">
+          <Link className="Nav_Link ps-4 py-3 text-decoration-none" to={"/"}>
             <House className="me-2 fs-4" /> Home
-          </Nav.Link>
-          <Nav.Link className="Nav_Link ps-4 py-3">
+          </Link>
+          <Link
+            className="Nav_Link ps-4 py-3 text-decoration-none"
+            to={"/movies"}
+          >
             <Film className="me-2 fs-4" /> Movies
-          </Nav.Link>
-          <Nav.Link className="Nav_Link ps-4 py-3">
+          </Link>
+          <Link className="Nav_Link ps-4 py-3 text-decoration-none">
             <Tv className="me-2 fs-4" /> TV Series
-          </Nav.Link>
-          <Nav.Link className="Nav_Link ps-4 py-3">
+          </Link>
+          <Link className="Nav_Link ps-4 py-3 text-decoration-none">
             <Calendar3 className="me-2 fs-4" /> Upcoming
-          </Nav.Link>
+          </Link>
         </Nav>
       </div>
-      <Nav.Link className="Nav_Link p-4">
+      <Link className="Nav_Link p-4">
         <BoxArrowLeft className="me-2 fs-4" /> Log out
-      </Nav.Link>
+      </Link>
     </div>
   );
 }

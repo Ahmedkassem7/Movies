@@ -4,6 +4,7 @@ import {
   deleteMovie,
   getAllMovies,
   getMovieById,
+  getMovieBySearch,
   updateMovie,
 } from "../Api/MovieApi";
 
@@ -27,7 +28,7 @@ export const getAllMovieByIdAction = createAsyncThunk(
   "movie/getAllMovieByIdAction",
   async (id, { rejectWithValue }) => {
     try {
-      const response = await getMovieById();
+      const response = await getMovieById(id);
       return response.data;
     } catch (error) {
       return rejectWithValue(error.message);
@@ -62,6 +63,19 @@ export const deleteMovieAction = createAsyncThunk(
     try {
       const response = await deleteMovie(id);
       return response.data;
+    } catch (error) {
+      return rejectWithValue(error.message);
+    }
+  }
+);
+
+// Handle searchMovieAction
+export const searchMovieAction = createAsyncThunk(
+  "movie/searchMovieAction",
+  async (search, { rejectWithValue }) => {
+    try {
+      const response = await getMovieBySearch(search);
+      return response;
     } catch (error) {
       return rejectWithValue(error.message);
     }
@@ -132,6 +146,19 @@ const movieSlice = createSlice({
       );
     });
     builder.addCase(deleteMovieAction.rejected, (state, action) => {
+      state.loading = false;
+      state.error = action.payload;
+    });
+    // Handle searchMovieAction
+    builder.addCase(searchMovieAction.pending, (state) => {
+      state.loading = true;
+      state.error = null;
+    });
+    builder.addCase(searchMovieAction.fulfilled, (state, action) => {
+      state.loading = false;
+      state.movies = action.payload; // filtered list
+    });
+    builder.addCase(searchMovieAction.rejected, (state, action) => {
       state.loading = false;
       state.error = action.payload;
     });
