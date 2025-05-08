@@ -22,7 +22,6 @@ let GradientButton = styled(SharedButton)`
 `;
 let SharedText = styled.h2`
   color: #e8e8e8;
-
   font-family: Poppins;
   font-size: 25px;
   font-style: normal;
@@ -41,4 +40,5 @@ let Shared_P = styled.p`
     color: #fff;
   }
 `;
-export { SharedButton, GradientButton, SharedText, Shared_P }; // ✅ named exports
+export { GradientButton, Shared_P, SharedButton, SharedText }; // ✅ named exports
+

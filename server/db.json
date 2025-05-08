@@ -1,9 +1,12 @@
 {
   "movies": [
-   {
+    {
       "adult": false,
       "backdrop_path": "/ybBIIzDL1B9yH8OVFav81JTZmoN.jpg",
-      "genre_ids": [53, 28],
+      "genre_ids": [
+        53,
+        28
+      ],
       "id": 1233069,
       "original_language": "de",
       "original_title": "Exterritorial",
@@ -19,7 +22,12 @@
     {
       "adult": false,
       "backdrop_path": "/86z1Yrwj7yN1xehSa0gIwHnR7xl.jpg",
-      "genre_ids": [10751, 12, 16, 18],
+      "genre_ids": [
+        10751,
+        12,
+        16,
+        18
+      ],
       "id": 37135,
       "original_language": "en",
       "original_title": "Tarzan",
@@ -35,7 +43,11 @@
     {
       "adult": false,
       "backdrop_path": "/fTrQsdMS2MUw00RnzH0r3JWHhts.jpg",
-      "genre_ids": [28, 80, 53],
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
       "id": 1197306,
       "original_language": "en",
       "original_title": "A Working Man",
@@ -51,7 +63,11 @@
     {
       "adult": false,
       "backdrop_path": "/rthMuZfFv4fqEU4JVbgSW9wQ8rs.jpg",
-      "genre_ids": [28, 12, 878],
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
       "id": 986056,
       "original_language": "en",
       "original_title": "Thunderbolts*",
@@ -67,7 +83,11 @@
     {
       "adult": false,
       "backdrop_path": "/44YfHklKam8COMUxDZop2Lnp0CS.jpg",
-      "genre_ids": [28, 80, 53],
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
       "id": 668489,
       "original_language": "en",
       "original_title": "Havoc",
@@ -83,7 +103,12 @@
     {
       "adult": false,
       "backdrop_path": "/2Nti3gYAX513wvhp8IiLL6ZDyOm.jpg",
-      "genre_ids": [10751, 35, 12, 14],
+      "genre_ids": [
+        10751,
+        35,
+        12,
+        14
+      ],
       "id": 950387,
       "original_language": "en",
       "original_title": "A Minecraft Movie",
@@ -99,7 +124,9 @@
     {
       "adult": false,
       "backdrop_path": "/1AWjIUgbZYaKbwUH5qoJaKCcRkf.jpg",
-      "genre_ids": [99],
+      "genre_ids": [
+        99
+      ],
       "id": 1471014,
       "original_language": "en",
       "original_title": "Van Gogh by Vincent",
@@ -115,7 +142,10 @@
     {
       "adult": false,
       "backdrop_path": "/kFXtAwJYbRTqiyQpE9kDc8qEP3X.jpg",
-      "genre_ids": [28, 53],
+      "genre_ids": [
+        28,
+        53
+      ],
       "id": 1225915,
       "original_language": "hi",
       "original_title": "ज्वेल थीफ: द हीस्ट बिगिन्स",
@@ -131,7 +161,12 @@
     {
       "adult": false,
       "backdrop_path": "/eDBZN0TbWkxoAB0qIDFagVcPPTN.jpg",
-      "genre_ids": [27, 14, 35, 12],
+      "genre_ids": [
+        27,
+        14,
+        35,
+        12
+      ],
       "id": 1153714,
       "original_language": "en",
       "original_title": "Death of a Unicorn",
@@ -147,7 +182,11 @@
     {
       "adult": false,
       "backdrop_path": "/8eifdha9GQeZAkexgtD45546XKx.jpg",
-      "genre_ids": [28, 53, 878],
+      "genre_ids": [
+        28,
+        53,
+        878
+      ],
       "id": 822119,
       "original_language": "en",
       "original_title": "Captain America: Brave New World",
@@ -163,7 +202,11 @@
     {
       "adult": false,
       "backdrop_path": "/op3qmNhvwEvyT7UFyPbIfQmKriB.jpg",
-      "genre_ids": [28, 14, 12],
+      "genre_ids": [
+        28,
+        14,
+        12
+      ],
       "id": 324544,
       "original_language": "en",
       "original_title": "In the Lost Lands",
@@ -179,7 +222,10 @@
     {
       "adult": false,
       "backdrop_path": "/1hBtO9tXP60IFBZD27OsbaBmxs5.jpg",
-      "genre_ids": [37, 28],
+      "genre_ids": [
+        37,
+        28
+      ],
       "id": 1414048,
       "original_language": "en",
       "original_title": "Day of Reckoning",
@@ -195,7 +241,9 @@
     {
       "adult": false,
       "backdrop_path": "/svLj9iyRmmeNVRsMreANn7DPPZE.jpg",
-      "genre_ids": [27],
+      "genre_ids": [
+        27
+      ],
       "id": 1356236,
       "original_language": "en",
       "original_title": "Saint Catherine",
@@ -211,7 +259,9 @@
     {
       "adult": false,
       "backdrop_path": "/12tEzU0bNYKIjXXEwI5abuOotHF.jpg",
-      "genre_ids": [37],
+      "genre_ids": [
+        37
+      ],
       "id": 710258,
       "original_language": "en",
       "original_title": "Rust",
@@ -227,7 +277,11 @@
     {
       "adult": false,
       "backdrop_path": "/b6e5Nss2QNoQM4wJv2VppChswNP.jpg",
-      "genre_ids": [53, 35, 80],
+      "genre_ids": [
+        53,
+        35,
+        80
+      ],
       "id": 974573,
       "original_language": "en",
       "original_title": "Another Simple Favor",
@@ -243,7 +297,10 @@
     {
       "adult": false,
       "backdrop_path": "/6dC7ULfiutxwEAs7LjWHL2Tc7Zv.jpg",
-      "genre_ids": [27, 35],
+      "genre_ids": [
+        27,
+        35
+      ],
       "id": 1124620,
       "original_language": "en",
       "original_title": "The Monkey",
@@ -259,7 +316,11 @@
     {
       "adult": false,
       "backdrop_path": "/nAxGnGHOsfzufThz20zgmRwKur3.jpg",
-      "genre_ids": [28, 27, 53],
+      "genre_ids": [
+        28,
+        27,
+        53
+      ],
       "id": 1233413,
       "original_language": "en",
       "original_title": "Sinners",
@@ -275,7 +336,12 @@
     {
       "adult": false,
       "backdrop_path": "/bFmziv84NfEVEGTK8c6EVY3bxve.jpg",
-      "genre_ids": [28, 80, 9648, 53],
+      "genre_ids": [
+        28,
+        80,
+        9648,
+        53
+      ],
       "id": 1180906,
       "original_language": "en",
       "original_title": "Desert Dawn",
@@ -291,7 +357,10 @@
     {
       "adult": false,
       "backdrop_path": "/bMdSmfI0qwpAkvhAL7sqpjmwgf4.jpg",
-      "genre_ids": [878, 18],
+      "genre_ids": [
+        878,
+        18
+      ],
       "id": 335984,
       "original_language": "en",
       "original_title": "Blade Runner 2049",
@@ -307,7 +376,12 @@
     {
       "adult": false,
       "backdrop_path": "/Zes06xI18u47pblwRGTtqRm0R8.jpg",
-      "genre_ids": [28, 53, 80, 18],
+      "genre_ids": [
+        28,
+        53,
+        80,
+        18
+      ],
       "id": 1276073,
       "original_language": "ja",
       "original_title": "新幹線大爆破",
