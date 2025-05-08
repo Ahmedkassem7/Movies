@@ -1,6 +1,13 @@
-hr{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hr {
     color: whitesmoke;
 }
+
 .sidebar {
     background-color: #212121;
 
@@ -50,4 +57,71 @@ hr{
     transform: scale(1.06);
     transition: 0.3s ease-in;
 
+}
+
+.admin-view-card i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.add-movie {
+    background-color: #212121;
+    color: #3DD2CC;
+    border: none;
+    font-weight: 600;
+
+    &:hover {
+        background-color: #212121;
+        color: #3DD2CC;
+    }
+
+    &:active {
+        color: #212121 !important;
+    }
+}
+
+
+.icon-btn {
+    background-color: #3DD2CC;
+    color: #212121;
+    border: none;
+    font-weight: 600;
+
+    &:hover {
+        background-color: #3dd2cdc5;
+        color: #212121;
+    }
+
+    &:active {
+        color: #212121 !important;
+    }
+}
+
+input::placeholder {
+    color: white !important;
+}
+
+.card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.font {
+    font-family: Poppins;
+    color: white;
+}
+
+.icon {
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.color {
+    color: #3DD2CC;
+}
+
+.sec-color {
+    color: #ccc8c8;
 }

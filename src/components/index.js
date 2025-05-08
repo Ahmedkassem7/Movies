@@ -1,20 +1,20 @@
-import Error from "./Error";
-import Loading from "./Loading";
-import Sidebar from "./Sidebar";
-import Header from "./Header";
+import DashboardSidebar from "./AdminView/DashboardSidebar";
+import DashTop from "./AdminView/DashTop";
+import MoviesCard from "./AdminView/MoviesCard";
+import MoviesDashboard from "./AdminView/moviesDashboard";
+import Search from "./AdminView/Search";
+import Statistics from "./AdminView/Statistics";
 import Banner from "./Banner";
-import TrendingMovies from "./TrendingMovies";
-import MovieCard from "./MovieCard";
-import Upcoming from "./Upcoming";
+import Error from "./Error";
 import MainFilter from "./Filters/MainFilter";
+import Header from "./Header";
+import Loading from "./Loading";
+import MovieCard from "./MovieCard";
+import Sidebar from "./Sidebar";
+import TrendingMovies from "./TrendingMovies";
+import Upcoming from "./Upcoming";
+
 export {
-  Error,
-  Loading,
-  Sidebar,
-  Header,
-  Banner,
-  TrendingMovies,
-  MovieCard,
-  Upcoming,
-  MainFilter,
+  Banner, DashboardSidebar, DashTop, Error, Header, Loading, MainFilter, MovieCard, MoviesCard, MoviesDashboard, Search, Sidebar, Statistics, TrendingMovies, Upcoming
 };
+
