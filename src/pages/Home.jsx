@@ -3,9 +3,10 @@ import {
   Sidebar,
   Header,
   Banner,
-  TrendingMovies,
-  Upcoming,
+  // TrendingMovies,
+  // Upcoming,
   MainFilter,
+  MovieSection,
 } from "../components/index";
 import FilterSection from "../components/Filters/FilterSection";
 
@@ -18,8 +19,18 @@ export default function Home() {
         <div className="row m-0 p-0 justify-content-between">
           <div className="content mt-4 p-0  col-lg-9">
             <Banner />
-            <TrendingMovies />
-            <Upcoming />
+            <MovieSection
+              title="Trending Movies"
+              sliceStart={0}
+              sliceEnd={4}
+              linkPath="/Movies"
+            />
+            <MovieSection
+              title="Upcoming"
+              sliceStart={4}
+              sliceEnd={8}
+              linkPath="/Movies"
+            />
           </div>
           <MainFilter />
         </div>
