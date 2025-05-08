@@ -3,6 +3,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { AdminView, Home, NotFound, ViewAll } from '../pages/index';
 import MovieDetails from '../pages/MovieDetails';
+import Movies from "../pages/Movies";
 
 
 export default function MianLayout() {

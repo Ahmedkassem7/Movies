@@ -1,8 +1,15 @@
-import React from "react";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function MovieCard({ movies }) {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/movie/${movies.id}`);
+  };
+
   return (
-    <div className="col-6 col-sm-4 col-md-3 mb-4">
+    <div className="col-6 col-sm-4 col-md-3 mb-4" onClick={handleClick}>
       <div className="card bg-dark text-white border-0 position-relative movie-card">
         <img
           src={`https://image.tmdb.org/t/p/w500${movies.poster_path}`}

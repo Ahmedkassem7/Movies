@@ -4,9 +4,13 @@ import MovieInfo from '../components/movies-details/MovieInfo';
 import MovieCastInfo from '../components/movies-details/MovieCastInfo';
 import { FaHeart, FaShareAlt, FaBookmark, FaStar } from 'react-icons/fa';
 import { Header, Sidebar } from '../components';
+import { useNavigate } from 'react-router-dom';
 
 export default function MovieDetails() {
   const videoKey = 'JYOMf4SS2oA';
+
+  
+
   return (
     <div
       className="row p-0 m-0"
@@ -16,7 +20,9 @@ export default function MovieDetails() {
       <div className="col-lg-10 p-5 pt-4">
         <Header />
 
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div
+          style={{ maxWidth: '1200px', margin: '0 auto' }}
+        >
           <MovieTrailer videoKey={videoKey} />
 
           <div style={{ display: 'flex', gap: '20px', marginTop: '20px' }}>
