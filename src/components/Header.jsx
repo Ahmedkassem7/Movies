@@ -1,7 +1,11 @@
 import React from "react";
 import { Form, FormControl } from "react-bootstrap";
 
-export default function Header() {
+export default function Header({ onSearch }) {
+  const handleSearch = (e) => {
+    onSearch(e.target.value);
+  };
+
   return (
     <div className="d-flex justify-content-between align-items-center py-3  text-white">
       <Form className="w-75 ">
@@ -13,6 +17,8 @@ export default function Header() {
             backgroundColor: "#2b2b2b",
             color: "rgba(102, 102, 102, 1)",
           }}
+          onChange={handleSearch}
+          aria-label="Search"
         />
       </Form>
       <div className="profile-icon">
