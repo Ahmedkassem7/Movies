@@ -3,7 +3,8 @@ import Home from "./Home";
 import NotFound from "./NotFound";
 import Movies from "./Movies";
 import ViewAll from "./ViewAll";
+import MovieForm from "./MovieForm";
 
 
-export { AdminView, Home, NotFound, ViewAll };
+export { AdminView, Home, NotFound, ViewAll , MovieForm };
 
