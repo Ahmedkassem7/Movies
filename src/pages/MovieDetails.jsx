@@ -32,7 +32,6 @@ export default function MovieDetails() {
     Director,
     Writer,
     Actors,
-
     Trailer,
     Year,
     Runtime,
