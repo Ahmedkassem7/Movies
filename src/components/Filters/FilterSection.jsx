@@ -3,7 +3,14 @@ import React from "react";
 import { Card, Button } from "react-bootstrap";
 import FilterOption from "./FilterOption";
 
-export default function FilterSection({ title, options }) {
+export default function FilterSection({ title, options, selected, onChange }) {
+  const handleToggle = (option) => {
+    if (selected.includes(option)) {
+      onChange(selected.filter((item) => item !== option));
+    } else {
+      onChange([...selected, option]);
+    }
+  };
   return (
     <Card className="bg-dark text-white mb-4">
       <Card.Body>
@@ -12,7 +19,12 @@ export default function FilterSection({ title, options }) {
         </div>
         <div className="d-flex flex-column gap-2">
           {options.map((option, index) => (
-            <FilterOption key={index} label={option} />
+            <FilterOption
+              key={index}
+              label={option}
+              checked={selected?.includes(option)}
+              onChange={() => handleToggle(option)}
+            />
           ))}
         </div>
         {/* <div className="text-end ">

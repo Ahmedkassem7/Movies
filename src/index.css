@@ -15,6 +15,12 @@ hr {
         color: #666666;
     }
 
+    .testActive {
+        background-color: rgba(61, 210, 204, 0.4);
+        border-right: 8px solid #3DD2CC;
+        color: #fff;
+    }
+
     .Nav_Link:hover {
         background-color: rgba(61, 210, 204, 0.4);
         border-right: 8px solid #3DD2CC;
@@ -129,32 +135,33 @@ input::placeholder {
 
 .movie-form-wrapper {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-    min-height: 100vh; 
+    min-height: 100vh;
     background: linear-gradient(135deg, #1c5554, #279c98, #3DD2CC);
-    padding: 20px; 
-  }
-  
-  .movie-form-container {
-    background-color: #343a40; 
+    padding: 20px;
+}
+
+.movie-form-container {
+    background-color: #343a40;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     width: 100%;
     max-width: 500px;
-  }
-  
-  .form-title {
-    color: #fff; 
+}
+
+.form-title {
+    color: #fff;
     margin-bottom: 25px;
-  }
-  
-  .form-label {
-    color: #ced4da; 
-  }
-  
-  .form-control, .form-select{
+}
+
+.form-label {
+    color: #ced4da;
+}
+
+.form-control,
+.form-select {
     margin-bottom: 20px;
     border-radius: 5px;
     border: 1px solid #495057;
@@ -170,11 +177,11 @@ input::placeholder {
         background-color: #495057 !important;
         border-color: #3DD2CC;
         box-shadow: 0 0 0 0.2rem rgba(72, 240, 234, 0.453);
-      }
-  }
+    }
+}
 
-    .form-btn1,
-  .form-btn2 {
+.form-btn1,
+.form-btn2 {
     background-color: #3DD2CC;
     padding: 10px 20px !important;
     border-radius: 5px;
@@ -183,6 +190,6 @@ input::placeholder {
     font-weight: bold;
 
     &:hover {
-      opacity: 0.9;
+        opacity: 0.9;
     }
-  }
+}
