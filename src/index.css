@@ -28,6 +28,61 @@ hr {
     }
 }
 
+.card-hover {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.card-hover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #877979;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.card-hover::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    border-width: 15px 0 15px 25px;
+    border-color: transparent transparent transparent white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.card-hover:hover::after {
+    opacity: 0.5;
+
+}
+
+.card-hover:hover::before {
+    opacity: 1;
+}
+
+.form-check-input:checked {
+    background-color: #3dd2cc !important;
+    border-color: #3dd2cc !important;
+}
+
+.form-check-input:focus {
+    border-color: #1f2d43;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgb(0 54 134 / 20%) !important;
+}
+
 /* .banner {
     /* .btn-light-play {
         border-radius: 15px;
