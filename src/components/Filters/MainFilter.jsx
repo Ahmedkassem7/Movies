@@ -32,12 +32,12 @@ export default function MainFilter({
           selected={selectedGenres}
           onChange={onGenreChange}
         />
-        <FilterSection
+        {/* <FilterSection
           title="Language"
           options={filtersLang}
           selected={selectedLanguages}
           onChange={onLanguageChange}
-        />
+        /> */}
       </div>
     </div>
   );

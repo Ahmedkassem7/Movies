@@ -1,17 +1,17 @@
-import { useEffect, useState } from "react";
-import { Header, MainFilter, Loading, MovieCard } from "../components/index";
-import { getAllMoviesAction, searchMovieAction } from "../store/movieSlice";
-import { useDispatch, useSelector } from "react-redux";
+import { useEffect, useState } from 'react';
+import { Header, MainFilter, Loading, MovieCard } from '../components/index';
+import { getAllMoviesAction, searchMovieAction } from '../store/movieSlice';
+import { useDispatch, useSelector } from 'react-redux';
 
 export default function Movies() {
   const { movies, loading, error } = useSelector((store) => store.movieSlice);
   const dispatch = useDispatch();
   // search term state
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState('');
   const [selectedGenres, setSelectedGenres] = useState([]);
   const [selectedLanguages, setSelectedLanguages] = useState([]);
   useEffect(() => {
-    if (searchTerm.trim() === "") {
+    if (searchTerm.trim() === '') {
       dispatch(getAllMoviesAction());
     } else {
       dispatch(searchMovieAction(searchTerm));
@@ -20,14 +20,14 @@ export default function Movies() {
   const filteredMovies = movies?.filter((movie) => {
     const matchGenre =
       selectedGenres.length === 0 ||
-      selectedGenres.some((genre) => movie.Genre?.includes(genre));
+      selectedGenres.some((genre) => movie.genres?.includes(genre));
     const matchLanguage =
       selectedLanguages.length === 0 ||
       selectedLanguages.some((lang) => movie.Language?.includes(lang));
     return matchGenre && matchLanguage;
   });
   return (
-    <div className="row p-0 m-0" style={{ backgroundColor: "#191919" }}>
+    <div className="row p-0 m-0" style={{ backgroundColor: '#191919' }}>
       <div className="row m-0 p-0 justify-content-between">
         <Header onSearch={setSearchTerm} />
 

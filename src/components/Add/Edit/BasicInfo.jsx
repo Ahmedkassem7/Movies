@@ -1,14 +1,14 @@
-import { Form } from "react-bootstrap";
+import { Form } from 'react-bootstrap';
 
 export default function BasicInfo({ register, errors }) {
-//   const type = watch("Type") || "movie";
+  //   const type = watch("Type") || "movie";
 
   return (
     <>
       <Form.Group controlId="formTitle">
         <Form.Label>Type</Form.Label>
         <Form.Select
-          {...register("Type", { required: "Type is required" })}
+          {...register('Type', { required: 'Type is required' })}
           isInvalid={!!errors.Type}
         >
           <option value="">Select type</option>
@@ -25,7 +25,7 @@ export default function BasicInfo({ register, errors }) {
         <Form.Control
           type="text"
           placeholder="Enter title"
-          {...register("Title", { required: "Title is required" })}
+          {...register('title', { required: 'Title is required' })}
           isInvalid={!!errors.Title}
         />
         <Form.Control.Feedback type="invalid">
@@ -38,14 +38,14 @@ export default function BasicInfo({ register, errors }) {
         <Form.Control
           type="text"
           placeholder="e.g. Action, Drama, Thriller"
-          {...register("Genre", {
-            required: "Genre name is required",
+          {...register('genres', {
+            required: 'Genre name is required',
             validate: (value) => {
               const genreList = value
-                .split(",")
+                .split(',')
                 .map((genre) => genre.trim())
                 .filter(Boolean);
-              return genreList.length >= 1 || "At least one genre is required";
+              return genreList.length >= 1 || 'At least one genre is required';
             },
           })}
           isInvalid={!!errors.Genre}
@@ -62,9 +62,9 @@ export default function BasicInfo({ register, errors }) {
           <Form.Control
             type="text"
             placeholder="YYYY"
-            {...register("Year", {
-              required: "Year is required",
-              min: { value: 1900, message: "Year must be after 1900" },
+            {...register('Year', {
+              required: 'Year is required',
+              min: { value: 1900, message: 'Year must be after 1900' },
             })}
             isInvalid={!!errors.Year}
           />
@@ -81,10 +81,10 @@ export default function BasicInfo({ register, errors }) {
           <Form.Control
             type="text"
             placeholder="0-10"
-            {...register("imdbRating", {
-              required: "Rating is required",
-              min: { value: 0, message: "Minimum is 0" },
-              max: { value: 10, message: "Maximum is 10" },
+            {...register('vote_average', {
+              required: 'Rating is required',
+              min: { value: 0, message: 'Minimum is 0' },
+              max: { value: 10, message: 'Maximum is 10' },
             })}
             isInvalid={!!errors.imdbRating}
           />

@@ -23,7 +23,7 @@ export default function Cast({ register, errors }) {
         <Form.Control
           type="text"
           placeholder="Enter at least 3 names, separated by commas"
-          {...register("Actors", {
+          {...register("cast", {
             required: "Actors name is required",
             validate: (value) => {
               const actorList = value

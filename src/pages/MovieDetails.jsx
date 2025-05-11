@@ -32,6 +32,8 @@ export default function MovieDetails() {
     cast,
     trailer_url,
     release_date,
+    vote_count,
+    vote_average,
   } = currentMovie;
 
   return (
@@ -90,8 +92,12 @@ export default function MovieDetails() {
                 <FaShareAlt style={{ cursor: 'pointer', opacity: 0.8 }} />
                 <FaBookmark style={{ cursor: 'pointer', opacity: 0.8 }} />
                 <span style={{ fontSize: '24px', color: '#FFD700' }}>★</span>
-                <span style={{ fontSize: '18px' }}>8.5</span>
-                <span style={{ fontSize: '14px', color: '#aaa' }}>| 350k</span>
+                <span style={{ fontSize: '18px' }}>
+                  {vote_average.toFixed(1)}
+                </span>
+                <span style={{ fontSize: '14px', color: '#aaa' }}>
+                  | {vote_count}k
+                </span>
               </div>
 
               {/* Buttons */}

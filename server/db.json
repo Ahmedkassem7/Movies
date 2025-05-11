@@ -10,7 +10,7 @@
     {
       "adult": false,
       "backdrop_path": "/bVm6udIB6iKsRqgMdQh6HywuEBj.jpg",
-      "id": 1233069,
+      "id": "1233069",
       "original_language": "de",
       "original_title": "Exterritorial",
       "overview": "When her son vanishes inside a US consulate, ex-special forces soldier Sara does everything in her power to find him — and uncovers a dark conspiracy.",
@@ -22,7 +22,10 @@
       "vote_count": 233,
       "poster_url": "https://image.tmdb.org/t/p/original/jM2uqCZNKbiyStyzXOERpMqAbdx.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/bVm6udIB6iKsRqgMdQh6HywuEBj.jpg",
-      "genres": ["Thriller", "Action"],
+      "genres": [
+        "Thriller",
+        "Action"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=tlLsFEDHtWs",
       "cast": "Jeanne Goursaud, Dougray Scott, Lera Abova, Emanuel Fellmer, Annabelle Mandeng",
@@ -32,7 +35,7 @@
     {
       "adult": false,
       "backdrop_path": "/cJvUJEEQ86LSjl4gFLkYpdCJC96.jpg",
-      "id": 1241436,
+      "id": "1241436",
       "original_language": "en",
       "original_title": "Warfare",
       "overview": "A platoon of Navy SEALs embarks on a dangerous mission in Ramadi, Iraq, with the chaos and brotherhood of war retold through their memories of the event.",
@@ -44,7 +47,10 @@
       "vote_count": 149,
       "poster_url": "https://image.tmdb.org/t/p/original/j8tqBXwH2PxBPzbtO19BTF9Ukbf.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/cJvUJEEQ86LSjl4gFLkYpdCJC96.jpg",
-      "genres": ["War", "Action"],
+      "genres": [
+        "War",
+        "Action"
+      ],
       "reviews": [
         {
           "author": "CinemaSerf",
@@ -111,7 +117,7 @@
     {
       "adult": false,
       "backdrop_path": "/rthMuZfFv4fqEU4JVbgSW9wQ8rs.jpg",
-      "id": 986056,
+      "id": "986056",
       "original_language": "en",
       "original_title": "Thunderbolts*",
       "overview": "After finding themselves ensnared in a death trap, seven disillusioned castoffs must embark on a dangerous mission that will force them to confront the darkest corners of their pasts.",
@@ -123,7 +129,11 @@
       "vote_count": 634,
       "poster_url": "https://image.tmdb.org/t/p/original/m9EtP1Yrzv6v7dMaC9mRaGhd1um.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/rthMuZfFv4fqEU4JVbgSW9wQ8rs.jpg",
-      "genres": ["Action", "Adventure", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
       "reviews": [
         {
           "author": "Chris Sawin",
@@ -218,7 +228,7 @@
     {
       "adult": false,
       "backdrop_path": "/fTrQsdMS2MUw00RnzH0r3JWHhts.jpg",
-      "id": 1197306,
+      "id": "1197306",
       "original_language": "en",
       "original_title": "A Working Man",
       "overview": "Levon Cade left behind a decorated military career in the black ops to live a simple life working construction. But when his boss's daughter, who is like family to him, is taken by human traffickers, his search to bring her home uncovers a world of corruption far greater than he ever could have imagined.",
@@ -230,7 +240,11 @@
       "vote_count": 591,
       "poster_url": "https://image.tmdb.org/t/p/original/6FRFIogh3zFnVWn7Z6zcYnIbRcX.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/fTrQsdMS2MUw00RnzH0r3JWHhts.jpg",
-      "genres": ["Action", "Crime", "Thriller"],
+      "genres": [
+        "Action",
+        "Crime",
+        "Thriller"
+      ],
       "reviews": [
         {
           "author": "Manuel São Bento",
@@ -325,7 +339,7 @@
     {
       "adult": false,
       "backdrop_path": "/4A5HH9HkCPqAwyYL6CnA0mxbYjn.jpg",
-      "id": 1144430,
+      "id": "1144430",
       "original_language": "fr",
       "original_title": "Balle perdue 3",
       "overview": "Car genius Lino returns to conclude his vendetta against Areski and the corrupt commander who ruined their lives in this turbo-charged trilogy finale.",
@@ -337,7 +351,11 @@
       "vote_count": 30,
       "poster_url": "https://image.tmdb.org/t/p/original/qycPITRqXgPai7zj1gKffjCdSB5.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/4A5HH9HkCPqAwyYL6CnA0mxbYjn.jpg",
-      "genres": ["Action", "Crime", "Thriller"],
+      "genres": [
+        "Action",
+        "Crime",
+        "Thriller"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=r2u9GifyDg0",
       "cast": "Alban Lenoir, Stéfi Celma, Nicolas Duvauchelle, Gérard Lanvin, Pascale Arbillot",
@@ -347,7 +365,7 @@
     {
       "adult": false,
       "backdrop_path": "/12tEzU0bNYKIjXXEwI5abuOotHF.jpg",
-      "id": 710258,
+      "id": "710258",
       "original_language": "en",
       "original_title": "Rust",
       "overview": "Infamous outlaw Harland Rust breaks his estranged grandson Lucas out of prison, after Lucas is convicted to hang for an accidental murder. The two must outrun legendary U.S Marshal Wood Helm and bounty hunter Fenton \"Preacher\" Lang who are hot on their tails. Deeply buried secrets rise from the ashes and an unexpected familial bond begins to form as the mismatched duo tries to survive the merciless American Frontier.",
@@ -359,7 +377,9 @@
       "vote_count": 34,
       "poster_url": "https://image.tmdb.org/t/p/original/tbJ3RkA2s6X5qrBzrYHYTxvDBui.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/12tEzU0bNYKIjXXEwI5abuOotHF.jpg",
-      "genres": ["Western"],
+      "genres": [
+        "Western"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=q95B6Ys5h_8",
       "cast": "Alec Baldwin, Josh Hopkins, Patrick Scott McDermott, Travis Fimmel, Frances Fisher",
@@ -369,7 +389,7 @@
     {
       "adult": false,
       "backdrop_path": "/2Nti3gYAX513wvhp8IiLL6ZDyOm.jpg",
-      "id": 950387,
+      "id": "950387",
       "original_language": "en",
       "original_title": "A Minecraft Movie",
       "overview": "Four misfits find themselves struggling with ordinary problems when they are suddenly pulled through a mysterious portal into the Overworld: a bizarre, cubic wonderland that thrives on imagination. To get back home, they'll have to master this world while embarking on a magical quest with an unexpected, expert crafter, Steve.",
@@ -381,7 +401,12 @@
       "vote_count": 842,
       "poster_url": "https://image.tmdb.org/t/p/original/iPPTGh2OXuIv6d7cwuoPkw8govp.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/2Nti3gYAX513wvhp8IiLL6ZDyOm.jpg",
-      "genres": ["Family", "Comedy", "Adventure", "Fantasy"],
+      "genres": [
+        "Family",
+        "Comedy",
+        "Adventure",
+        "Fantasy"
+      ],
       "reviews": [
         {
           "author": "tmdb98094809",
@@ -434,7 +459,7 @@
     {
       "adult": false,
       "backdrop_path": "/86z1Yrwj7yN1xehSa0gIwHnR7xl.jpg",
-      "id": 37135,
+      "id": "37135",
       "original_language": "en",
       "original_title": "Tarzan",
       "overview": "Tarzan was a small orphan who was raised by an ape named Kala since he was a child. He believed that this was his family, but on an expedition Jane Porter is rescued by Tarzan. He then finds out that he's human. Now Tarzan must make the decision as to which family he should belong to...",
@@ -446,7 +471,12 @@
       "vote_count": 6923,
       "poster_url": "https://image.tmdb.org/t/p/original/bTvHlcqiOjGa3lFtbrTLTM3zasY.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/86z1Yrwj7yN1xehSa0gIwHnR7xl.jpg",
-      "genres": ["Family", "Adventure", "Animation", "Drama"],
+      "genres": [
+        "Family",
+        "Adventure",
+        "Animation",
+        "Drama"
+      ],
       "reviews": [
         {
           "author": "The Movie Diorama",
@@ -513,7 +543,7 @@
     {
       "adult": false,
       "backdrop_path": "/65MVgDa6YjSdqzh7YOA04mYkioo.jpg",
-      "id": 668489,
+      "id": "668489",
       "original_language": "en",
       "original_title": "Havoc",
       "overview": "When a drug heist swerves lethally out of control, a jaded cop fights his way through a corrupt city's criminal underworld to save a politician's son.",
@@ -525,7 +555,11 @@
       "vote_count": 549,
       "poster_url": "https://image.tmdb.org/t/p/original/r46leE6PSzLR3pnVzaxx5Q30yUF.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/65MVgDa6YjSdqzh7YOA04mYkioo.jpg",
-      "genres": ["Action", "Crime", "Thriller"],
+      "genres": [
+        "Action",
+        "Crime",
+        "Thriller"
+      ],
       "reviews": [
         {
           "author": "MovieGuys",
@@ -564,7 +598,7 @@
     {
       "adult": false,
       "backdrop_path": "/8eifdha9GQeZAkexgtD45546XKx.jpg",
-      "id": 822119,
+      "id": "822119",
       "original_language": "en",
       "original_title": "Captain America: Brave New World",
       "overview": "After meeting with newly elected U.S. President Thaddeus Ross, Sam finds himself in the middle of an international incident. He must discover the reason behind a nefarious global plot before the true mastermind has the entire world seeing red.",
@@ -576,7 +610,11 @@
       "vote_count": 1763,
       "poster_url": "https://image.tmdb.org/t/p/original/pzIddUEMWhWzfvLI3TwxUG2wGoi.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/8eifdha9GQeZAkexgtD45546XKx.jpg",
-      "genres": ["Action", "Thriller", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Thriller",
+        "Science Fiction"
+      ],
       "reviews": [
         {
           "author": "r96sk",
@@ -671,7 +709,7 @@
     {
       "adult": false,
       "backdrop_path": "/eDBZN0TbWkxoAB0qIDFagVcPPTN.jpg",
-      "id": 1153714,
+      "id": "1153714",
       "original_language": "en",
       "original_title": "Death of a Unicorn",
       "overview": "A father and daughter accidentally hit and kill a unicorn while en route to a weekend retreat, where his billionaire boss seeks to exploit the creature’s miraculous curative properties.",
@@ -683,7 +721,12 @@
       "vote_count": 173,
       "poster_url": "https://image.tmdb.org/t/p/original/lXR32JepFwD1UHkplWqtBP1K79z.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/eDBZN0TbWkxoAB0qIDFagVcPPTN.jpg",
-      "genres": ["Horror", "Fantasy", "Comedy", "Adventure"],
+      "genres": [
+        "Horror",
+        "Fantasy",
+        "Comedy",
+        "Adventure"
+      ],
       "reviews": [
         {
           "author": "r96sk",
@@ -722,7 +765,7 @@
     {
       "adult": false,
       "backdrop_path": "/op3qmNhvwEvyT7UFyPbIfQmKriB.jpg",
-      "id": 324544,
+      "id": "324544",
       "original_language": "en",
       "original_title": "In the Lost Lands",
       "overview": "A queen sends the powerful and feared sorceress Gray Alys to the ghostly wilderness of the Lost Lands in search of a magical power, where she and her guide, the drifter Boyce, must outwit and outfight both man and demon.",
@@ -734,7 +777,11 @@
       "vote_count": 340,
       "poster_url": "https://image.tmdb.org/t/p/original/dDlfjR7gllmr8HTeN6rfrYhTdwX.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/op3qmNhvwEvyT7UFyPbIfQmKriB.jpg",
-      "genres": ["Action", "Fantasy", "Adventure"],
+      "genres": [
+        "Action",
+        "Fantasy",
+        "Adventure"
+      ],
       "reviews": [
         {
           "author": "CinemaSerf",
@@ -787,7 +834,7 @@
     {
       "adult": false,
       "backdrop_path": "/kFXtAwJYbRTqiyQpE9kDc8qEP3X.jpg",
-      "id": 1225915,
+      "id": "1225915",
       "original_language": "hi",
       "original_title": "ज्वेल थीफ: द हीस्ट बिगिन्स",
       "overview": "In this high-octane battle of wits and wills, ingenious con artist Rehan devises a diamond heist while trying to outsmart Rajan, his sadistic adversary.",
@@ -799,7 +846,10 @@
       "vote_count": 35,
       "poster_url": "https://image.tmdb.org/t/p/original/eujLbO0kf1eqWC8XpHUJdtAVW2J.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/kFXtAwJYbRTqiyQpE9kDc8qEP3X.jpg",
-      "genres": ["Action", "Thriller"],
+      "genres": [
+        "Action",
+        "Thriller"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=gzN46jvgTck",
       "cast": "Saif Ali Khan, Jaideep Ahlawat, Nikita Dutta, Kunal Kapoor, Kulbhushan Kharbanda",
@@ -809,7 +859,7 @@
     {
       "adult": false,
       "backdrop_path": "/z3edlTX9YDBrVMoYupMsc8qdiUw.jpg",
-      "id": 974573,
+      "id": "974573",
       "original_language": "en",
       "original_title": "Another Simple Favor",
       "overview": "Stephanie and Emily reunite on the beautiful island of Capri, Italy for Emily's extravagant wedding to a rich Italian businessman. Along with the glamorous guests, expect murder and betrayal to RSVP for a wedding with more twists and turns than the road from the Marina Grande to the Capri town square.",
@@ -821,7 +871,11 @@
       "vote_count": 189,
       "poster_url": "https://image.tmdb.org/t/p/original/zboCGZ4aIqPMd7VFI4HWnmc7KYJ.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/z3edlTX9YDBrVMoYupMsc8qdiUw.jpg",
-      "genres": ["Thriller", "Comedy", "Crime"],
+      "genres": [
+        "Thriller",
+        "Comedy",
+        "Crime"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=QWajCwdC_TM",
       "cast": "Anna Kendrick, Blake Lively, Michele Morrone, Henry Golding, Allison Janney",
@@ -831,7 +885,7 @@
     {
       "adult": false,
       "backdrop_path": "/nAxGnGHOsfzufThz20zgmRwKur3.jpg",
-      "id": 1233413,
+      "id": "1233413",
       "original_language": "en",
       "original_title": "Sinners",
       "overview": "Trying to leave their troubled lives behind, twin brothers return to their hometown to start again, only to discover that an even greater evil is waiting to welcome them back.",
@@ -843,7 +897,11 @@
       "vote_count": 621,
       "poster_url": "https://image.tmdb.org/t/p/original/jYfMTSiFFK7ffbY2lay4zyvTkEk.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/nAxGnGHOsfzufThz20zgmRwKur3.jpg",
-      "genres": ["Action", "Horror", "Thriller"],
+      "genres": [
+        "Action",
+        "Horror",
+        "Thriller"
+      ],
       "reviews": [
         {
           "author": "Chris Sawin",
@@ -910,7 +968,7 @@
     {
       "adult": false,
       "backdrop_path": "/svLj9iyRmmeNVRsMreANn7DPPZE.jpg",
-      "id": 1356236,
+      "id": "1356236",
       "original_language": "en",
       "original_title": "Saint Catherine",
       "overview": "An orphaned girl is rescued from a satanic ritual and taken to Saint Catherine Institute for homeless youth. There she will learn new skills while facing demons that stalk her.",
@@ -922,7 +980,9 @@
       "vote_count": 23,
       "poster_url": "https://image.tmdb.org/t/p/original/hBJdzKPeDaC96AzlrtMWBomYSZV.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/svLj9iyRmmeNVRsMreANn7DPPZE.jpg",
-      "genres": ["Horror"],
+      "genres": [
+        "Horror"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=nq1ReNQSSWg",
       "cast": "Raymond E. Lee, Pachi Lucas, Julia Kraiselburd, Emilia Mayo, Adriana Torrebejano",
@@ -932,7 +992,7 @@
     {
       "adult": false,
       "backdrop_path": "/1AWjIUgbZYaKbwUH5qoJaKCcRkf.jpg",
-      "id": 1471014,
+      "id": "1471014",
       "original_language": "fr",
       "original_title": "Van Gogh by Vincent",
       "overview": "In a career that lasted only ten years, Vincent Van Gogh painted one subject more than any other: himself. This is the story of Vincent told using eight of his most iconic self-portraits.",
@@ -944,7 +1004,9 @@
       "vote_count": 14,
       "poster_url": "https://image.tmdb.org/t/p/original/z73X4WKZghBh5fri31o8P6vBEB2.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/1AWjIUgbZYaKbwUH5qoJaKCcRkf.jpg",
-      "genres": ["Documentary"],
+      "genres": [
+        "Documentary"
+      ],
       "reviews": [],
       "trailer_url": null,
       "cast": "Zahra Ahmadi, Jack Etchells, Adam Woolley, Frances Christie, Neil Lebeter",
@@ -954,7 +1016,7 @@
     {
       "adult": false,
       "backdrop_path": "/6azpBJGcLx9SKif8h9VMnflBfa.jpg",
-      "id": 497698,
+      "id": "497698",
       "original_language": "en",
       "original_title": "Black Widow",
       "overview": "Natasha Romanoff, also known as Black Widow, confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Pursued by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy and the broken relationships left in her wake long before she became an Avenger.",
@@ -966,7 +1028,11 @@
       "vote_count": 10511,
       "poster_url": "https://image.tmdb.org/t/p/original/kwB7d51AIcyzPOBOHLCEZJkmPhQ.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/6azpBJGcLx9SKif8h9VMnflBfa.jpg",
-      "genres": ["Action", "Adventure", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
       "reviews": [
         {
           "author": "garethmb",
@@ -1173,7 +1239,7 @@
     {
       "adult": false,
       "backdrop_path": "/6dC7ULfiutxwEAs7LjWHL2Tc7Zv.jpg",
-      "id": 1124620,
+      "id": "1124620",
       "original_language": "en",
       "original_title": "The Monkey",
       "overview": "When twin brothers find a mysterious wind-up monkey, a series of outrageous deaths tear their family apart. Twenty-five years later, the monkey begins a new killing spree forcing the estranged brothers to confront the cursed toy.",
@@ -1185,7 +1251,10 @@
       "vote_count": 583,
       "poster_url": "https://image.tmdb.org/t/p/original/yYa8Onk9ow7ukcnfp2QWVvjWYel.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/6dC7ULfiutxwEAs7LjWHL2Tc7Zv.jpg",
-      "genres": ["Horror", "Comedy"],
+      "genres": [
+        "Horror",
+        "Comedy"
+      ],
       "reviews": [
         {
           "author": "r96sk",
@@ -1238,7 +1307,7 @@
     {
       "adult": false,
       "backdrop_path": "/1hBtO9tXP60IFBZD27OsbaBmxs5.jpg",
-      "id": 1414048,
+      "id": "1414048",
       "original_language": "en",
       "original_title": "Day of Reckoning",
       "overview": "Put-upon lawman John Dorsey is on the verge of losing his wife and his job as sheriff, so he posses up with bullish U.S. Marshall Butch Hayden to hold outlaw Emily Rusk hostage. A battle of wills ensues as Emily turns the posse on themselves, but as her marauding husband and his gang approach, Emily and John realize they will need each other to survive.",
@@ -1250,7 +1319,10 @@
       "vote_count": 17,
       "poster_url": "https://image.tmdb.org/t/p/original/cVSjSQryFUERYSdOmdgJ2m0eBte.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/1hBtO9tXP60IFBZD27OsbaBmxs5.jpg",
-      "genres": ["Western", "Action"],
+      "genres": [
+        "Western",
+        "Action"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=tZaje_sh97A",
       "cast": "Zach Roerig, Billy Zane, Cara Jade Myers, Scott Adkins, Trace Adkins",
@@ -1260,7 +1332,7 @@
     {
       "adult": false,
       "backdrop_path": "/bFmziv84NfEVEGTK8c6EVY3bxve.jpg",
-      "id": 1180906,
+      "id": "1180906",
       "original_language": "en",
       "original_title": "Desert Dawn",
       "overview": "A newly appointed small-town sheriff and his begrudging deputy get tangled up in a web of lies and corruption involving shady businessmen and the cartel while investigating the murder of a mysterious woman.",
@@ -1272,7 +1344,12 @@
       "vote_count": 0,
       "poster_url": "https://image.tmdb.org/t/p/original/S21BfLrJSD9njucBfY3CKqp8rD.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/bFmziv84NfEVEGTK8c6EVY3bxve.jpg",
-      "genres": ["Action", "Crime", "Mystery", "Thriller"],
+      "genres": [
+        "Action",
+        "Crime",
+        "Mystery",
+        "Thriller"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=yQCpGW7bZyo",
       "cast": "Kellan Lutz, Cam Gigandet, Chad Michael Collins, Texas Battle, Mike Ferguson",
@@ -1282,7 +1359,7 @@
     {
       "adult": false,
       "backdrop_path": "/rdxdvXQGqCj2Vb7SvTL8gdxlSzI.jpg",
-      "id": 870028,
+      "id": "870028",
       "original_language": "en",
       "original_title": "The Accountant²",
       "overview": "When an old acquaintance is murdered, Wolff is compelled to solve the case. Realizing more extreme measures are necessary, Wolff recruits his estranged and highly lethal brother, Brax, to help. In partnership with Marybeth Medina, they uncover a deadly conspiracy, becoming targets of a ruthless network of killers who will stop at nothing to keep their secrets buried.",
@@ -1294,7 +1371,11 @@
       "vote_count": 139,
       "poster_url": "https://image.tmdb.org/t/p/original/kMDUS7VmFhb2coRfVBoGLR8ADBt.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/rdxdvXQGqCj2Vb7SvTL8gdxlSzI.jpg",
-      "genres": ["Crime", "Thriller", "Action"],
+      "genres": [
+        "Crime",
+        "Thriller",
+        "Action"
+      ],
       "reviews": [
         {
           "author": "Manuel São Bento",
@@ -1347,7 +1428,7 @@
     {
       "adult": false,
       "backdrop_path": "/7wKnf6ILtRmKXV8eJWk0P6ZXnQ.jpg",
-      "id": 574475,
+      "id": "574475",
       "original_language": "en",
       "original_title": "Final Destination Bloodlines",
       "overview": "Plagued by a violent recurring nightmare, college student Stefanie heads home to track down the one person who might be able to break the cycle and save her family from the grisly demise that inevitably awaits them all.",
@@ -1359,7 +1440,10 @@
       "vote_count": 9,
       "poster_url": "https://image.tmdb.org/t/p/original/cAoktVUBhGyULRoxV6mZ2LB3x7I.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/7wKnf6ILtRmKXV8eJWk0P6ZXnQ.jpg",
-      "genres": ["Horror", "Mystery"],
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=xitSoRbHJ50",
       "cast": "Kaitlyn Santa Juana, Teo Briones, Rya Kihlstedt, Richard Harmon, Owen Patrick Joyner",
@@ -1369,7 +1453,7 @@
     {
       "adult": false,
       "backdrop_path": "/7ONMDhnErvpkKvkZqM82ud7bzcT.jpg",
-      "id": 575265,
+      "id": "575265",
       "original_language": "en",
       "original_title": "Mission: Impossible - The Final Reckoning",
       "overview": "Ethan Hunt and the IMF team continue their search for the terrifying AI known as the Entity — which has infiltrated intelligence networks all over the globe — with the world's governments and a mysterious ghost from Ethan's past on their trail. Joined by new allies and armed with the means to shut the Entity down for good, Hunt is in a race against time to prevent the world as we know it from changing forever.",
@@ -1381,7 +1465,11 @@
       "vote_count": 0,
       "poster_url": "https://image.tmdb.org/t/p/original/z53D72EAOxGRqdr7KXXWp9dJiDe.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/7ONMDhnErvpkKvkZqM82ud7bzcT.jpg",
-      "genres": ["Action", "Adventure", "Thriller"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Thriller"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=G1VBfMCZVkw",
       "cast": "Tom Cruise, Hayley Atwell, Ving Rhames, Simon Pegg, Esai Morales",
@@ -1391,7 +1479,7 @@
     {
       "adult": false,
       "backdrop_path": "/3lEV4CoKoeT2cZ4fbKEJugZcw6Z.jpg",
-      "id": 1244944,
+      "id": "1244944",
       "original_language": "en",
       "original_title": "The Woman in the Yard",
       "overview": "In the aftermath of her husband's death, widow Ramona's struggle to raise her two kids is hindered by the arrival of a mysterious woman with supernatural abilities.",
@@ -1403,7 +1491,10 @@
       "vote_count": 143,
       "poster_url": "https://image.tmdb.org/t/p/original/n0WS2TsNcS6dtaZKzxipyO7LuCJ.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/3lEV4CoKoeT2cZ4fbKEJugZcw6Z.jpg",
-      "genres": ["Horror", "Mystery"],
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
       "reviews": [
         {
           "author": "CinemaSerf",
@@ -1442,7 +1533,7 @@
     {
       "adult": false,
       "backdrop_path": "/kXxriYfAWtMJNHGHVYr09c37L07.jpg",
-      "id": 650033,
+      "id": "650033",
       "original_language": "ru",
       "original_title": "Свободное падение",
       "overview": "In the near future, humanity has successfully colonized space and build a giant orbital station \"Delta\". Max is a repairman working on the station. After a disaster caused by a proton storm, he is left alone without his crew members, drifting into space. His space suit is broken, he is exhausted, and he lacks communication with people. But suddenly a dispatcher named Anna comes to help. She is the only one who can guide Max through difficulties and get him to the station. Max has to risk everything to save his life, but he has no idea what Anna is up to.",
@@ -1454,7 +1545,10 @@
       "vote_count": 2,
       "poster_url": "https://image.tmdb.org/t/p/original/tB66c6dnu9dG60mta8TF8zmeGJn.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/kXxriYfAWtMJNHGHVYr09c37L07.jpg",
-      "genres": ["Thriller", "Science Fiction"],
+      "genres": [
+        "Thriller",
+        "Science Fiction"
+      ],
       "reviews": [],
       "trailer_url": null,
       "cast": "Aleksandr Kuznetsov, Anya Chipovskaya, Andrey Merzlikin",
@@ -1464,7 +1558,7 @@
     {
       "adult": false,
       "backdrop_path": "/tGjo4L15aELqZGqQH3ThZQGMKmL.jpg",
-      "id": 1011477,
+      "id": "1011477",
       "original_language": "en",
       "original_title": "Karate Kid: Legends",
       "overview": "After a family tragedy, kung fu prodigy Li Fong is uprooted from his home in Beijing and forced to move to New York City with his mother. When a new friend needs his help, Li enters a karate competition – but his skills alone aren't enough. Li's kung fu teacher Mr. Han enlists original Karate Kid Daniel LaRusso for help, and Li learns a new way to fight, merging their two styles into one for the ultimate martial arts showdown.",
@@ -1476,7 +1570,11 @@
       "vote_count": 3,
       "poster_url": "https://image.tmdb.org/t/p/original/ckI6bmQDvvGy20FPTIW1kfGKGRK.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/tGjo4L15aELqZGqQH3ThZQGMKmL.jpg",
-      "genres": ["Action", "Adventure", "Drama"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=LhRXf-yEQqA",
       "cast": "Ben Wang, Jackie Chan, Ralph Macchio, Joshua Jackson, Sadie Stanley",
@@ -1486,7 +1584,7 @@
     {
       "adult": false,
       "backdrop_path": "/r4X2xRrWleVgx0kahP27xRmm3ia.jpg",
-      "id": 1083968,
+      "id": "1083968",
       "original_language": "en",
       "original_title": "Locked",
       "overview": "When Eddie breaks into a luxury SUV, he steps into a deadly trap set by William, a self-proclaimed vigilante delivering his own brand of twisted justice. With no means of escape, Eddie must fight to survive in a ride where escape is an illusion, survival is a nightmare, and justice shifts into high gear.",
@@ -1498,7 +1596,9 @@
       "vote_count": 115,
       "poster_url": "https://image.tmdb.org/t/p/original/hhkiqXpfpufwxVrdSftzeKIANl3.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/r4X2xRrWleVgx0kahP27xRmm3ia.jpg",
-      "genres": ["Thriller"],
+      "genres": [
+        "Thriller"
+      ],
       "reviews": [
         {
           "author": "Chris Sawin",
@@ -1523,7 +1623,7 @@
     {
       "adult": false,
       "backdrop_path": "/jl2YIADk391yc6Qjy9JhgCRkHJk.jpg",
-      "id": 1064486,
+      "id": "1064486",
       "original_language": "en",
       "original_title": "Memoir of a Snail",
       "overview": "Forcibly separated from her twin brother when they are orphaned, a melancholic misfit learns how to find confidence within herself amid the clutter of misfortunes and everyday life.",
@@ -1535,7 +1635,11 @@
       "vote_count": 474,
       "poster_url": "https://image.tmdb.org/t/p/original/57AgZv1ITeBLShiNdchZ5153evs.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/jl2YIADk391yc6Qjy9JhgCRkHJk.jpg",
-      "genres": ["Animation", "Drama", "Comedy"],
+      "genres": [
+        "Animation",
+        "Drama",
+        "Comedy"
+      ],
       "reviews": [
         {
           "author": "good.film",
@@ -1602,7 +1706,7 @@
     {
       "adult": false,
       "backdrop_path": "/b3mdmjYTEL70j7nuXATUAD9qgu4.jpg",
-      "id": 823219,
+      "id": "823219",
       "original_language": "lv",
       "original_title": "Straume",
       "overview": "A solitary cat, displaced by a great flood, finds refuge on a boat with various species and must navigate the challenges of adapting to a transformed world together.",
@@ -1614,7 +1718,11 @@
       "vote_count": 1904,
       "poster_url": "https://image.tmdb.org/t/p/original/imKSymKBK7o73sajciEmndJoVkR.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/b3mdmjYTEL70j7nuXATUAD9qgu4.jpg",
-      "genres": ["Animation", "Fantasy", "Adventure"],
+      "genres": [
+        "Animation",
+        "Fantasy",
+        "Adventure"
+      ],
       "reviews": [
         {
           "author": "Manuel São Bento",
@@ -1709,7 +1817,7 @@
     {
       "adult": false,
       "backdrop_path": "/jRvhP4AfFnJ03lCQhp1fie7XPSd.jpg",
-      "id": 977294,
+      "id": "977294",
       "original_language": "en",
       "original_title": "Tin Soldier",
       "overview": "An ex-special forces operative seeks revenge against a cult leader who has corrupted his former comrades, the Shinjas. This leader, known as The Bokushi, promises veterans a purpose and protection, but is revealed to be a destructive influence. The ex-soldier, Nash Cavanaugh, joins forces with military operative Emmanuel Ashburn to infiltrate the Bokushi's fortress and expose his reign of terror",
@@ -1721,7 +1829,10 @@
       "vote_count": 0,
       "poster_url": "https://image.tmdb.org/t/p/original/lFFDrFLXywFhy6khHes1LCFVMsL.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/jRvhP4AfFnJ03lCQhp1fie7XPSd.jpg",
-      "genres": ["Action", "Thriller"],
+      "genres": [
+        "Action",
+        "Thriller"
+      ],
       "reviews": [],
       "trailer_url": null,
       "cast": "Scott Eastwood, Robert De Niro, Jamie Foxx, John Leguizamo, Nora Arnezeder",
@@ -1731,7 +1842,7 @@
     {
       "adult": false,
       "backdrop_path": "/1nn7nCFRTKeWOXbtjrFxfSvf1EI.jpg",
-      "id": 1122099,
+      "id": "1122099",
       "original_language": "en",
       "original_title": "The Ballad of Wallis Island",
       "overview": "Eccentric lottery winner Charles lives alone on a remote island but dreams of hiring his favourite musician, Herb McGwyer, to play an exclusive, private gig. Unbeknownst to Herb, Charles has also hired Herb’s ex-bandmate and ex-girlfriend, Nell, with her new husband in tow, to perform the old favourites. As tempers flare and old tensions resurface, the stormy weather traps them all on the island and Charles desperately looks for a way to salvage his dream gig.",
@@ -1743,7 +1854,11 @@
       "vote_count": 11,
       "poster_url": "https://image.tmdb.org/t/p/original/AhmJOYdUn9katXqDk0ZpZanQ0xp.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/1nn7nCFRTKeWOXbtjrFxfSvf1EI.jpg",
-      "genres": ["Comedy", "Drama", "Music"],
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Music"
+      ],
       "reviews": [
         {
           "author": "Brent Marchant",
@@ -1768,7 +1883,7 @@
     {
       "adult": false,
       "backdrop_path": "/eCqIpFpYIcZpCBexU3y8BfZKR7f.jpg",
-      "id": 552524,
+      "id": "552524",
       "original_language": "en",
       "original_title": "Lilo & Stitch",
       "overview": "The wildly funny and touching story of a lonely Hawaiian girl and the fugitive alien who helps to mend her broken family.",
@@ -1780,7 +1895,11 @@
       "vote_count": 0,
       "poster_url": "https://image.tmdb.org/t/p/original/3bN675X0K2E5QiAZVChzB5wq90B.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/eCqIpFpYIcZpCBexU3y8BfZKR7f.jpg",
-      "genres": ["Family", "Comedy", "Science Fiction"],
+      "genres": [
+        "Family",
+        "Comedy",
+        "Science Fiction"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=VWqJifMMgZE",
       "cast": "Maia Kealoha, Sydney Agudong, Billy Magnussen, Hannah Waddingham, Chris Sanders",
@@ -1790,7 +1909,7 @@
     {
       "adult": false,
       "backdrop_path": "/3ExQ28MVRaBbJFI2br5NjLyXVO1.jpg",
-      "id": 1212855,
+      "id": "1212855",
       "original_language": "en",
       "original_title": "Fight or Flight",
       "overview": "A mercenary takes on the job of tracking down a target on a plane but must protect her when they're surrounded by people trying to kill both of them.",
@@ -1802,7 +1921,11 @@
       "vote_count": 69,
       "poster_url": "https://image.tmdb.org/t/p/original/x4nWnfgJvL045rcUCSJzfgIIY9i.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/3ExQ28MVRaBbJFI2br5NjLyXVO1.jpg",
-      "genres": ["Action", "Comedy", "Thriller"],
+      "genres": [
+        "Action",
+        "Comedy",
+        "Thriller"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=SdsHRpjfqEI",
       "cast": "Josh Hartnett, Katee Sackhoff, Marko Zaror, Julian Kostov, Charithra Chandran",
@@ -1812,7 +1935,7 @@
     {
       "adult": false,
       "backdrop_path": "/9OO6I25MHhCDd0XwNk4oZl0fpwB.jpg",
-      "id": 1261050,
+      "id": "1261050",
       "original_language": "da",
       "original_title": "De lydløse",
       "overview": "In 2008, a group of men from Denmark and across Europe pull off the biggest heist of all time on Danish soil. Kasper, a boxer with few chances left in life, is offered the opportunity to plan the robbery by its foreign initiators.",
@@ -1824,7 +1947,10 @@
       "vote_count": 44,
       "poster_url": "https://image.tmdb.org/t/p/original/7NLY1jNwtZX1yVzwVoBeAhaBE8i.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/9OO6I25MHhCDd0XwNk4oZl0fpwB.jpg",
-      "genres": ["Action", "Drama"],
+      "genres": [
+        "Action",
+        "Drama"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=_LYIHKNLJTU",
       "cast": "Gustav Dyekjær Giese, Reda Kateb, Amanda Collin, Christopher Wagelin, Jens Hultén",
@@ -1834,7 +1960,7 @@
     {
       "adult": false,
       "backdrop_path": "/jTOeWjamUKGxWVUO1TMZXqQUarw.jpg",
-      "id": 402431,
+      "id": "402431",
       "original_language": "en",
       "original_title": "Wicked",
       "overview": "In the land of Oz, ostracized and misunderstood green-skinned Elphaba is forced to share a room with the popular aristocrat Glinda at Shiz University, and the two's unlikely friendship is tested as they begin to fulfill their respective destinies as Glinda the Good and the Wicked Witch of the West.",
@@ -1846,7 +1972,11 @@
       "vote_count": 2101,
       "poster_url": "https://image.tmdb.org/t/p/original/xDGbZ0JJ3mYaGKy4Nzd9Kph6M9L.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/jTOeWjamUKGxWVUO1TMZXqQUarw.jpg",
-      "genres": ["Drama", "Romance", "Fantasy"],
+      "genres": [
+        "Drama",
+        "Romance",
+        "Fantasy"
+      ],
       "reviews": [
         {
           "author": "Chris Sawin",
@@ -1983,7 +2113,7 @@
     {
       "adult": false,
       "backdrop_path": "/8btfz81bOJ2lC7cujYBTw03wzg3.jpg",
-      "id": 980477,
+      "id": "980477",
       "original_language": "zh",
       "original_title": "哪吒之魔童闹海",
       "overview": "Following the Tribulation, although the souls of Ne Zha and Ao Bing were preserved, their physical bodies will soon be destroyed. Tai Yi Zhen Ren plans to use the Seven Colored Lotus to reshape their physical forms, but encounters numerous difficulties. What will become of Ne Zha and Ao Bing?",
@@ -1995,7 +2125,11 @@
       "vote_count": 164,
       "poster_url": "https://image.tmdb.org/t/p/original/5lUmWTGkEcYnXujixXn31o9q2T0.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/8btfz81bOJ2lC7cujYBTw03wzg3.jpg",
-      "genres": ["Animation", "Fantasy", "Adventure"],
+      "genres": [
+        "Animation",
+        "Fantasy",
+        "Adventure"
+      ],
       "reviews": [
         {
           "author": "CinemaSerf",
@@ -2020,7 +2154,7 @@
     {
       "adult": false,
       "backdrop_path": "/wi2CEFSyoxoBWdFeVmTeqnlX3qI.jpg",
-      "id": 1233575,
+      "id": "1233575",
       "original_language": "en",
       "original_title": "Black Bag",
       "overview": "When intelligence agent Kathryn Woodhouse is suspected of betraying the nation, her husband – also a legendary agent – faces the ultimate test of whether to be loyal to his marriage, or his country.",
@@ -2032,7 +2166,11 @@
       "vote_count": 479,
       "poster_url": "https://image.tmdb.org/t/p/original/hHPovtU4b96LHcoeEwRkGHI5btw.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/wi2CEFSyoxoBWdFeVmTeqnlX3qI.jpg",
-      "genres": ["Thriller", "Mystery", "Drama"],
+      "genres": [
+        "Thriller",
+        "Mystery",
+        "Drama"
+      ],
       "reviews": [
         {
           "author": "Brent Marchant",
@@ -2099,7 +2237,7 @@
     {
       "adult": false,
       "backdrop_path": "/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg",
-      "id": 278,
+      "id": "278",
       "original_language": "en",
       "original_title": "The Shawshank Redemption",
       "overview": "Imprisoned in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
@@ -2111,7 +2249,10 @@
       "vote_count": 28254,
       "poster_url": "https://image.tmdb.org/t/p/original/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg",
-      "genres": ["Drama", "Crime"],
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
       "reviews": [
         {
           "author": "elshaarawy",
@@ -2360,7 +2501,7 @@
     {
       "adult": false,
       "backdrop_path": "/tmU7GeKVybMWFButWEGl2M4GeiP.jpg",
-      "id": 238,
+      "id": "238",
       "original_language": "en",
       "original_title": "The Godfather",
       "overview": "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.",
@@ -2372,7 +2513,10 @@
       "vote_count": 21414,
       "poster_url": "https://image.tmdb.org/t/p/original/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/tmU7GeKVybMWFButWEGl2M4GeiP.jpg",
-      "genres": ["Drama", "Crime"],
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
       "reviews": [
         {
           "author": "futuretv",
@@ -2467,7 +2611,7 @@
     {
       "adult": false,
       "backdrop_path": "/kGzFbGhp99zva6oZODW5atUtnqi.jpg",
-      "id": 240,
+      "id": "240",
       "original_language": "en",
       "original_title": "The Godfather Part II",
       "overview": "In the continuing saga of the Corleone crime family, a young Vito Corleone grows up in Sicily and in 1910s New York. In the 1950s, Michael Corleone attempts to expand the family business into Las Vegas, Hollywood and Cuba.",
@@ -2479,7 +2623,10 @@
       "vote_count": 12936,
       "poster_url": "https://image.tmdb.org/t/p/original/hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/kGzFbGhp99zva6oZODW5atUtnqi.jpg",
-      "genres": ["Drama", "Crime"],
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
       "reviews": [
         {
           "author": "jkbbr549",
@@ -2546,7 +2693,7 @@
     {
       "adult": false,
       "backdrop_path": "/zb6fM1CX41D9rF9hdgclu0peUmy.jpg",
-      "id": 424,
+      "id": "424",
       "original_language": "en",
       "original_title": "Schindler's List",
       "overview": "The true story of how businessman Oskar Schindler saved over a thousand Jewish lives from the Nazis while they worked as slaves in his factory during World War II.",
@@ -2558,7 +2705,11 @@
       "vote_count": 16415,
       "poster_url": "https://image.tmdb.org/t/p/original/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/zb6fM1CX41D9rF9hdgclu0peUmy.jpg",
-      "genres": ["Drama", "History", "War"],
+      "genres": [
+        "Drama",
+        "History",
+        "War"
+      ],
       "reviews": [
         {
           "author": "Mayurpanchamia",
@@ -2611,7 +2762,7 @@
     {
       "adult": false,
       "backdrop_path": "/bxgTSUenZDHNFerQ1whRKplrMKF.jpg",
-      "id": 389,
+      "id": "389",
       "original_language": "en",
       "original_title": "12 Angry Men",
       "overview": "The defense and the prosecution have rested and the jury is filing into the jury room to decide if a young Spanish-American is guilty or innocent of murdering his father. What begins as an open and shut case soon becomes a mini-drama of each of the jurors' prejudices and preconceptions about the trial, the accused, and each other.",
@@ -2623,7 +2774,9 @@
       "vote_count": 9111,
       "poster_url": "https://image.tmdb.org/t/p/original/ow3wq89wM8qd5X7hWKxiRfsFf9C.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/bxgTSUenZDHNFerQ1whRKplrMKF.jpg",
-      "genres": ["Drama"],
+      "genres": [
+        "Drama"
+      ],
       "reviews": [
         {
           "author": "Andres Gomez",
@@ -2746,7 +2899,7 @@
     {
       "adult": false,
       "backdrop_path": "/6oaL4DP75yABrd5EbC4H2zq5ghc.jpg",
-      "id": 129,
+      "id": "129",
       "original_language": "ja",
       "original_title": "千と千尋の神隠し",
       "overview": "A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family.",
@@ -2758,7 +2911,11 @@
       "vote_count": 17114,
       "poster_url": "https://image.tmdb.org/t/p/original/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/6oaL4DP75yABrd5EbC4H2zq5ghc.jpg",
-      "genres": ["Animation", "Family", "Fantasy"],
+      "genres": [
+        "Animation",
+        "Family",
+        "Fantasy"
+      ],
       "reviews": [
         {
           "author": "ZeBlah",
@@ -2797,7 +2954,7 @@
     {
       "adult": false,
       "backdrop_path": "/oOv2oUXcAaNXakRqUPxYq5lJURz.jpg",
-      "id": 155,
+      "id": "155",
       "original_language": "en",
       "original_title": "The Dark Knight",
       "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
@@ -2809,7 +2966,12 @@
       "vote_count": 33805,
       "poster_url": "https://image.tmdb.org/t/p/original/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/oOv2oUXcAaNXakRqUPxYq5lJURz.jpg",
-      "genres": ["Drama", "Action", "Crime", "Thriller"],
+      "genres": [
+        "Drama",
+        "Action",
+        "Crime",
+        "Thriller"
+      ],
       "reviews": [
         {
           "author": "tricksy",
@@ -3030,7 +3192,7 @@
     {
       "adult": false,
       "backdrop_path": "/90ez6ArvpO8bvpyIngBuwXOqJm5.jpg",
-      "id": 19404,
+      "id": "19404",
       "original_language": "hi",
       "original_title": "दिलवाले दुल्हनिया ले जायेंगे",
       "overview": "Raj is a rich, carefree, happy-go-lucky second generation NRI. Simran is the daughter of Chaudhary Baldev Singh, who in spite of being an NRI is very strict about adherence to Indian values. Simran has left for India to be married to her childhood fiancé. Raj leaves for India with a mission at his hands, to claim his lady love under the noses of her whole family. Thus begins a saga.",
@@ -3042,7 +3204,11 @@
       "vote_count": 4484,
       "poster_url": "https://image.tmdb.org/t/p/original/rfcy6Gd3PbFIqwZX5U8xnbv7jOc.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/90ez6ArvpO8bvpyIngBuwXOqJm5.jpg",
-      "genres": ["Comedy", "Drama", "Romance"],
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
       "reviews": [
         {
           "author": "MohamedElsharkawy",
@@ -3067,7 +3233,7 @@
     {
       "adult": false,
       "backdrop_path": "/amZavErrjrdgDwhsIdpWxHNenIx.jpg",
-      "id": 497,
+      "id": "497",
       "original_language": "en",
       "original_title": "The Green Mile",
       "overview": "A supernatural tale set on death row in a Southern prison, where gentle giant John Coffey possesses the mysterious power to heal people's ailments. When the cell block's head guard, Paul Edgecomb, recognizes Coffey's miraculous gift, he tries desperately to help stave off the condemned man's execution.",
@@ -3079,7 +3245,11 @@
       "vote_count": 18069,
       "poster_url": "https://image.tmdb.org/t/p/original/8VG8fDNiy50H4FedGwdSVUPoaJe.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/amZavErrjrdgDwhsIdpWxHNenIx.jpg",
-      "genres": ["Fantasy", "Drama", "Crime"],
+      "genres": [
+        "Fantasy",
+        "Drama",
+        "Crime"
+      ],
       "reviews": [
         {
           "author": "Wuchak",
@@ -3132,7 +3302,7 @@
     {
       "adult": false,
       "backdrop_path": "/hiKmpZMGZsrkA3cdce8a7Dpos1j.jpg",
-      "id": 496243,
+      "id": "496243",
       "original_language": "ko",
       "original_title": "기생충",
       "overview": "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident.",
@@ -3144,7 +3314,11 @@
       "vote_count": 19011,
       "poster_url": "https://image.tmdb.org/t/p/original/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/hiKmpZMGZsrkA3cdce8a7Dpos1j.jpg",
-      "genres": ["Comedy", "Thriller", "Drama"],
+      "genres": [
+        "Comedy",
+        "Thriller",
+        "Drama"
+      ],
       "reviews": [
         {
           "author": "SWITCH.",
@@ -3365,7 +3539,7 @@
     {
       "adult": false,
       "backdrop_path": "/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg",
-      "id": 680,
+      "id": "680",
       "original_language": "en",
       "original_title": "Pulp Fiction",
       "overview": "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
@@ -3377,7 +3551,10 @@
       "vote_count": 28636,
       "poster_url": "https://image.tmdb.org/t/p/original/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg",
-      "genres": ["Thriller", "Crime"],
+      "genres": [
+        "Thriller",
+        "Crime"
+      ],
       "reviews": [
         {
           "author": "Wuchak",
@@ -3472,7 +3649,7 @@
     {
       "adult": false,
       "backdrop_path": "/8x9iKH8kWA0zdkgNdpAew7OstYe.jpg",
-      "id": 372058,
+      "id": "372058",
       "original_language": "ja",
       "original_title": "君の名は。",
       "overview": "High schoolers Mitsuha and Taki are complete strangers living separate lives. But one night, they suddenly switch places. Mitsuha wakes up in Taki’s body, and he in hers. This bizarre occurrence continues to happen randomly, and the two must adjust their lives around each other.",
@@ -3484,7 +3661,11 @@
       "vote_count": 11749,
       "poster_url": "https://image.tmdb.org/t/p/original/8GJsy7w7frGquw1cy9jasOGNNI1.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/8x9iKH8kWA0zdkgNdpAew7OstYe.jpg",
-      "genres": ["Animation", "Romance", "Drama"],
+      "genres": [
+        "Animation",
+        "Romance",
+        "Drama"
+      ],
       "reviews": [
         {
           "author": "Gimly",
@@ -3593,7 +3774,7 @@
     {
       "adult": false,
       "backdrop_path": "/2u7zbn8EudG6kLlBzUYqP8RyFU4.jpg",
-      "id": 122,
+      "id": "122",
       "original_language": "en",
       "original_title": "The Lord of the Rings: The Return of the King",
       "overview": "As armies mass for a final battle that will decide the fate of the world--and powerful, ancient forces of Light and Dark compete to determine the outcome--one member of the Fellowship of the Ring is revealed as the noble heir to the throne of the Kings of Men. Yet, the sole hope for triumph over evil lies with a brave hobbit, Frodo, who, accompanied by his loyal friend Sam and the hideous, wretched Gollum, ventures deep into the very dark heart of Mordor on his seemingly impossible quest to destroy the Ring of Power.​",
@@ -3605,7 +3786,11 @@
       "vote_count": 25040,
       "poster_url": "https://image.tmdb.org/t/p/original/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/2u7zbn8EudG6kLlBzUYqP8RyFU4.jpg",
-      "genres": ["Adventure", "Fantasy", "Action"],
+      "genres": [
+        "Adventure",
+        "Fantasy",
+        "Action"
+      ],
       "reviews": [
         {
           "author": "NeoBrowser",
@@ -3714,7 +3899,7 @@
     {
       "adult": false,
       "backdrop_path": "/ghgfzbEV7kbpbi1O8eIILKVXEA8.jpg",
-      "id": 13,
+      "id": "13",
       "original_language": "en",
       "original_title": "Forrest Gump",
       "overview": "A man with a low IQ has accomplished great things in his life and been present during significant historic events—in each case, far exceeding what anyone imagined he could do. But despite all he has achieved, his one true love eludes him.",
@@ -3726,7 +3911,11 @@
       "vote_count": 28183,
       "poster_url": "https://image.tmdb.org/t/p/original/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/ghgfzbEV7kbpbi1O8eIILKVXEA8.jpg",
-      "genres": ["Comedy", "Drama", "Romance"],
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
       "reviews": [
         {
           "author": "llgolden",
@@ -3779,7 +3968,7 @@
     {
       "adult": false,
       "backdrop_path": "/x4biAVdPVCghBlsVIzB6NmbghIz.jpg",
-      "id": 429,
+      "id": "429",
       "original_language": "it",
       "original_title": "Il buono, il brutto, il cattivo",
       "overview": "While the Civil War rages on between the Union and the Confederacy, three men – a quiet loner, a ruthless hitman, and a Mexican bandit – comb the American Southwest in search of a strongbox containing $200,000 in stolen gold.",
@@ -3791,7 +3980,9 @@
       "vote_count": 8969,
       "poster_url": "https://image.tmdb.org/t/p/original/bX2xnavhMYjWDoZp1VM6VnU1xwe.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/x4biAVdPVCghBlsVIzB6NmbghIz.jpg",
-      "genres": ["Western"],
+      "genres": [
+        "Western"
+      ],
       "reviews": [
         {
           "author": "John Chard",
@@ -3942,7 +4133,7 @@
     {
       "adult": false,
       "backdrop_path": "/sJNNMCc6B7KZIY3LH3JMYJJNH5j.jpg",
-      "id": 346,
+      "id": "346",
       "original_language": "ja",
       "original_title": "七人の侍",
       "overview": "A samurai answers a village's request for protection after he falls on hard times. The town needs protection from bandits, so the samurai gathers six others to help him teach the people how to defend themselves, and the villagers provide the soldiers with food.",
@@ -3954,7 +4145,10 @@
       "vote_count": 3885,
       "poster_url": "https://image.tmdb.org/t/p/original/8OKmBV5BUFzmozIC3pPWKHy17kx.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/sJNNMCc6B7KZIY3LH3JMYJJNH5j.jpg",
-      "genres": ["Action", "Drama"],
+      "genres": [
+        "Action",
+        "Drama"
+      ],
       "reviews": [
         {
           "author": "Andres Gomez",
@@ -4035,7 +4229,7 @@
     {
       "adult": false,
       "backdrop_path": "/l33oR0mnvf20avWyIMxW02EtQxn.jpg",
-      "id": 157336,
+      "id": "157336",
       "original_language": "en",
       "original_title": "Interstellar",
       "overview": "The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
@@ -4047,7 +4241,11 @@
       "vote_count": 37079,
       "poster_url": "https://image.tmdb.org/t/p/original/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/l33oR0mnvf20avWyIMxW02EtQxn.jpg",
-      "genres": ["Adventure", "Drama", "Science Fiction"],
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Science Fiction"
+      ],
       "reviews": [
         {
           "author": "Reno",
@@ -4296,7 +4494,7 @@
     {
       "adult": false,
       "backdrop_path": "/7TF4p86ZafnxFuNqWdhpHXFO244.jpg",
-      "id": 769,
+      "id": "769",
       "original_language": "en",
       "original_title": "GoodFellas",
       "overview": "The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood gangsters at an early age and climbs the ranks of a Mafia family under the guidance of Jimmy Conway.",
@@ -4308,7 +4506,10 @@
       "vote_count": 13347,
       "poster_url": "https://image.tmdb.org/t/p/original/aKuFiU82s5ISJpGZp7YkIr3kCUd.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/7TF4p86ZafnxFuNqWdhpHXFO244.jpg",
-      "genres": ["Drama", "Crime"],
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
       "reviews": [
         {
           "author": "John Chard",
@@ -4403,7 +4604,7 @@
     {
       "adult": false,
       "backdrop_path": "/tDFvXn4tane9lUvFAFAUkMylwSr.jpg",
-      "id": 12477,
+      "id": "12477",
       "original_language": "ja",
       "original_title": "火垂るの墓",
       "overview": "In the final months of World War II, 14-year-old Seita and his sister Setsuko are orphaned when their mother is killed during an air raid in Kobe, Japan. After a falling out with their aunt, they move into an abandoned bomb shelter. With no surviving relatives and their emergency rations depleted, Seita and Setsuko struggle to survive.",
@@ -4415,7 +4616,11 @@
       "vote_count": 5874,
       "poster_url": "https://image.tmdb.org/t/p/original/k9tv1rXZbOhH7eiCk378x61kNQ1.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/tDFvXn4tane9lUvFAFAUkMylwSr.jpg",
-      "genres": ["Animation", "Drama", "War"],
+      "genres": [
+        "Animation",
+        "Drama",
+        "War"
+      ],
       "reviews": [
         {
           "author": "Andres Gomez",
@@ -4454,7 +4659,7 @@
     {
       "adult": false,
       "backdrop_path": "/6aNKD81RHR1DqUUa8kOZ1TBY1Lp.jpg",
-      "id": 637,
+      "id": "637",
       "original_language": "it",
       "original_title": "La vita è bella",
       "overview": "A touching story of an Italian book seller of Jewish ancestry who lives in his own little fairy tale. His creative and happy life would come to an abrupt halt when his entire family is deported to a concentration camp during World War II. While locked up he tries to convince his son that the whole thing is just a game.",
@@ -4466,7 +4671,10 @@
       "vote_count": 13357,
       "poster_url": "https://image.tmdb.org/t/p/original/74hLDKjD5aGYOotO6esUVaeISa2.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/6aNKD81RHR1DqUUa8kOZ1TBY1Lp.jpg",
-      "genres": ["Comedy", "Drama"],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
       "reviews": [
         {
           "author": "tubbs",
@@ -4491,7 +4699,7 @@
     {
       "adult": false,
       "backdrop_path": "/1YMrOtrW7b4pL2lfD8UciZPOJGs.jpg",
-      "id": 974576,
+      "id": "974576",
       "original_language": "en",
       "original_title": "Conclave",
       "overview": "After the unexpected death of the Pope, Cardinal Lawrence is tasked with managing the covert and ancient ritual of electing a new one. Sequestered in the Vatican with the Catholic Church’s most powerful leaders until the process is complete, Lawrence finds himself at the center of a conspiracy that could lead to its downfall.",
@@ -4503,7 +4711,11 @@
       "vote_count": 2361,
       "poster_url": "https://image.tmdb.org/t/p/original/l4WXg5oQPK6GVlISKQNIUGb8rKJ.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/1YMrOtrW7b4pL2lfD8UciZPOJGs.jpg",
-      "genres": ["Drama", "Thriller", "Mystery"],
+      "genres": [
+        "Drama",
+        "Thriller",
+        "Mystery"
+      ],
       "reviews": [
         {
           "author": "Brent Marchant",
@@ -4598,7 +4810,7 @@
     {
       "adult": false,
       "backdrop_path": "/Zes06xI18u47pblwRGTtqRm0R8.jpg",
-      "id": 1276073,
+      "id": "1276073",
       "original_language": "ja",
       "original_title": "新幹線大爆破",
       "overview": "When panic erupts on a Tokyo-bound bullet train that will explode if it slows below 100 kph, authorities race against time to save everyone on board.",
@@ -4610,7 +4822,12 @@
       "vote_count": 151,
       "poster_url": "https://image.tmdb.org/t/p/original/jmzxlDBwgvRbpPJzNQwizyn9UEn.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/Zes06xI18u47pblwRGTtqRm0R8.jpg",
-      "genres": ["Action", "Thriller", "Crime", "Drama"],
+      "genres": [
+        "Action",
+        "Thriller",
+        "Crime",
+        "Drama"
+      ],
       "reviews": [
         {
           "author": "Manuel São Bento",
@@ -4649,7 +4866,7 @@
     {
       "adult": false,
       "backdrop_path": "/2CcMG34v4PCynvxwmBUwVtNqsKL.jpg",
-      "id": 1249213,
+      "id": "1249213",
       "original_language": "en",
       "original_title": "Drop",
       "overview": "Violet, a widowed mother on her first date in years, arrives at an upscale restaurant where she is relieved that her date, Henry, is more charming and handsome than she expected. But their chemistry begins to curdle as Violet begins being irritated and then terrorized by a series of anonymous drops to her phone.",
@@ -4661,7 +4878,10 @@
       "vote_count": 266,
       "poster_url": "https://image.tmdb.org/t/p/original/dS2S5lpfgRIRQOb7LDCjNsQqKjp.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/2CcMG34v4PCynvxwmBUwVtNqsKL.jpg",
-      "genres": ["Mystery", "Thriller"],
+      "genres": [
+        "Mystery",
+        "Thriller"
+      ],
       "reviews": [
         {
           "author": "Chris Sawin",
@@ -4714,7 +4934,7 @@
     {
       "adult": false,
       "backdrop_path": "/iznPd7PLnCBA1G50M4DuA9wvCIy.jpg",
-      "id": 1307520,
+      "id": "1307520",
       "original_language": "es",
       "original_title": "La más fan",
       "overview": "Canceled in Hollywood, star Lana Cruz heads to her hometown for a comeback. Enter Polly, her fan-turned-frenemy. Can Lana dodge drama and reclaim her fame?",
@@ -4726,7 +4946,9 @@
       "vote_count": 13,
       "poster_url": "https://image.tmdb.org/t/p/original/wgUmsekYPOt9ZQ8ero91qRnmhQY.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/iznPd7PLnCBA1G50M4DuA9wvCIy.jpg",
-      "genres": ["Comedy"],
+      "genres": [
+        "Comedy"
+      ],
       "reviews": [],
       "trailer_url": null,
       "cast": "Kate del Castillo, Diana Bovio, Daniel Raymont, Gabriel Nuncio, Hugo Catalán",
@@ -4736,7 +4958,7 @@
     {
       "adult": false,
       "backdrop_path": "/sNx1A3822kEbqeUxvo5A08o4N7o.jpg",
-      "id": 1195506,
+      "id": "1195506",
       "original_language": "en",
       "original_title": "Novocaine",
       "overview": "When the girl of his dreams is kidnapped, everyman Nate turns his inability to feel pain into an unexpected strength in his fight to get her back.",
@@ -4748,7 +4970,11 @@
       "vote_count": 702,
       "poster_url": "https://image.tmdb.org/t/p/original/xmMHGz9dVRaMY6rRAlEX4W0Wdhm.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/sNx1A3822kEbqeUxvo5A08o4N7o.jpg",
-      "genres": ["Action", "Comedy", "Thriller"],
+      "genres": [
+        "Action",
+        "Comedy",
+        "Thriller"
+      ],
       "reviews": [
         {
           "author": "Brent Marchant",
@@ -4801,19 +5027,23 @@
     {
       "adult": false,
       "backdrop_path": "/k32XKMjmXMGeydykD32jfER3BVI.jpg",
-      "id": 1045938,
+      "id": "1045938",
       "original_language": "en",
       "original_title": "G20",
       "overview": "After the G20 Summit is overtaken by terrorists, President Danielle Sutton must bring all her statecraft and military experience to defend her family and her fellow leaders.",
       "popularity": 82.1321,
       "poster_path": "/wv6oWAleCJZUk5htrGg413t3GCy.jpg",
       "release_date": "2025-04-10",
-      "title": "G20",
+      "title": "g20",
       "vote_average": 6.57,
       "vote_count": 459,
       "poster_url": "https://image.tmdb.org/t/p/original/wv6oWAleCJZUk5htrGg413t3GCy.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/k32XKMjmXMGeydykD32jfER3BVI.jpg",
-      "genres": ["Action", "Mystery", "Drama"],
+      "genres": [
+        "Action",
+        "Mystery",
+        "Drama"
+      ],
       "reviews": [
         {
           "author": "Manuel São Bento",
@@ -4845,44 +5075,56 @@
         }
       ],
       "trailer_url": "https://www.youtube.com/watch?v=ZL7R8qyQXrc",
-      "cast": "Viola Davis, Anthony Anderson, Marsai Martin, Ramón Rodríguez, Antony Starr",
+      "cast": [
+        "Viola Davis",
+        "Anthony Anderson",
+        "Marsai Martin",
+        "Ramón Rodríguez",
+        "Antony Starr"
+      ],
       "category": "now_playing",
-      "createdAt": "2025-05-09T18:08:42.049Z"
+      "createdAt": "2025-05-09T18:08:42.049Z",
+      "writer": [],
+      "director": [],
+      "Type": "movie",
+      "Year": "2025",
+      "Director": "stenven",
+      "Writer": "cherstphore"
     }
   ],
   "actors": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Leonardo DiCaprio",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Leonardo_DiCaprio_66ème_Festival_de_Venise_%28Mostra%29.jpg/440px-Leonardo_DiCaprio_66ème_Festival_de_Venise_%28Mostra%29.jpg",
       "rate": 9.2
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Scarlett Johansson",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Scarlett_Johansson_C%C3%A9sars_2014.jpg/440px-Scarlett_Johansson_C%C3%A9sars_2014.jpg",
       "rate": 8.9
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Denzel Washington",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Denzel_Washington_Cannes_2013.jpg/440px-Denzel_Washington_Cannes_2013.jpg",
-      "rate": 9.0
+      "rate": 9
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Emma Stone",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Emma_Stone_at_Maniac_UK_Premiere.jpg/440px-Emma_Stone_at_Maniac_UK_Premiere.jpg",
       "rate": 8.7
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Tom Hanks",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Tom_Hanks_TIFF_2019.jpg/440px-Tom_Hanks_TIFF_2019.jpg",
       "rate": 9.3
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Zendaya",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Zendaya_at_2019_San_Diego_Comic_Con_%2848446842911%29_%28cropped%29.jpg/440px-Zendaya_at_2019_San_Diego_Comic_Con_%2848446842911%29_%28cropped%29.jpg",
       "rate": 8.5
@@ -5331,7 +5573,11 @@
           "vote_count": 9037,
           "poster_url": "https://image.tmdb.org/t/p/original/9PFonBhy4cQy7Jz20NpMygczOkv.jpg",
           "backdrop_url": "https://image.tmdb.org/t/p/original/iHSwvRVsRyxpX7FE7GbviaDvgGZ.jpg",
-          "genres": ["Sci-Fi & Fantasy", "Mystery", "Comedy"],
+          "genres": [
+            "Sci-Fi & Fantasy",
+            "Mystery",
+            "Comedy"
+          ],
           "reviews": [
             {
               "author": "UtileDulci",
@@ -6742,7 +6988,9 @@
           "vote_count": 10027,
           "poster_url": "https://image.tmdb.org/t/p/original/3Q0hd3heuWwDWpwcDkhQOA6TYWI.jpg",
           "backdrop_url": "https://image.tmdb.org/t/p/original/9KnIzPCv9XpWA0MqmwiKBZvV1Sj.jpg",
-          "genres": ["Drama"],
+          "genres": [
+            "Drama"
+          ],
           "reviews": [
             {
               "author": "tmdb15214618",
@@ -7719,7 +7967,11 @@
           "vote_count": 10327,
           "poster_url": "https://image.tmdb.org/t/p/original/eU1i6eHXlzMOlEq0ku1Rzq7Y4wA.jpg",
           "backdrop_url": "https://image.tmdb.org/t/p/original/9zcbqSxdsRMZWHYtyCd1nXPr2xq.jpg",
-          "genres": ["Sci-Fi & Fantasy", "Action & Adventure", "Drama"],
+          "genres": [
+            "Sci-Fi & Fantasy",
+            "Action & Adventure",
+            "Drama"
+          ],
           "reviews": [
             {
               "author": "avidrunner",
@@ -7812,7 +8064,9 @@
           "vote_count": 5875,
           "poster_url": "https://image.tmdb.org/t/p/original/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg",
           "backdrop_url": "https://image.tmdb.org/t/p/original/lY2DhbA7Hy44fAKddr06UrXWWaQ.jpg",
-          "genres": ["Drama"],
+          "genres": [
+            "Drama"
+          ],
           "reviews": [
             {
               "author": "JacobMars",
@@ -9869,7 +10123,10 @@
           "vote_count": 3057,
           "poster_url": "https://image.tmdb.org/t/p/original/bE71f9A3eztjcd5JT3MmHB8MbzA.jpg",
           "backdrop_url": "https://image.tmdb.org/t/p/original/9qq8LpOoBLYq8MxiMugn0gf9qJd.jpg",
-          "genres": ["Drama", "Comedy"],
+          "genres": [
+            "Drama",
+            "Comedy"
+          ],
           "reviews": [],
           "trailer_url": null,
           "cast": "Hande Erçel, Kerem Bürsin, Evrim Doğan, Anıl İlter, Elçin Afacan",
@@ -9891,7 +10148,10 @@
           "vote_count": 34,
           "poster_url": "https://image.tmdb.org/t/p/original/krSdiuUrsqka7FFtaqjxEqC0bE9.jpg",
           "backdrop_url": "https://image.tmdb.org/t/p/original/nWNH4OTbiZTxqfPOgSYI2U17aCJ.jpg",
-          "genres": ["Comedy", "Drama"],
+          "genres": [
+            "Comedy",
+            "Drama"
+          ],
           "reviews": [],
           "trailer_url": "https://www.youtube.com/watch?v=oco6xbjAjGs",
           "cast": "Hande Erçel, Burak Deniz, Özcan Tekdemir, Merve Çağıran, Oğuzhan Karbi",
@@ -12095,7 +12355,7 @@
     {
       "adult": false,
       "backdrop_path": "/9faGSFi5jam6pDWGNd0p8JcJgXQ.jpg",
-      "id": 1396,
+      "id": "1396",
       "original_language": "en",
       "original_title": "Breaking Bad",
       "overview": "Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.",
@@ -12178,7 +12438,7 @@
     {
       "adult": false,
       "backdrop_path": "/5yk3QwnQxzwKfhU1tlDkV2PSIBz.jpg",
-      "id": 219246,
+      "id": "219246",
       "original_language": "ko",
       "original_title": "폭싹 속았수다",
       "overview": "In Jeju, a spirited girl and a steadfast boy's island story blossoms into a lifelong tale of setbacks and triumphs — proving love endures across time.",
@@ -12218,7 +12478,7 @@
     {
       "adult": false,
       "backdrop_path": "/7BzmK4MWc0cj4hCxwWURt6TS6UR.jpg",
-      "id": 131378,
+      "id": "131378",
       "original_language": "en",
       "original_title": "Adventure Time: Fionna & Cake",
       "overview": "Fionna and Cake – with the help of the former Ice King, Simon Petrikov - embark on a multiverse-hopping adventure and journey of self-discovery. All the while a powerful new antagonist determined to track them down and erase them from existence, lurks in the shadows.",
@@ -12261,7 +12521,7 @@
     {
       "adult": false,
       "backdrop_path": "/wQEW3xLrQAThu1GvqpsKQyejrYS.jpg",
-      "id": 94605,
+      "id": "94605",
       "original_language": "en",
       "original_title": "Arcane",
       "overview": "Amid the stark discord of twin cities Piltover and Zaun, two sisters fight on rival sides of a war between magic technologies and clashing convictions.",
@@ -12346,7 +12606,7 @@
     {
       "adult": false,
       "backdrop_path": "/96RT2A47UdzWlUfvIERFyBsLhL2.jpg",
-      "id": 209867,
+      "id": "209867",
       "original_language": "ja",
       "original_title": "葬送のフリーレン",
       "overview": "After the party of heroes defeated the Demon King, they restored peace to the land and returned to lives of solitude. Generations pass, and the elven mage Frieren comes face to face with humanity’s mortality. She takes on a new apprentice and promises to fulfill old friends’ dying wishes. Can an elven mind make peace with the nature of life and death? Frieren embarks on her quest to find out.",
@@ -12389,7 +12649,7 @@
     {
       "adult": false,
       "backdrop_path": "/kU98MbVVgi72wzceyrEbClZmMFe.jpg",
-      "id": 246,
+      "id": "246",
       "original_language": "en",
       "original_title": "Avatar: The Last Airbender",
       "overview": "In a war-torn world of elemental magic, a young boy reawakens to undertake a dangerous mystic quest to fulfill his destiny as the Avatar, and bring peace to the world.",
@@ -12459,7 +12719,7 @@
     {
       "adult": false,
       "backdrop_path": "/tuCU2yVRM2iZxFkpqlPUyvd6tSu.jpg",
-      "id": 94954,
+      "id": "94954",
       "original_language": "en",
       "original_title": "Hazbin Hotel",
       "overview": "In attempt to find a non-violent alternative for reducing Hell's overpopulation, the daughter of Lucifer opens a rehabilitation hotel that offers a group of misfit demons a chance at redemption.",
@@ -12501,7 +12761,7 @@
     {
       "adult": false,
       "backdrop_path": "/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
-      "id": 37854,
+      "id": "37854",
       "original_language": "ja",
       "original_title": "ワンピース",
       "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
@@ -12528,7 +12788,7 @@
     {
       "adult": false,
       "backdrop_path": "/jlbUx0aHJupDVDlCo0R7UxSaUUd.jpg",
-      "id": 240411,
+      "id": "240411",
       "original_language": "ja",
       "original_title": "ダンダダン",
       "overview": "In a bet to prove whether ghosts or aliens exist, two high schoolers face terrifying paranormal threats, gain superpowers and maybe even fall in love?!",
@@ -12585,7 +12845,7 @@
     {
       "adult": false,
       "backdrop_path": "/A6tMQAo6t6eRFCPhsrShmxZLqFB.jpg",
-      "id": 31911,
+      "id": "31911",
       "original_language": "ja",
       "original_title": "鋼の錬金術師 FULLMETAL ALCHEMIST",
       "overview": "Disregard for alchemy’s laws ripped half of Edward Elric’s limbs from his body and left his brother Alphonse’s soul clinging to a suit of armor. To restore what was lost, the brothers seek the Philosopher’s Stone. Enemies and allies – the corrupt military, the Homunculi, and foreign alchemists – will alter the Elric brothers course, but their purpose will remain unchanged and their bond unbreakable.",
@@ -12613,7 +12873,7 @@
     {
       "adult": false,
       "backdrop_path": "/hPea3Qy5Gd6z4kJLUruBbwAH8Rm.jpg",
-      "id": 60059,
+      "id": "60059",
       "original_language": "en",
       "original_title": "Better Call Saul",
       "overview": "Six years before Saul Goodman meets Walter White. We meet him when the man who will become Saul Goodman is known as Jimmy McGill, a small-time lawyer searching for his destiny, and, more immediately, hustling to make ends meet. Working alongside, and, often, against Jimmy, is “fixer” Mike Ehrmantraut. The series tracks Jimmy’s transformation into Saul Goodman, the man who puts “criminal” in “criminal lawyer\".",
@@ -12654,7 +12914,7 @@
     {
       "adult": false,
       "backdrop_path": "/rBF8wVQN8hTWHspVZBlI3h7HZJ.jpg",
-      "id": 60625,
+      "id": "60625",
       "original_language": "en",
       "original_title": "Rick and Morty",
       "overview": "Rick is a mentally-unbalanced but scientifically gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.",
@@ -12711,7 +12971,7 @@
     {
       "adult": false,
       "backdrop_path": "/20eIP9o5ebArmu2HxJutaBjhLf4.jpg",
-      "id": 87108,
+      "id": "87108",
       "original_language": "en",
       "original_title": "Chernobyl",
       "overview": "The true story of one of the worst man-made catastrophes in history: the catastrophic nuclear accident at Chernobyl. A tale of the brave men and women who sacrificed to save Europe from unimaginable disaster.",
@@ -12793,7 +13053,7 @@
     {
       "adult": false,
       "backdrop_path": "/gffVOVZ2Y9cmVIZ26Gt9ByMGCYH.jpg",
-      "id": 220542,
+      "id": "220542",
       "original_language": "ja",
       "original_title": "薬屋のひとりごと",
       "overview": "Maomao lived a peaceful life with her apothecary father. Until one day, she's sold as a lowly servant to the emperor's palace. But she wasn't meant for a compliant life among royalty. So when imperial heirs fall ill, she decides to step in and find a cure! This catches the eye of Jinshi, a handsome palace official who promotes her. Now, she's making a name for herself solving medical mysteries!",
@@ -12820,7 +13080,7 @@
     {
       "adult": false,
       "backdrop_path": "/aok7IhrbA83josNz9Dqh8tNA0Ao.jpg",
-      "id": 1429,
+      "id": "1429",
       "original_language": "ja",
       "original_title": "進撃の巨人",
       "overview": "Many years ago, the last remnants of humanity were forced to retreat behind the towering walls of a fortified city to escape the massive, man-eating Titans that roamed the land outside their fortress. Only the heroic members of the Scouting Legion dared to stray beyond the safety of the walls – but even those brave warriors seldom returned alive. Those within the city clung to the illusion of a peaceful existence until the day that dream was shattered, and their slim chance at survival was reduced to one horrifying choice: kill – or be devoured!",
@@ -12862,7 +13122,7 @@
     {
       "adult": false,
       "backdrop_path": "/mGHrUSt2uA5RaIheSmBfRnRHPS8.jpg",
-      "id": 92685,
+      "id": "92685",
       "original_language": "en",
       "original_title": "The Owl House",
       "overview": "An animated fantasy-comedy series that follows Luz, a self-assured teenage girl who accidentally stumbles upon a portal to a magical world where she befriends a rebellious witch, Eda, and an adorably tiny warrior, King. Despite not having magical abilities, Luz pursues her dream of becoming a witch by serving as Eda's apprentice at the Owl House and ultimately finds a new family in an unlikely setting.",
@@ -12907,7 +13167,7 @@
     {
       "adult": false,
       "backdrop_path": "/ywQtHG17LZhAFZyZtBflhtFMtJ7.jpg",
-      "id": 70785,
+      "id": "70785",
       "original_language": "en",
       "original_title": "Anne with an E",
       "overview": "A coming-of-age story about an outsider who, against all odds and numerous challenges, fights for love and acceptance and for her place in the world. The series centers on a young orphaned girl in the late 1890’s, who, after an abusive childhood spent in orphanages and the homes of strangers, is mistakenly sent to live with an elderly woman and her aging brother. Over time, 13-year-old Anne will transform their lives and eventually the small town in which they live with her unique spirit, fierce intellect and brilliant imagination.",
@@ -12948,7 +13208,7 @@
     {
       "adult": false,
       "backdrop_path": "/6U0e6OHklJAcMAuIoGXjTBS5zsI.jpg",
-      "id": 46298,
+      "id": "46298",
       "original_language": "ja",
       "original_title": "HUNTER×HUNTER",
       "overview": "To fulfill his dreams of becoming a legendary Hunter like his dad, a young boy must pass a rigorous examination and find his missing father.",
@@ -12975,7 +13235,7 @@
     {
       "adult": false,
       "backdrop_path": "/2w8FaLwwJTWr6ExUMeVgT2Th5YT.jpg",
-      "id": 42705,
+      "id": "42705",
       "original_language": "ja",
       "original_title": "はじめの一歩",
       "overview": "Makunouchi Ippo is an ordinary high school student in Japan. Since he spends most of his time away from school helping his mother run the family business, he doesn't get to enjoy his younger years like most teenagers. Always a target for bullying at school (the family fishing business grants him a distinct odor), Ippo's life is one of hardship. One of these after-school bullying sessions turns Ippo's life around for the better, as he is saved by a boxer named Takamura. He decides to follow in Takamura's footsteps and train to become a boxer, giving his life direction and purpose. Ippo's path to perfecting his pugilistic prowess is just beginning...",
@@ -13003,7 +13263,7 @@
     {
       "adult": false,
       "backdrop_path": "/lNpkvX2s8LGB0mjGODMT4o6Up7j.jpg",
-      "id": 1398,
+      "id": "1398",
       "original_language": "en",
       "original_title": "The Sopranos",
       "overview": "The story of New Jersey-based Italian-American mobster Tony Soprano and the difficulties he faces as he tries to balance the conflicting requirements of his home life and the criminal organization he heads. Those difficulties are often highlighted through his ongoing professional relationship with psychiatrist Jennifer Melfi. The show features Tony's family members and Mafia associates in prominent roles and story arcs, most notably his wife Carmela and his cousin and protégé Christopher Moltisanti.",
@@ -13041,5 +13301,4 @@
       "createdAt": "2025-05-09T18:08:48.146Z"
     }
   ]
-  
 }
