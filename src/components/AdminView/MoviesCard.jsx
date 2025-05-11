@@ -10,7 +10,7 @@ export default function MoviesCard({ movie }) {
   };
   return (
     <div
-      className="mt-4 mb-3 mx-3 d-flex flex-column flex-md-row justify-content-between align-items-center px-4 py-3 rounded-4"
+      className="mb-3 mx-3 d-flex flex-column flex-sm-row justify-content-between align-items-center px-4 rounded-4 py-2 py-sm-1"
       style={{ backgroundColor: '#212121' }}
     >
       <img
@@ -21,13 +21,13 @@ export default function MoviesCard({ movie }) {
       />
       <p className="card-title font sec-color fs-5 mb-0">{movie.Title}</p>
       <div>
-        <Link to={`/movieDetail/${movie.id}`}>
+        <Link to={`/movie/${movie.id}`}>
           <i
             className="bi bi-eye-fill fs-4 mx-2 text-warning"
             style={{ cursor: 'pointer' }}
           ></i>
         </Link>
-        <Link to={`/movieDetail/${movie.id}/edit`}>
+        <Link to={`/admin/movie/${movie.id}/edit`}>
           <i
             className="bi bi-pencil-square fs-4 color mx-2"
             style={{ cursor: 'pointer' }}
