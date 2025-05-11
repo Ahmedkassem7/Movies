@@ -12,6 +12,7 @@ import Loading from "./Loading";
 import MovieCard from "./MovieCard";
 import MovieSection from "./MovieSection";
 import Sidebar from "./Sidebar";
+import MoviesTable from "./AdminView/MoviesTable";
 // import TrendingMovies from "./TrendingMovies";
 // import Upcoming from "./Upcoming";
 
@@ -30,6 +31,7 @@ export {
   MovieCard,
   MovieSection,
   Sidebar,
+  MoviesTable
   // TrendingMovies,
   // Upcoming,
 };

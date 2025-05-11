@@ -30,11 +30,11 @@ export default function Statistics() {
     },
   ]
   return (
-    <div className='d-flex w-100 container justify-content-around mt-3 col-6 col-sm-4 col-md-3'>
+    <div className='d-flex w-100 container justify-content-around mt-3 col-6 col-sm-4 col-md-3 flex-wrap'>
       {statisticsList.map((item, index) => {
         const IconComponent = item.icon;
         return (
-          <div key={index} className='py-2 rounded-4' style={{width:"170px",borderTop:"1px solid #3dd2cdc5",borderBottom:"1px solid #3dd2cdc5",borderLeft:"1px solid white",borderRight:"1px solid white"}}>
+          <div key={index} className='py-2 rounded-4 m-2' style={{width:"170px",borderTop:"1px solid #3dd2cdc5",borderBottom:"1px solid #3dd2cdc5",borderLeft:"1px solid white",borderRight:"1px solid white"}}>
             <div className='d-flex align-items-center justify-content-center'>
               <IconComponent className=" fs-3 color me-3" />
               <span className='sec-color fs-2 font'>{item.number}</span>
