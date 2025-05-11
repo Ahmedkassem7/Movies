@@ -1,0 +1,34 @@
+.material-you-swiper {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.slide-card {
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+
+.slide-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.slide-card:hover {
+    transform: scale(1.05);
+}
+
+.slide-label {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}

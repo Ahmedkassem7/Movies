@@ -1,4 +1,4 @@
-import { Banner, MovieSection } from "../components/index";
+import { Banner, MovieSection, Popular } from "../components/index";
 export default function Home() {
   return (
     <div className="row p-0 m-0" style={{ backgroundColor: "#191919" }}>
@@ -16,6 +16,7 @@ export default function Home() {
           sliceEnd={8}
           linkPath="/Movies"
         />
+        <Popular title="Popular" linkPath="/Popular" />
       </div>
     </div>
   );
