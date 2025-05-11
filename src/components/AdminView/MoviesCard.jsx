@@ -14,12 +14,12 @@ export default function MoviesCard({ movie }) {
       style={{ backgroundColor: '#212121' }}
     >
       <img
-        src={movie.Poster}
+        src={movie.poster_url}
         className="card-img rounded"
-        alt={movie.Title}
+        alt={movie.title}
         style={{ width: '70px', height: '110px' }}
       />
-      <p className="card-title font sec-color fs-5 mb-0">{movie.Title}</p>
+      <p className="card-title font sec-color fs-5 mb-0">{movie.title}</p>
       <div>
         <Link to={`/movie/${movie.id}`}>
           <i

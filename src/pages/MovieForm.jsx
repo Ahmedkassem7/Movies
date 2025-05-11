@@ -32,9 +32,9 @@ export default function MovieForm() {
 
         const formattedMovie = {
           ...movie,
-          Genre: Array.isArray(movie.Genre)
-            ? movie.Genre.join(", ")
-            : movie.Genre?.split(",")
+          Genre: Array.isArray(movie.genres)
+            ? movie.genres.join(", ")
+            : movie.genres?.split(",")
                 .map((g) => g.trim())
                 .join(", "),
 
