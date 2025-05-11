@@ -38,12 +38,9 @@ export default function MovieDetails() {
   } = currentMovie;
 
   return (
-    <div
-      className="row p-0 m-0"
-      style={{ backgroundColor: "#191919", padding: "30px 16px" }}
-    >
-      <Sidebar />
-      <div className="col-lg-10 p-5 pt-4">
+    <div className="row p-0 m-0" style={{ backgroundColor: "#191919" }}>
+      {/* <Sidebar /> */}
+      <div className="col-lg-12 ">
         <Header />
 
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
