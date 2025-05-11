@@ -20,7 +20,7 @@ export default function MoviesDashboard({ searchTerm, category }) {
 
     return (
         <div>
-            <div className="row m-auto p-0 mt-3 container">
+            <div className="row m-auto p-0 mt-3 container-md">
                 {loading && <Loading />}
                 {error && <div className="text-center">{error}</div>}
                 {!loading && !error && filteredMovies.length > 0 ? (
@@ -34,9 +34,9 @@ export default function MoviesDashboard({ searchTerm, category }) {
                             <thead>
                                 <tr className='text-center' style={{ backgroundColor: "#212121" }}>
                                     <th className='font sec-color fs-5 mb-0 px-4 pt-4 pb-3 rounded-start-3'>Title</th>
-                                    <th className='font sec-color fs-5 mb-0 px-4 pt-4 pb-3'>Genre</th>
-                                    <th className='font sec-color fs-5 mb-0 px-4 pt-4 pb-3'>Country</th>
-                                    <th className='font sec-color fs-5 mb-0 px-4 pt-4 pb-3'>imdbRating</th>
+                                    <th className='font sec-color fs-5 mb-0 px-4 pt-4 pb-3 d-none d-sm-table-cell'>Genre</th>
+                                    <th className='font sec-color fs-5 mb-0 px-4 pt-4 pb-3 d-none d-lg-table-cell'>Country</th>
+                                    <th className='font sec-color fs-5 mb-0 px-4 pt-4 pb-3 d-none d-xl-table-cell'>imdbRating</th>
                                     <th className='font sec-color fs-5 mb-0 px-4 pt-4 pb-3 rounded-end-3'>Actions</th>
                                 </tr>
                             </thead>

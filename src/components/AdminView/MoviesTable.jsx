@@ -8,14 +8,13 @@ export default function MoviesTable({ movie }) {
     };
     return (
         <tr
-            className="mb-5 mx-3 px-4 text-center"
+            className="mb-5 mx-0 mx-md-3 px-4 text-center"
             style={{ backgroundColor: '#212121' }}
         >
             <td className="card-title font sec-color fs-5 px-5 py-3 rounded-start-3">{movie.Title}</td>
-            <td className="card-title font sec-color fs-5 px-5 py-3">{movie.Genre.join(", ")}</td>
-            <td className="card-title font sec-color fs-5 px-5 py-3">{movie.Country.join(", ")}</td>
-
-            <td className="card-title font sec-color fs-5 px-5 py-3">{movie.imdbRating === "N/A"? "No Rating":`⭐${movie.imdbRating}`}</td>
+            <td className="card-title font sec-color fs-5 px-5 py-3 d-none d-sm-table-cell">{movie.Genre.join(", ")}</td>
+            <td className="card-title font sec-color fs-5 px-5 py-3 d-none d-lg-table-cell">{movie.Country.join(", ")}</td>
+            <td className="card-title font sec-color fs-5 px-5 py-3 d-none d-xl-table-cell">{movie.imdbRating === "N/A"? "No Rating":`⭐${movie.imdbRating}`}</td>
             <td className='rounded-end-3'>
                 <Link to={`/movie/${movie.id}`}>
                     <i

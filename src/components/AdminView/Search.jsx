@@ -2,7 +2,7 @@
 export default function Search({ searchTerm, setSearchTerm }) {
     return (
         <>
-        <div className="container d-flex justify-content-between w-100">
+        <div className=" container-md d-flex justify-content-between w-100">
             <input
                 type="search"
                 className="form-control px-3"
