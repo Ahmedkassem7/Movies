@@ -14,14 +14,24 @@ import MovieCard from "./MovieCard";
 import MovieSection from "./MovieSection";
 import Sidebar from "./Sidebar";
 import Popular from "./Popular";
-
+import MediaList from "./MediaList";
 
 export {
   Banner,
   DashboardSidebar,
-  DashTop, Error, Header,
-  Loading, MainFilter, MovieCard, MoviesCard,
-  MoviesDashboard, MovieSection, MoviesTable,
-  Popular, Search, Sidebar, Statistics
+  DashTop,
+  Error,
+  Header,
+  Loading,
+  MainFilter,
+  MovieCard,
+  MoviesCard,
+  MoviesDashboard,
+  MovieSection,
+  MoviesTable,
+  Popular,
+  Search,
+  Sidebar,
+  Statistics,
+  MediaList,
 };
-
