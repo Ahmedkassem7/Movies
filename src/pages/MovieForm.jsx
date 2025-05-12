@@ -64,14 +64,18 @@ export default function MovieForm() {
       Writer: data.Writer.split(", ")
         .map((writer) => writer.trim())
         .filter(Boolean),
+      Genre: data.Genre.split(", ")
+        .map((genre) => genre.trim())
+        .filter(Boolean),
     };
 
     if (id === "0") {
       dispatch(addMovieAction(processedData));
+      navigate("/adminDashboard");
     } else {
       dispatch(editMovieAction({ id, movie: processedData }));
+      navigate(`/movie/${id}`);
     }
-    navigate("/AdminView");
   };
 
   return (
@@ -94,7 +98,7 @@ export default function MovieForm() {
             </Button>
             <Button
               className="form-btn2 bg-danger ms-2"
-              onClick={() => navigate("/AdminView")}
+              onClick={() => navigate("/adminDashboard")}
             >
               Cancel
             </Button>
