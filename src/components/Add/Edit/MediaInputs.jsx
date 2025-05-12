@@ -15,7 +15,7 @@ export default function MedidaInputs({ register, errors, watch }) {
           <Form.Control
             type="text"
             placeholder="https://example.com/image.jpg"
-            {...register("Poster", { required: "Poster link is required" })}
+            {...register("poster_url", { required: "Poster link is required" })}
             isInvalid={!!errors.Poster}
           />
         </div>
@@ -33,7 +33,7 @@ export default function MedidaInputs({ register, errors, watch }) {
           <Form.Control
             type="text"
             placeholder="https://example.com/trailer.mp4"
-            {...register("Trailer", {
+            {...register("trailer_url", {
               required: "Trailer link is required",
             })}
             isInvalid={!!errors.Trailer}
@@ -49,7 +49,7 @@ export default function MedidaInputs({ register, errors, watch }) {
         <Form.Control
           type="text"
           placeholder="Enter a brief summary of the movie plot"
-          {...register("Plot", { required: "Plot is required" })}
+          {...register("overview", { required: "Plot is required" })}
           isInvalid={!!errors.Plot}
         />
         <Form.Control.Feedback type="invalid">

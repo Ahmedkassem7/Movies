@@ -1,5 +1,5 @@
-import axios from "axios";
-const baseUrl = "http://localhost:3001/movies";
+import axios from 'axios';
+const baseUrl = 'http://localhost:3001/movies';
 const getAllMovies = async () => axios.get(baseUrl);
 
 const getMovieById = async (id) => axios.get(`${baseUrl}/${id}`);
@@ -13,11 +13,11 @@ const getMovieBySearch = async (search) => {
     const response = await getAllMovies();
     const movies = response.data;
     const filteredMovies = movies.filter((movie) =>
-      movie.Title.toLowerCase().includes(search.toLowerCase())
+      movie.title.toLowerCase().includes(search.toLowerCase())
     );
     return filteredMovies;
   } catch (error) {
-    console.error("Error fetching movies by search:", error);
+    console.error('Error fetching movies by search:', error);
     throw error;
   }
 };
@@ -29,13 +29,13 @@ const getGenresFromData = async () => {
   const genres = new Set();
 
   movies.forEach((movie) => {
-    const genreValue = movie.Genre;
+    const genreValue = movie.genres;
 
     if (Array.isArray(genreValue)) {
       genreValue.forEach((genre) => genres.add(genre.trim()));
-    } else if (typeof genreValue === "string") {
+    } else if (typeof genreValue === 'string') {
       genreValue
-        .split(",")
+        .split(',')
         .map((genre) => genre.trim())
         .forEach((genre) => genres.add(genre));
     }
@@ -52,9 +52,9 @@ const getLanguageFromData = async () => {
     const langMovie = movie.Language;
     if (Array.isArray(langMovie)) {
       langMovie.forEach((movie) => movieByLang.add(movie.trim()));
-    } else if (typeof langMovie === "string") {
+    } else if (typeof langMovie === 'string') {
       langMovie
-        .split(",")
+        .split(',')
         .map((movielan) => movielan.Trim())
         .forEach((movielan) => movieByLang.add(movielan.trim()));
     }

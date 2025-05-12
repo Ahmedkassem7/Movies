@@ -13,9 +13,6 @@ import Loading from "./Loading";
 import MovieCard from "./MovieCard";
 import MovieSection from "./MovieSection";
 import Sidebar from "./Sidebar";
-// import TrendingMovies from "./TrendingMovies";
-// import Upcoming from "./Upcoming";
-
 import Popular from "./Popular";
 
 
@@ -25,8 +22,6 @@ export {
   DashTop, Error, Header,
   Loading, MainFilter, MovieCard, MoviesCard,
   MoviesDashboard, MovieSection, MoviesTable,
-  // TrendingMovies,
-  // Upcoming,
   Popular, Search, Sidebar, Statistics
 };
 
