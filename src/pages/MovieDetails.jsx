@@ -57,92 +57,103 @@ export default function MovieDetails() {
   } = currentMovie;
 
   return (
-    <div className="row p-0 m-0" style={{ backgroundColor: '#191919' }}>
-      <div className="col-lg-12">
-        <div className="container" style={{ maxWidth: '1200px' }}>
+    <div className="container-fluid p-0 m-0" style={{ backgroundColor: '#191919' }}>
+      <div className="row mx-0">
+        <div className="col-12 px-0">
           <MovieTrailer trailer={trailer_url} poster={backdrop_url} />
+        </div>
+      </div>
 
-          <div className="d-flex gap-3 mt-3">
-            {/* Left column */}
-            <div style={{ width: '700px' }}>
-              <MovieInfo
-                movieInfo={{
-                  title,
-                  category: genres,
-                  year: release_date,
-                  dureation: '2h:25m',
-                  plot: overview,
-                }}
-              />
-              <hr style={{ borderColor: '#333' }} />
+      <div className="row mx-0">
+        {/* Main content area */}
+        <div className="col-12">
+          <div className="container py-4">
+            <div className="row">
+              {/* Left column - main content (stack on mobile, then 8 columns on md+) */}
+              <div className="col-12 col-lg-9 order-2 order-lg-1">
+                {/* Main content */}
+                <MovieInfo
+                  movieInfo={{
+                    title,
+                    category: genres,
+                    year: release_date,
+                    dureation: '2h:25m',
+                    plot: overview,
+                  }}
+                />
+                <hr style={{ borderColor: '#333' }} />
 
-              <MovieCastInfo
-                data={{
-                  poistions: 'Stars',
-                  names: cast,
-                }}
-              />
+                <MovieCastInfo
+                  data={{
+                    poistions: 'Stars',
+                    names: cast,
+                  }}
+                />
 
-              {/* Reviews Section */}
-              <div className=" text-white py-4 px-3 mt-4 rounded">
-                <div
-                  className="mx-auto"
-                  style={{  maxWidth: '768px' }}
-                >
-                  <MovieReviews reviews={reviews} />
-                  <AddReviewForm onSubmit={handleAddReview} />
+                {/* Reviews Section */}
+                <div className="text-white py-4 rounded">
+                  <div className="mx-auto" style={{ maxWidth: '768px' }}>
+                    <MovieReviews reviews={reviews} />
+                    <AddReviewForm onSubmit={handleAddReview} />
+                  </div>
                 </div>
               </div>
-            </div>
 
-            {/* Right column */}
-            <div style={{ width: '360px' }}>
-              <div className="d-flex align-items-center gap-3 text-white mb-3">
-                <FaHeart style={{ cursor: 'pointer', opacity: 0.8 }} />
-                <FaShareAlt style={{ cursor: 'pointer', opacity: 0.8 }} />
-                <FaBookmark style={{ cursor: 'pointer', opacity: 0.8 }} />
-                <span style={{ fontSize: '24px', color: '#FFD700' }}>★</span>
-                <span style={{ fontSize: '18px' }}>
-                  {vote_average.toFixed(1)}
-                </span>
-                <span className="text-muted" style={{ fontSize: '14px' }}>
-                  | {vote_count}k
-                </span>
+              {/* Right column - sidebar */}
+              <div className="col-12 col-lg-3 order-1 order-lg-2 mb-4 mb-md-0">
+                <div className="sticky-md-top" style={{ top: '20px' }}>
+                  {/* Sidebar content */}
+                  <div className="d-flex align-items-center gap-3 text-white mb-3 flex-wrap">
+                    <FaHeart style={{ cursor: 'pointer', opacity: 0.8 }} />
+                    <FaShareAlt style={{ cursor: 'pointer', opacity: 0.8 }} />
+                    <FaBookmark style={{ cursor: 'pointer', opacity: 0.8 }} />
+                    <span style={{ fontSize: '24px', color: '#FFD700' }}>★</span>
+                    <span style={{ fontSize: '18px' }}>
+                      {vote_average.toFixed(1)}
+                    </span>
+                    <span style={{ fontSize: '14px', color: "white" }}>
+                      | {vote_count}k
+                    </span>
+                  </div>
+
+                  <div className="d-grid gap-2">
+                    <button className="btn btn-info text-white">
+                      🎟️ See Showtimes
+                    </button>
+                    <button className="btn btn-secondary">
+                      ☰ More watch options
+                    </button>
+                  </div>
+
+                  <div className="mt-3 d-flex">
+                    {[
+                      'https://image.tmdb.org/t/p/w185/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg',
+                      'https://image.tmdb.org/t/p/w185/lXR32JepFwD1UHkplWqtBP1K79z.jpg',
+                      'https://image.tmdb.org/t/p/w185/kdPMUMJzyYAc4roD52qavX0nLIC.jpg',
+                    ].map((img, idx) => (
+                      <img
+                        key={idx}
+                        src={img}
+                        alt="movie"
+                        className="me-2 rounded"
+                        style={{
+                          width: '33%',
+                          height: '160px',
+                          objectFit: 'cover',
+                          flexShrink: 0
+                        }}
+                      />
+                    ))}
+                  </div>
+
+                  <p
+                    className="text-white text-center bg-secondary mt-2 p-2 rounded"
+                    style={{ fontSize: '14px' }}
+                  >
+                    The Best Movies and Shows in September
+                  </p>
+                </div>
               </div>
-
-              <button className="btn btn-info w-100 mb-2 text-white">
-                🎟️ See Showtimes
-              </button>
-              <button className="btn btn-secondary w-100">
-                ☰ More watch options
-              </button>
-
-              <div className="mt-3 d-flex overflow-auto">
-                {[
-                  'https://image.tmdb.org/t/p/w185/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg',
-                  'https://image.tmdb.org/t/p/w185/lXR32JepFwD1UHkplWqtBP1K79z.jpg',
-                  'https://image.tmdb.org/t/p/w185/kdPMUMJzyYAc4roD52qavX0nLIC.jpg',
-                ].map((img, idx) => (
-                  <img
-                    key={idx}
-                    src={img}
-                    alt="movie"
-                    className="me-2 rounded"
-                    style={{
-                      width: '110px',
-                      height: '160px',
-                      objectFit: 'cover',
-                    }}
-                  />
-                ))}
-              </div>
-
-              <p
-                className="text-white text-center bg-secondary mt-2 p-2 rounded"
-                style={{ fontSize: '14px' }}
-              >
-                The Best Movies and Shows in September
-              </p>
             </div>
           </div>
         </div>

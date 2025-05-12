@@ -52,6 +52,7 @@ export default function MediaList({
             selectedLanguages={selectedLanguages}
             onGenreChange={setSelectedGenres}
             onLanguageChange={setSelectedLanguages}
+           
           />
         )}
       </div>
