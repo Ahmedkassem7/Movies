@@ -1,10 +1,11 @@
-import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { MoviesTable } from '../../components';
-import { getAllMoviesAction } from '../../store/movieSlice';
-import Loading from '../Loading';
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { MoviesTable } from "../../components";
+import { getAllMoviesAction } from "../../store/movieSlice";
+import Loading from "../Loading";
 
-export default function MoviesDashboard({ searchTerm, category }) {
+// export default function MoviesDashboard({ searchTerm, category }) {
+export default function MoviesDashboard({ searchTerm }) {
   const { movies, loading, error } = useSelector((store) => store.movieSlice);
   const dispatch = useDispatch();
 
@@ -25,23 +26,23 @@ export default function MoviesDashboard({ searchTerm, category }) {
         {error && <div className="text-center">{error}</div>}
         {!loading && !error && filteredMovies.length > 0 ? (
           <>
-            <div
+            {/* <div
               className="my-sm-0 mt-md-4  mx-3 mb-0"
               style={{ width: 'fit-content' }}
             >
               <p className="font text-light sec-color fs-1 fw-bold">
                 {category}
               </p>
-            </div>
+            </div> */}
 
             <table
               className="view-table"
-              style={{ borderCollapse: 'separate', borderSpacing: '0 20px' }}
+              style={{ borderCollapse: "separate", borderSpacing: "0 20px" }}
             >
               <thead>
                 <tr
                   className="text-center"
-                  style={{ backgroundColor: '#212121' }}
+                  style={{ backgroundColor: "#212121" }}
                 >
                   <th className="font sec-color fs-5 mb-0 px-4 pt-4 pb-3 rounded-start-3">
                     Title
@@ -71,11 +72,11 @@ export default function MoviesDashboard({ searchTerm, category }) {
           filteredMovies.length === 0 && (
             <div
               className="text-center text-white d-flex align-items-center justify-content-center"
-              style={{ height: '80vh' }}
+              style={{ height: "80vh" }}
             >
               <p
                 className="alert w-75 fs-3 text-dark fw-medium"
-                style={{ backgroundColor: '#3DD2CC' }}
+                style={{ backgroundColor: "#3DD2CC" }}
               >
                 No movies found
               </p>
