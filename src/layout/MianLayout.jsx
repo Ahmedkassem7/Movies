@@ -6,6 +6,8 @@ import MovieDetails from "../pages/MovieDetails";
 import Movies from "../pages/Movies";
 import SharedLayout from "./SharedLayout";
 import AdminLayout from "./AdminLayout";
+import RegisterForm from "../components/Form/RegisterForm/RegisterForm";
+import LoginForm from "../components/Form/LoginForm/LoginForm";
 
 export default function MianLayout() {
   return (
@@ -31,6 +33,7 @@ export default function MianLayout() {
 
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="Movies" element={<Movies />} />
           <Route path="movie/:id" element={<MovieDetails />} />
         </Route>
@@ -43,6 +46,9 @@ export default function MianLayout() {
           <Route path="movie/:id/edit" element={<MovieForm />} />
         </Route>
 
+          <Route path="login" element={<LoginForm/>} />
+          <Route path="register" element={<RegisterForm/>} />
+          
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
