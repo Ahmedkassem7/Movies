@@ -1,4 +1,26 @@
 {
+  "users": [
+    {
+      "id": "1",
+      "name": "ahmed",
+      "email": "ahmed@gmail.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "6032",
+      "name": "omar",
+      "email": "elsharkawii@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "836e",
+      "name": "malek",
+      "email": "malek@gmail.com",
+      "password": "Malek@12345",
+      "role": "user"
+    }
+  ],
   "admin": [
     {
       "id": "1",
