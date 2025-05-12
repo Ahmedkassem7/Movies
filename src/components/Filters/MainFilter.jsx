@@ -20,12 +20,10 @@ export default function MainFilter({
     };
     fetchFilters();
   }, []);
-  console.log("filters", filters);
-  console.log("filtersLang", filtersLang);
 
   return (
-    <div className="filters   col-lg-3 text-light">
-      <div className="col-lg-12  ">
+    <div className="filters col-lg-3 text-light">
+      <div className="col-lg-12 sticky-top" style={{ top: "20px", zIndex: 100 }}>
         <FilterSection
           title="Genre"
           options={filters}
