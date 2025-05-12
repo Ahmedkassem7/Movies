@@ -1,7 +1,14 @@
 import React from "react";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { AdminView, Home, MovieForm, NotFound, ViewAll } from "../pages/index";
+import {
+  AdminView,
+  Home,
+  MovieForm,
+  NotFound,
+  Series,
+  ViewAll,
+} from "../pages/index";
 import MovieDetails from "../pages/MovieDetails";
 import Movies from "../pages/Movies";
 import SharedLayout from "./SharedLayout";
@@ -31,6 +38,7 @@ export default function MianLayout() {
           <Route path="/" element={<SharedLayout />}>
             <Route index element={<Home />} />
             <Route path="Movies" element={<Movies />} />
+            <Route path="Series" element={<Series />} />
             <Route path="movie/:id" element={<MovieDetails />} />
           </Route>
 
