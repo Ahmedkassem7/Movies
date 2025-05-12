@@ -30,7 +30,7 @@ export default function Sidebar() {
             <Film className="me-2 fs-4" /> Movies
           </NavLink>
 
-          <NavLink to="/tv-series" className={getNavLinkClass}>
+          <NavLink to="/Series" className={getNavLinkClass}>
             <Tv className="me-2 fs-4" /> TV Series
           </NavLink>
 
