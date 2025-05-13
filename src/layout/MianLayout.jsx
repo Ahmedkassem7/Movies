@@ -43,7 +43,7 @@ export default function MianLayout() {
           </Route>
 
           <Route path="/admin" element={<AdminLayout />}>
-            <Route path="dashboard" index element={<AdminView />} />
+            <Route index element={<AdminView />} />
             <Route path="movie/:id" element={<MovieDetails />} />
             <Route path="dashboard/all" element={<ViewAll />} />
             <Route path="movie/:id" element={<MovieForm />} />
