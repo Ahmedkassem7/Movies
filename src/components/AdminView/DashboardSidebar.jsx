@@ -40,7 +40,7 @@ export default function DashboardSidebar() {
           <NavLink to="dashboard/all" end className={getNavLinkClass}>
             <Film className="me-2 fs-4 color" /> Movies
           </NavLink>
-          <NavLink to="/Series" end className={getNavLinkClass}>
+          <NavLink to="/Seriess" end className={getNavLinkClass}>
             <Tv className="me-2 fs-4 color" /> Series
           </NavLink>
           <NavLink to="/Animes" end className={getNavLinkClass}>
