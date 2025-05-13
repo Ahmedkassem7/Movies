@@ -5114,28 +5114,6 @@
       "Writer": "cherstphore"
     },
     {
-      "id": "1a79",
-      "Type": "movie",
-      "title": "Teast",
-      "genres": [
-        "Action"
-      ],
-      "Year": "2020",
-      "vote_average": "8",
-      "poster_url": "https://image.tmdb.org/t/p/original/jM2uqCZNKbiyStyzXOERpMqAbdx.jpg",
-      "trailer_url": "https://www.youtube.com/watch?v=tlLsFEDHtWs",
-      "overview": "Hello Test",
-      "Director": "Kassem",
-      "cast": [
-        "Ahmed",
-        "ali",
-        "kassem"
-      ],
-      "Writer": "Mohamed Johan",
-      "writer": [],
-      "director": []
-    },
-    {
       "id": "053d",
       "Type": "",
       "title": "Cast Awayغ",
@@ -5188,6 +5166,23 @@
         "Will Smith",
         "Thandiwe Newton",
         "Jaden Smith"
+      ]
+    },
+    {
+      "id": "6dd2",
+      "title": "Ass",
+      "genres": [
+        "Action"
+      ],
+      "release_date": "2020-02-23",
+      "vote_average": 3,
+      "poster": "dwdw",
+      "trailer_url": "dwdw",
+      "overview": "ddcdvedv",
+      "cast": [
+        "Ali",
+        "Ahmed",
+        "Samy"
       ]
     }
   ],

@@ -36,19 +36,9 @@ export default function MianLayout() {
           <Route path="movie/:id/edit" element={<MovieForm />} />
         </Route>
 
-
-          <Route path="/admin" element={<AdminLayout />}>
-            <Route index element={<AdminView />} />
-            <Route path="movie/:id" element={<MovieDetails />} />
-            <Route path="dashboard/all" element={<ViewAll />} />
-            <Route path="movie/:id" element={<MovieForm />} />
-            <Route path="movie/:id/edit" element={<MovieForm />} />
-          </Route>
-
         {/* Auth Routes */}
         <Route path="login" element={<LoginForm />} />
         <Route path="register" element={<RegisterForm />} />
-
 
         {/* Catch-all Route */}
         <Route path="*" element={<NotFound />} />
