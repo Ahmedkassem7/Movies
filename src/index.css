@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 hr {
     color: whitesmoke;
 }
@@ -13,17 +14,23 @@ hr {
 
     .Nav_Link {
         color: #666666;
+        display: flex;
+        align-items: center;
+        color: white;
+
     }
 
     .testActive {
         background-color: rgba(61, 210, 204, 0.4);
-        border-right: 8px solid #3DD2CC;
+        border-right: 5px solid #3DD2CC;
+        border-radius: 5px;
         color: #fff;
     }
 
     .Nav_Link:hover {
+        border-radius: 5px;
         background-color: rgba(61, 210, 204, 0.4);
-        border-right: 8px solid #3DD2CC;
+        border-right: 5px solid #3DD2CC;
         color: #fff;
     }
 }
@@ -157,14 +164,15 @@ hr {
         color: #212121 !important;
     }
 }
+
 .admin-side {
-.admin-sidebar {
-    .testActive {
-        background-color: rgba(61, 210, 204, 0.4);
-        border-right: 8px solid #3DD2CC;
-        color: #fff;
+    .admin-sidebar {
+        .testActive {
+            background-color: rgba(61, 210, 204, 0.4);
+            border-right: 8px solid #3DD2CC;
+            color: #fff;
+        }
     }
-}
 }
 
 @media (max-width: 1300px) {
@@ -212,21 +220,21 @@ input::placeholder {
 
 
 .movie-form-wrapper {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #1c5554, #279c98, #3DD2CC);
-    padding: 20px;
+    /* min-height: 100vh; */
+    /* background: linear-gradient(135deg, #1c5554, #279c98, #3DD2CC); */
+    /* padding: 20px; */
 }
 
 .movie-form-container {
-    background-color: #343a40;
+    background-color: #25272a;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    width: 100%;
-    max-width: 500px;
+    /* width: 100%;
+    max-width: 500px; */
 }
 
 .form-title {
@@ -269,5 +277,54 @@ input::placeholder {
 
     &:hover {
         opacity: 0.9;
+    }
+}
+
+/* Custom responsive classes */
+
+
+@media (min-width: 1200px) {
+
+    /* md breakpoint */
+    .sidebar {
+        height: 100vh !important;
+        position: sticky;
+        top: 0;
+    }
+}
+
+/* For xs to lg screens - horizontal layout */
+@media (max-width: 991.98px) {
+    .sidebar {
+        width: 100%;
+        flex-direction: row !important;
+        align-items: center;
+        padding: 0.5rem;
+    }
+
+    .sidebar .nav {
+        flex-direction: row !important;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .navContainer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sidebar .Nav {
+        flex-direction: row !important;
+        margin-top: 0 !important;
+        gap: 1rem;
+    }
+
+
+}
+
+@media (max-width: 575.98px) {
+    .sidebar img {
+        width: 70px;
     }
 }

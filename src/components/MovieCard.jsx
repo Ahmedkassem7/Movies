@@ -1,5 +1,5 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function MovieCard({ movies }) {
   const navigate = useNavigate();
@@ -15,7 +15,7 @@ export default function MovieCard({ movies }) {
     >
       <div
         className="card bg-dark text-white border-0 movie-card"
-        style={{ height: '100%' }}
+        style={{ height: "100%" }}
       >
         <div className="card-hover">
           <img
@@ -25,7 +25,7 @@ export default function MovieCard({ movies }) {
           />
         </div>
         <div className="position-absolute top-0 end-0 bg-dark px-2 py-1 rounded-start text-warning fw-bold">
-          ⭐ {movies.vote_average.toFixed(1)}
+          ⭐ {Number(movies.vote_average).toFixed(1)}
         </div>
       </div>
     </div>

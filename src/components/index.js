@@ -16,15 +16,25 @@ import Sidebar from "./Sidebar";
 import Popular from "./Popular";
 import Actors from "./AdminView/Actors";
 import ActorsTable from "./AdminView/ActorsTable";
-
+import MediaList from "./MediaList";
 
 export {
   Banner,
   DashboardSidebar,
-  DashTop, Error, Header,
-  Loading, MainFilter, MovieCard, MoviesCard,
-  MoviesDashboard, MovieSection, MoviesTable,
-  Popular, Search, Sidebar, Statistics,
-  Actors,ActorsTable
+  DashTop,
+  Error,
+  Header,
+  Loading,
+  MainFilter,
+  MovieCard,
+  MoviesCard,
+  MoviesDashboard,
+  MovieSection,
+  MoviesTable,
+  Popular,
+  Search,
+  Sidebar,
+  Statistics,
+  Actors,ActorsTable,
+  MediaList,
 };
-

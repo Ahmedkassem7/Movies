@@ -26,10 +26,8 @@ export default function MovieTrailer({ trailer, poster }) {
       style={{
         position: "relative",
         width: "100%",
-        maxWidth: "1200px",
         margin: "0 auto",
-        height: "430px",
-        // aspectRatio: '16 / 9',
+        aspectRatio: '16 / 6',
         borderRadius: "12px",
         overflow: "hidden",
         boxShadow: "0 4px 12px rgba(0, 0, 0, 0.2)",
@@ -43,7 +41,7 @@ export default function MovieTrailer({ trailer, poster }) {
             style={{
               width: "100%",
               height: "100%",
-              objectFit: "unset",
+              objectFit: "cover",
             }}
           />
           <button
