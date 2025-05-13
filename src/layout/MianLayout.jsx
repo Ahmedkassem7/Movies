@@ -28,16 +28,19 @@ export default function MianLayout() {
           <Route path="Movies" element={<Movies />} />
           <Route path="Series" element={<Series />} />
           <Route path="movie/:id" element={<MovieDetails />} />
+          <Route path="series/:id" element={<MovieDetails />} />
         </Route>
 
 
         {/* Admin Routes */}
         <Route path="/admin" element={<AdminLayout />}>
           <Route path="dashboard" index element={<AdminView />} />
-          <Route path="dashboard/all" element={<ViewAll />} />
+          <Route path="movies/all" element={<ViewAll />} />
+          <Route path="series/all" element={<ViewAll />} />
           <Route path="Actors" element={<ActorsPage />} />
           {/* <Route path="movie/:id" element={<MovieForm />} /> */}
           <Route path="movie/:id/edit" element={<MovieForm />} />
+          <Route path="series/:id/edit" element={<MovieForm />} />
         </Route>
 
         {/* Auth Routes

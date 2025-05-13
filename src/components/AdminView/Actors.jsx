@@ -46,7 +46,7 @@ export default function Actors({ searchTerm }) {
                                     <th className="font sec-color fs-5 mb-0 px-4 pt-4 pb-3 d-none d-xl-table-cell">
                                         popularity
                                     </th>
-                                    <th className="font sec-color fs-5 mb-0 px-2 px-sm-4 pt-4 pb-3 ">
+                                    <th className="font sec-color fs-5 mb-0 px-2 px-sm-4 pt-4 pb-3 rounded-end-3 custom-rounded-responsive">
                                         Famous Movie
                                     </th>
                                     <th className="font sec-color fs-5 mb-0 px-4 pt-4 pb-3 rounded-end-3 d-none d-sm-table-cell">

@@ -328,3 +328,10 @@ input::placeholder {
         width: 70px;
     }
 }
+
+@media (min-width: 768px) {
+    .custom-rounded-responsive {
+        border-radius: 0 !important;
+    }
+}
+

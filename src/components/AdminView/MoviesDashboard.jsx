@@ -3,28 +3,36 @@ import { useDispatch, useSelector } from "react-redux";
 import { MoviesTable } from "../../components";
 import { getAllMoviesAction } from "../../store/movieSlice";
 import Loading from "../Loading";
+import { getAllSeriesAction } from "../../store/serieSlice";
 
 // export default function MoviesDashboard({ searchTerm, category }) {
-export default function MoviesDashboard({ searchTerm }) {
-  const { movies, loading, error } = useSelector((store) => store.movieSlice);
+export default function MoviesDashboard({ searchTerm, category }) {
+  const { movies = [], series = [], loading, error } = useSelector((store) =>
+    category === "Movies" ? store.movieSlice : store.seriesSlice
+  );
   const dispatch = useDispatch();
+  const data = category === "Movies" ? movies : series;
 
   useEffect(() => {
-    dispatch(getAllMoviesAction());
-  }, [dispatch]);
+    if (category === "Movies") {
+      dispatch(getAllMoviesAction());
+    } else {
+      dispatch(getAllSeriesAction());
+    }
+  }, [dispatch, category])
 
-  const filteredMovies = searchTerm
-    ? movies.filter((movie) =>
-        movie.title?.toLowerCase().includes(searchTerm?.toLowerCase())
-      )
-    : movies;
+const filteredData = searchTerm
+  ? data.filter((item) =>
+      item.title?.toLowerCase().includes(searchTerm?.toLowerCase())
+    )
+  : data;
 
   return (
     <div>
-      <div className="row m-auto p-0 mt-3 container-md">
+      <div className="row m-auto p-0 mt-3 container-lg">
         {loading && <Loading />}
         {error && <div className="text-center">{error}</div>}
-        {!loading && !error && filteredMovies.length > 0 ? (
+        {!loading && !error && filteredData.length > 0 ? (
           <>
             {/* <div
               className="my-sm-0 mt-md-4  mx-3 mb-0"
@@ -60,8 +68,8 @@ export default function MoviesDashboard({ searchTerm }) {
                 </tr>
               </thead>
               <tbody>
-                {filteredMovies.map((movie) => (
-                  <MoviesTable key={movie.id} movie={movie} />
+                {filteredData.map((item) => (
+                  <MoviesTable key={item.id} movie={item} category={category}/>
                 ))}
               </tbody>
             </table>
@@ -69,7 +77,7 @@ export default function MoviesDashboard({ searchTerm }) {
         ) : (
           !loading &&
           !error &&
-          filteredMovies.length === 0 && (
+          filteredData.length === 0 && (
             <div
               className="text-center text-white d-flex align-items-center justify-content-center"
               style={{ height: "80vh" }}
@@ -78,7 +86,7 @@ export default function MoviesDashboard({ searchTerm }) {
                 className="alert w-75 fs-3 text-dark fw-medium"
                 style={{ backgroundColor: "#3DD2CC" }}
               >
-                No movies found
+                No {category.toLowerCase()} found
               </p>
             </div>
           )

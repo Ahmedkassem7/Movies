@@ -1,24 +1,20 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
 import { Nav } from "react-bootstrap";
 import {
   BoxArrowLeft,
-  ChatDots,
   CollectionPlay,
   Film,
-  Gear,
   HouseDoor,
-  People,
-  Tv,
+  Tv
 } from "react-bootstrap-icons";
+import { NavLink } from "react-router-dom";
 import logoImg from "../../../public/Vector.png";
 
 export default function DashboardSidebar() {
   const getNavLinkClass = ({ isActive }) =>
-    `Nav_Link ps-4 py-3 text-decoration-none ${isActive ? "testActive" : ""}`;
+    `Nav_Link ps-4 py-3 my-1 text-decoration-none ${isActive ? "testActive" : ""}`;
 
   return (
-    <div className="sidebar admin-side d-flex flex-column justify-content-between col-xl-2 col-md-3 col-xs-12  rounded-end-5 vh-100 pb-2">
+    <div className="sidebar admin-side d-flex flex-column justify-content-between col-xl-2 col-md-3 col-xs-12 rounded-end-5 vh-100 pb-2">
       <div>
         <div className="ms-4 pt-5">
           <img src={logoImg} alt="Movie Icon" />
@@ -33,21 +29,20 @@ export default function DashboardSidebar() {
           <em className=" ms-3 fs-5 pt-2 sec-color">Admin</em>
         </div> */}
 
-        <Nav className="flex-column mt-4 admin-sidebar">
-
-              <NavLink to='/admin/dashboard' end className={getNavLinkClass}>
-                <HouseDoor className="me-2 fs-4 color" /> Dashboard
-              </NavLink>
-              <NavLink to='dashboard/all' end className={getNavLinkClass}>
-                <Film className="me-2 fs-4 color" /> Movies
-              </NavLink>
-              <NavLink to='/Series' end className={getNavLinkClass}>
-                <Tv className="me-2 fs-4 color" /> Series
-              </NavLink>
-              <NavLink to='/admin/Actors' end className={getNavLinkClass}>
-                <CollectionPlay className="me-2 fs-4 color" /> Actors
-              </NavLink>
-              <NavLink to='/Users' end className={getNavLinkClass}>
+        <Nav className="flex-column mt-5 admin-sidebar">
+          <NavLink to='/admin/dashboard' end className={getNavLinkClass}>
+            <HouseDoor className="me-2 fs-4 color" /> Dashboard
+          </NavLink>
+          <NavLink to='movies/all' end className={getNavLinkClass}>
+            <Film className="me-2 fs-4 color" /> Movies
+          </NavLink>
+          <NavLink to='series/all' end className={getNavLinkClass}>
+            <Tv className="me-2 fs-4 color" /> Series
+          </NavLink>
+          <NavLink to='/admin/Actors' end className={getNavLinkClass}>
+            <CollectionPlay className="me-2 fs-4 color" /> Actors
+          </NavLink>
+          {/* <NavLink to='/Users' end className={getNavLinkClass}>
                 <People className="me-2 fs-4 color" /> Users
               </NavLink>
               <NavLink to='/Comments' end className={getNavLinkClass}>
@@ -55,34 +50,12 @@ export default function DashboardSidebar() {
               </NavLink>
               <NavLink to='/Settings' end className={getNavLinkClass}>
                 <Gear className="me-2 fs-4 color" /> Settings
-              </NavLink>
-
-          <NavLink to="/admin" end className={getNavLinkClass}>
-            <HouseDoor className="me-2 fs-4 color" /> Dashboard
-          </NavLink>
-          <NavLink to="dashboard/all" end className={getNavLinkClass}>
-            <Film className="me-2 fs-4 color" /> Movies
-          </NavLink>
-          <NavLink to="/Seriess" end className={getNavLinkClass}>
-            <Tv className="me-2 fs-4 color" /> Series
-          </NavLink>
-          <NavLink to="/Animes" end className={getNavLinkClass}>
-            <CollectionPlay className="me-2 fs-4 color" /> Animes
-          </NavLink>
-          <NavLink to="/Users" end className={getNavLinkClass}>
-            <People className="me-2 fs-4 color" /> Users
-          </NavLink>
-          <NavLink to="/Comments" end className={getNavLinkClass}>
-            <ChatDots className="me-2 fs-4 color" /> Comments
-          </NavLink>
-          <NavLink to="/Settings" end className={getNavLinkClass}>
-            <Gear className="me-2 fs-4 color" /> Settings
-          </NavLink>
+              </NavLink> */}
         </Nav>
       </div>
-      <NavLink to="/logout" end className={getNavLinkClass}>
-        <BoxArrowLeft className="me-2 fs-4 color" /> Log out
-      </NavLink>
+              <NavLink to="/logout" end className={getNavLinkClass}>
+          <BoxArrowLeft className="me-2 fs-4 color" /> Log out
+        </NavLink>
     </div>
   );
 }

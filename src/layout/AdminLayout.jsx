@@ -8,7 +8,7 @@ export default function adminLayout() {
         style={{ backgroundColor: "#191919" }}
       >
         <DashboardSidebar />
-        <div className="col-md-9 col-xl-10 px-1 px-xl-4 pt-2">
+        <div className="col-12 col-lg-9 col-xl-10 px-1 px-xl-4 pt-2">
           <div className="row m-0 p-0">
             <div className="content  p-0 w-100">
               <Outlet />

@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { deleteMovieAction } from '../../store/movieSlice';
-export default function MoviesTable({ movie }) {
+export default function MoviesTable({ movie, category }) {
     const dispatch = useDispatch();
     const deleteMovie = (movieId) => {
         dispatch(deleteMovieAction(movieId));
@@ -23,13 +23,13 @@ export default function MoviesTable({ movie }) {
                 {movie.vote_average === 'N/A' ? 'No Rating' : `⭐${movie.vote_average}`}
             </td>
             <td className="rounded-end-3">
-                <Link to={`/movie/${movie.id}`}>
+                <Link to={`/${category.toLowerCase() === "movies" ? "movie" : category.toLowerCase()}/${movie.id}`}>
                     <i
                         className="bi bi-eye-fill fs-4 mx-2 text-warning"
                         style={{ cursor: 'pointer' }}
                     ></i>
                 </Link>
-                <Link to={`/admin/movie/${movie.id}/edit`}>
+                <Link to={`/admin/${category.toLowerCase() === "movies" ? "movie" : category.toLowerCase()}/${movie.id}/edit`}>
                     <i
                         className="bi bi-pencil-square fs-4 color mx-2"
                         style={{ cursor: 'pointer' }}
