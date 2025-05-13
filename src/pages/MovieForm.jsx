@@ -23,12 +23,12 @@ export default function MovieForm() {
     watch,
   } = useForm();
 
-  const type = watch("Type") || "Movie";
-
   useEffect(() => {
     if (id !== "0") {
       getMovieById(id).then((response) => {
         const movie = response.data;
+        console.log("Full movie data:", movie);
+console.log("Loaded poster_url:", movie.poster_url);
 
         const formattedMovie = {
           ...movie,
@@ -46,19 +46,20 @@ export default function MovieForm() {
                 .map((c) => c.trim())
                 .join(", "),
 
-          writer: Array.isArray(movie.writer)
-            ? movie.writer.join(", ")
-            : movie.writer
-                ?.split(",")
-                .map((w) => w.trim())
-                .join(", "),
+          // writer: Array.isArray(movie.writer)
+          //   ? movie.writer.join(", ")
+          //   : movie.writer
+          //       ?.split(",")
+          //       .map((w) => w.trim())
+          //       .join(", "),
 
-          director: Array.isArray(movie.director)
-            ? movie.director.join(", ")
-            : movie.director
-                ?.split(",")
-                .map((d) => d.trim())
-                .join(", "),
+          // director: Array.isArray(movie.director)
+          //   ? movie.director.join(", ")
+          //   : movie.director
+          //       ?.split(",")
+          //       .map((d) => d.trim())
+          //       .join(", "),
+          vote_average: movie.vote_average || 0,
         };
 
         reset(formattedMovie);
@@ -66,24 +67,29 @@ export default function MovieForm() {
     }
   }, [id, reset]);
 
+
   const onSubmit = (data) => {
     const processedData = {
       ...data,
-      Actors: data.Actors.split(", ")
-        .map((actor) => actor.trim())
+      vote_average: parseFloat(data.vote_average),
+      cast: data.cast
+        .split(",")
+        .map((c) => c.trim())
         .filter(Boolean),
-      Writer: data.Writer.split(", ")
-        .map((writer) => writer.trim())
+      // Writer: data.Writer.split(", ")
+      //   .map((writer) => writer.trim())
+      //   .filter(Boolean),
+      genres: data.genres
+        .split(",")
+        .map((g) => g.trim())
         .filter(Boolean),
-      Genre: data.Genre.split(", ")
-        .map((genre) => genre.trim())
-        .filter(Boolean),
-
     };
+
+    // console.log("Processed data:", processedData);
 
     if (id === "0") {
       dispatch(addMovieAction(processedData));
-      navigate("/adminDashboard");
+      navigate("/admin/dashboard/all");
     } else {
       dispatch(editMovieAction({ id, movie: processedData }));
       navigate(`/movie/${id}`);
@@ -95,9 +101,7 @@ export default function MovieForm() {
       <div className="movie-form-container text-light">
         {/* <img src={logoImg} alt="Logo" className="mb-4" /> */}
         <h1 className="form-title  mb-3">
-          {id === "0"
-            ? `Add New ${type.charAt(0).toUpperCase() + type.slice(1)}`
-            : `Update ${type.charAt(0).toUpperCase() + type.slice(1)}`}
+          {id === "0" ? "Add Movie" : "Update Movie"}
         </h1>
         <Form onSubmit={handleSubmit(onSubmit)}>
           <BasicInfo register={register} errors={errors} watch={watch} />
@@ -112,9 +116,7 @@ export default function MovieForm() {
             </Button>
             <Button
               className="form-btn2 bg-danger ms-2"
-
               onClick={() => navigate("/admin/dashboard")}
-
             >
               Cancel
             </Button>

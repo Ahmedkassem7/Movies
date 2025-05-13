@@ -1,39 +1,23 @@
 import { Form } from "react-bootstrap";
 
 export default function BasicInfo({ register, errors }) {
-  //   const type = watch("Type") || "movie";
-
   return (
     <>
       <div className="row">
-        <Form.Group controlId="formTitle" className="col-md-6">
-          <Form.Label>Type</Form.Label>
-          <Form.Select
-            {...register("Type", { required: "Type is required" })}
-            isInvalid={!!errors.Type}
-          >
-            <option value="">Select type</option>
-            <option value="movie">Movie</option>
-            <option value="series">Series</option>
-          </Form.Select>
-          <Form.Control.Feedback type="invalid">
-            {errors.Type?.message}
-          </Form.Control.Feedback>
-        </Form.Group>
-
         <Form.Group controlId="formTitle" className="col-md-6">
           <Form.Label>Movie Title</Form.Label>
           <Form.Control
             type="text"
             placeholder="Enter title"
             {...register("title", { required: "Title is required" })}
-            isInvalid={!!errors.Title}
+            isInvalid={!!errors.title}
           />
           <Form.Control.Feedback type="invalid">
-            {errors.Title?.message}
+            {errors.title?.message}
           </Form.Control.Feedback>
         </Form.Group>
       </div>
+
 
       <div className="row">
         <Form.Group controlId="formgenre" className="col-md-4">
@@ -42,7 +26,7 @@ export default function BasicInfo({ register, errors }) {
             type="text"
             placeholder="e.g. Action, Drama, Thriller"
             {...register("genres", {
-              required: "Genre name is required",
+              required: "Genre is required",
               validate: (value) => {
                 const genreList = value
                   .split(",")
@@ -53,48 +37,63 @@ export default function BasicInfo({ register, errors }) {
                 );
               },
             })}
-            isInvalid={!!errors.Genre}
+            isInvalid={!!errors.genres}
           />
           <Form.Control.Feedback type="invalid">
-            {errors.Genre?.message}
+            {errors.genres?.message}
           </Form.Control.Feedback>
         </Form.Group>
 
+
         <Form.Group controlId="formYear" className="col-md-4">
-          <Form.Label>Release Year</Form.Label>
+          <Form.Label>Release Date</Form.Label>
           <div className="position-relative">
-            <i className="bi bi-calendar-date position-absolute top-50 end-0 translate-middle-y me-3"></i>
+            <i
+              className="bi bi-calendar-date position-absolute top-50 end-0 translate-middle-y me-3"
+              style={{ pointerEvents: "none" }}
+            ></i>
             <Form.Control
               type="text"
-              placeholder="YYYY"
-              {...register("Year", {
-                required: "Year is required",
-                min: { value: 1900, message: "Year must be after 1900" },
+              placeholder="YYYY-MM-DD"
+              {...register("release_date", {
+                required: "Date is required",
+                // min: { value: 1900, message: "Minimum is 1900" },
               })}
-              isInvalid={!!errors.Year}
+              isInvalid={!!errors.release_date}
+              className="pe-4"
+              style={{ paddingRight: "2.5rem" }}
             />
           </div>
-          <Form.Control.Feedback type="invalid">
-            {errors.Year?.message}
+          <Form.Control.Feedback type="invalid" className="d-block">
+            {errors.release_date?.message}
           </Form.Control.Feedback>
         </Form.Group>
+
+
         <Form.Group controlId="formRating" className="col-md-4">
-          <Form.Label>IMDb Rating</Form.Label>
+          <Form.Label>Rating</Form.Label>
           <div className="position-relative">
-            <i className="bi bi-star-fill position-absolute top-50 end-0 translate-middle-y me-3"></i>
+            <i
+              className="bi bi-star-fill position-absolute top-50 end-0 translate-middle-y me-3"
+              style={{ pointerEvents: "none" }}
+            ></i>
             <Form.Control
-              type="text"
+              type="number"
               placeholder="0-10"
+              step="any"
               {...register("vote_average", {
                 required: "Rating is required",
                 min: { value: 0, message: "Minimum is 0" },
                 max: { value: 10, message: "Maximum is 10" },
+                valueAsNumber: true,
               })}
-              isInvalid={!!errors.imdbRating}
+              isInvalid={!!errors.vote_average}
+              className="pe-4"
+              style={{ paddingRight: "2.5rem" }}
             />
           </div>
-          <Form.Control.Feedback type="invalid">
-            {errors.imdbRating?.message}
+          <Form.Control.Feedback type="invalid" className="d-block">
+            {errors.vote_average ? errors.vote_average.message : ""}
           </Form.Control.Feedback>
         </Form.Group>
       </div>
