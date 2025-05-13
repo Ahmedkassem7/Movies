@@ -34,7 +34,7 @@ export default function DashboardSidebar() {
         </div> */}
 
         <Nav className="flex-column mt-4 admin-sidebar">
-          <NavLink to="/admin/dashboard" end className={getNavLinkClass}>
+          <NavLink to="/admin" end className={getNavLinkClass}>
             <HouseDoor className="me-2 fs-4 color" /> Dashboard
           </NavLink>
           <NavLink to="dashboard/all" end className={getNavLinkClass}>
