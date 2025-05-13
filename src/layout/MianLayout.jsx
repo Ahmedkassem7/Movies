@@ -6,6 +6,7 @@ import MovieDetails from "../pages/MovieDetails";
 import Movies from "../pages/Movies";
 import SharedLayout from "./SharedLayout";
 import AdminLayout from "./AdminLayout";
+import ActorsPage from "../pages/ActorsPage";
 
 export default function MianLayout() {
   return (
@@ -36,10 +37,11 @@ export default function MianLayout() {
         </Route>
 
         <Route path="/admin" element={<AdminLayout/>}>
-          <Route path="movie/:id" element={<MovieDetails />} />
+          {/* <Route path="movie/:id" element={<MovieDetails />} /> */}
           <Route path="dashboard" element={<AdminView />} />
           <Route path="dashboard/all" element={<ViewAll />} />
-          <Route path="movie/:id" element={<MovieForm />} />
+          <Route path="Actors" element={<ActorsPage />} />
+          {/* <Route path="movie/:id" element={<MovieForm />} /> */}
           <Route path="movie/:id/edit" element={<MovieForm />} />
         </Route>
 

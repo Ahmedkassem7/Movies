@@ -14,6 +14,8 @@ import MovieCard from "./MovieCard";
 import MovieSection from "./MovieSection";
 import Sidebar from "./Sidebar";
 import Popular from "./Popular";
+import Actors from "./AdminView/Actors";
+import ActorsTable from "./AdminView/ActorsTable";
 
 
 export {
@@ -22,6 +24,7 @@ export {
   DashTop, Error, Header,
   Loading, MainFilter, MovieCard, MoviesCard,
   MoviesDashboard, MovieSection, MoviesTable,
-  Popular, Search, Sidebar, Statistics
+  Popular, Search, Sidebar, Statistics,
+  Actors,ActorsTable
 };
 

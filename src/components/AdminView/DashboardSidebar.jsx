@@ -44,8 +44,8 @@ export default function DashboardSidebar() {
               <NavLink to='/Series' end className={getNavLinkClass}>
                 <Tv className="me-2 fs-4 color" /> Series
               </NavLink>
-              <NavLink to='/Animes' end className={getNavLinkClass}>
-                <CollectionPlay className="me-2 fs-4 color" /> Animes
+              <NavLink to='/admin/Actors' end className={getNavLinkClass}>
+                <CollectionPlay className="me-2 fs-4 color" /> Actors
               </NavLink>
               <NavLink to='/Users' end className={getNavLinkClass}>
                 <People className="me-2 fs-4 color" /> Users
