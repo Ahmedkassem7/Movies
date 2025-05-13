@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
 
 hr {
     color: whitesmoke;
@@ -20,7 +15,6 @@ hr {
     .Nav_Link {
         color: #666666;
         display: flex;
-        /* justify-content: center; */
         align-items: center;
         color: white;
 
@@ -28,7 +22,8 @@ hr {
 
     .testActive {
         background-color: rgba(61, 210, 204, 0.4);
-        border-right: 8px solid #3DD2CC;
+        border-right: 5px solid #3DD2CC;
+        border-radius: 5px;
         color: #fff;
     }
 
@@ -248,7 +243,6 @@ input::placeholder {
 .form-label {
     color: #ced4da;
 }
-
 
 .form-control,
 .form-select {

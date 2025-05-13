@@ -12,8 +12,8 @@ import MovieDetails from "../pages/MovieDetails";
 import Movies from "../pages/Movies";
 import SharedLayout from "./SharedLayout";
 import AdminLayout from "./AdminLayout";
-import RegisterForm from "../components/Form/RegisterForm/RegisterForm";
-import LoginForm from "../components/Form/LoginForm/LoginForm";
+// import RegisterForm from "../components/Form/RegisterForm/RegisterForm";
+// import LoginForm from "../components/Form/LoginForm/LoginForm";
 
 export default function MianLayout() {
   return (
@@ -36,9 +36,9 @@ export default function MianLayout() {
           <Route path="movie/:id/edit" element={<MovieForm />} />
         </Route>
 
-        {/* Auth Routes */}
+        {/* Auth Routes
         <Route path="login" element={<LoginForm />} />
-        <Route path="register" element={<RegisterForm />} />
+        <Route path="register" element={<RegisterForm />} /> */}
 
         {/* Catch-all Route */}
         <Route path="*" element={<NotFound />} />
