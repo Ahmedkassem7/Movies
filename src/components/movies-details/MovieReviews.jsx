@@ -83,7 +83,7 @@ export const MovieReviews = ({ reviews }) => {
               </div>
 
               <p className="text-light mt-2" style={{ lineHeight: '1.6' }}>
-                {review.content}
+                {review.content.split(" ").splice(0,60).join(" ")} ...
               </p>
 
               <div className="d-flex justify-content-end mt-3 text-muted small">

@@ -4,7 +4,7 @@ export default function Cast({ register, errors }) {
   return (
     <>
       <div className="row">
-        <Form.Group controlId="formDirector" className="col-md-6">
+        {/* <Form.Group controlId="formDirector" className="col-md-6">
           <Form.Label>Director</Form.Label>
           <Form.Control
             type="text"
@@ -17,34 +17,34 @@ export default function Cast({ register, errors }) {
           <Form.Control.Feedback type="invalid">
             {errors.Director?.message}
           </Form.Control.Feedback>
-        </Form.Group>
+        </Form.Group> */}
 
         <Form.Group controlId="formActors" className="col-md-6">
-          <Form.Label>Actors</Form.Label>
+          <Form.Label>Cast</Form.Label>
           <Form.Control
             type="text"
             placeholder="Enter at least 3 names, separated by commas"
             {...register("cast", {
-              required: "Actors name is required",
+              required: "Cast names are required",
               validate: (value) => {
-                const actorList = value
+                const castList = value
                   .split(",")
-                  .map((actor) => actor.trim())
+                  .map((cast) => cast.trim())
                   .filter(Boolean);
                 return (
-                  actorList.length >= 2 || "At least two actors are required"
+                  castList.length >= 3 || "At least three cast names are required"
                 );
               },
             })}
-            isInvalid={!!errors.Actors}
+            isInvalid={!!errors.cast}
           />
           <Form.Control.Feedback type="invalid">
-            {errors.Actors?.message}
+            {errors.cast?.message}
           </Form.Control.Feedback>
         </Form.Group>
       </div>
 
-      <Form.Group controlId="formWriter">
+      {/* <Form.Group controlId="formWriter">
         <Form.Label>Writers</Form.Label>
         <Form.Control
           type="text"
@@ -66,7 +66,7 @@ export default function Cast({ register, errors }) {
         <Form.Control.Feedback type="invalid">
           {errors.Writer?.message}
         </Form.Control.Feedback>
-      </Form.Group>
+      </Form.Group> */}
     </>
   );
 }
