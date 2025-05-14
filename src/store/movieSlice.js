@@ -90,6 +90,13 @@ export const searchMovieAction = createAsyncThunk(
 const movieSlice = createSlice({
   name: 'movie',
   initialState,
+  reducers: {
+    updateCurrentMovieReviews: (state, action) => {
+      if (state.currentMovie) {
+        state.currentMovie.reviews = action.payload;
+      }
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(getAllMoviesAction.pending, (state) => {
@@ -103,7 +110,6 @@ const movieSlice = createSlice({
         state.loading = false;
         state.error = action.payload;
       })
-
       .addCase(getAllMovieByIdAction.pending, (state) => {
         state.loading = true;
         state.currentMovie = null;
@@ -116,7 +122,6 @@ const movieSlice = createSlice({
         state.loading = false;
         state.error = action.payload;
       })
-
       .addCase(addMovieAction.pending, (state) => {
         state.loading = true;
       })
@@ -128,7 +133,6 @@ const movieSlice = createSlice({
         state.loading = false;
         state.error = action.payload;
       })
-
       .addCase(editMovieAction.pending, (state) => {
         state.loading = true;
       })
@@ -137,15 +141,14 @@ const movieSlice = createSlice({
         const index = state.movies.findIndex(
           (movie) => movie.id === action.payload.id
         );
-        if (index !== -1) {
-          state.movies[index] = action.payload;
-        }
+        if (index !== -1) state.movies[index] = action.payload;
+        if (state.currentMovie?.id === action.payload.id)
+          state.currentMovie = action.payload;
       })
       .addCase(editMovieAction.rejected, (state, action) => {
         state.loading = false;
         state.error = action.payload;
       })
-
       .addCase(deleteMovieAction.pending, (state) => {
         state.loading = true;
       })
@@ -159,7 +162,6 @@ const movieSlice = createSlice({
         state.loading = false;
         state.error = action.payload;
       })
-
       .addCase(searchMovieAction.pending, (state) => {
         state.loading = true;
         state.error = null;
@@ -175,4 +177,5 @@ const movieSlice = createSlice({
   },
 });
 
+export const { updateCurrentMovieReviews } = movieSlice.actions;
 export const movieReducer = movieSlice.reducer;

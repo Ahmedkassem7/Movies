@@ -48,7 +48,35 @@
         "Thriller",
         "Action"
       ],
-      "reviews": [],
+      "reviews": [
+        {
+          "id": "1747226505622",
+          "author": "eslam",
+          "author_details": {
+            "rating": 8
+          },
+          "content": "sss",
+          "created_at": "2025-05-14T12:41:45.622Z"
+        },
+        {
+          "id": "1747226477770",
+          "author": "eslam ",
+          "author_details": {
+            "rating": 3
+          },
+          "content": "bad",
+          "created_at": "2025-05-14T12:41:17.770Z"
+        },
+        {
+          "id": "1747226421601",
+          "author": "eslam",
+          "author_details": {
+            "rating": 10
+          },
+          "content": "good",
+          "created_at": "2025-05-14T12:40:21.601Z"
+        }
+      ],
       "trailer_url": "https://www.youtube.com/watch?v=tlLsFEDHtWs",
       "cast": "Jeanne Goursaud, Dougray Scott, Lera Abova, Emanuel Fellmer, Annabelle Mandeng",
       "category": "popular",
@@ -5171,21 +5199,22 @@
       ]
     },
     {
-      "id": "6dd2",
-      "title": "Ass",
-      "genres": [
-        "Action"
-      ],
-      "release_date": "2020-02-23",
-      "vote_average": 3,
-      "poster": "dwdw",
-      "trailer_url": "dwdw",
-      "overview": "ddcdvedv",
+      "id": "44bb",
+      "vote_average": 5,
+      "Type": "Movie",
       "cast": [
-        "Ali",
-        "Ahmed",
-        "Samy"
-      ]
+        "lejj",
+        "h",
+        "j"
+      ],
+      "title": "test",
+      "genres": [
+        "action"
+      ],
+      "release_date": "2025-2-2",
+      "poster_url": "test",
+      "trailer_url": "test",
+      "overview": "test"
     }
   ],
   "actors": [
