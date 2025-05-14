@@ -8,12 +8,6 @@
       "role": "admin"
     },
     {
-      "id": "6032",
-      "name": "omar",
-      "email": "elsharkawii@gmail.com",
-      "password": "12345"
-    },
-    {
       "id": "836e",
       "name": "malek",
       "email": "malek@gmail.com",
@@ -21,16 +15,11 @@
       "role": "user"
     },
     {
-      "id": "2d26",
-      "userName": "Samy",
-      "email": "Samy@gmail.com",
-      "password": "Samy@123"
-    },
-    {
-      "id": "438a",
-      "name": "Sayed",
-      "email": "Sayed12@gmail.com",
-      "password": "Sayed@123"
+      "id": "7419",
+      "name": "Alis",
+      "email": "Alis@gmail.com",
+      "password": "Ali@123",
+      "role": "user"
     }
   ],
   "admin": [
@@ -5217,6 +5206,24 @@
         "Ahmed",
         "Samy"
       ]
+    },
+    {
+      "id": "70a4",
+      "vote_average": 6,
+      "Type": "Movie",
+      "cast": [
+        "Ahmed",
+        "Ali",
+        "Samy"
+      ],
+      "title": "Ahmed12",
+      "genres": [
+        "Action"
+      ],
+      "release_date": "2024-4-5",
+      "poster_url": "scsc",
+      "trailer_url": "cscs",
+      "overview": "Summary "
     }
   ],
   "actors": [

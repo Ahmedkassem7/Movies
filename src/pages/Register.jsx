@@ -14,7 +14,11 @@ export default function Register() {
     setErrorMessage("");
 
     try {
-      const user = await addNewUser(values);
+      const newUser = {
+        ...values,
+        role: "user",
+      };
+      const user = await addNewUser(newUser);
       console.log("New user registered:", user);
       navigate("/login");
     } catch (error) {
