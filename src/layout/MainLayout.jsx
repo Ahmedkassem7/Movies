@@ -8,6 +8,8 @@ import {
   Series,
   SeriesDetails,
   ViewAll,
+  Login,
+  Register
 } from "../pages/index";
 import MovieDetails from "../pages/MovieDetails";
 import Movies from "../pages/Movies";
@@ -22,6 +24,8 @@ export default function MainLayout() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         {/* Public Routes */}
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Home />} />
