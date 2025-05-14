@@ -193,6 +193,8 @@ input::placeholder {
     max-width: 120px;
 }
 
+
+
 .view-table th {
     color: #3DD2CC;
 }
@@ -326,3 +328,10 @@ input::placeholder {
         width: 70px;
     }
 }
+
+@media (min-width: 768px) {
+    .custom-rounded-responsive {
+        border-radius: 0 !important;
+    }
+}
+

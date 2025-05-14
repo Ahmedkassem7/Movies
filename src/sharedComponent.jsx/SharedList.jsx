@@ -2,16 +2,20 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { MoviesCard } from "../components";
-import { getAllMoviesAction } from "../store/movieSlice";
 
-export default function SharedList({ category }) {
-  const { movies, loading, error } = useSelector((store) => store.movieSlice);
+export default function SharedList({ category, getAllAction, selectorName }) {
+  const state = useSelector((store) => store[selectorName] || {});
+  const { movies = [], series = [], loading, error } = state;
+  const data = category === "Movies" ? movies : series;
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getAllMoviesAction());
-  }, []);
+    dispatch(getAllAction());
+  }, [dispatch, getAllAction]);
 
+  console.log("selectorName:", selectorName);
+console.log("state from store:", state);
+console.log("data to display:", data);
   return (
     // <div className='m-3 p-3 rounded-4' style={{ backgroundColor: "#3dd2cdc5" }}>
     <div className="m-3 p-3 rounded-4" style={{ backgroundColor: "#25272a" }}>
@@ -38,10 +42,10 @@ export default function SharedList({ category }) {
         </p>
         <p className="font sec-color fs-5 mb-0">Actions</p>
       </div>
-      {movies.slice(0, 4).map((movie) => {
-        return <MoviesCard key={movie.id} movie={movie}></MoviesCard>;
+      {data.slice(0, 4).map((item) => {
+        return <MoviesCard key={item.id} item={item} category={category}></MoviesCard>;
       })}
-      <Link to={"all"} style={{ textDecoration: "none" }}>
+      <Link state={{ category }} to={`/admin/${category.toLowerCase()}/all`} style={{ textDecoration: "none" }}>
         <button
           className="btn add-movie mx-auto d-block px-4 py-2 rounded-4"
           style={{ fontSize: "18px" }}

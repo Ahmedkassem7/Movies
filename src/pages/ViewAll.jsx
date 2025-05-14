@@ -1,19 +1,16 @@
-import React, { useState } from "react";
-import { MoviesDashboard, Search } from "../components";
+import { useState } from 'react'
+import { MoviesDashboard } from '../components'
+import SharedView from '../sharedComponent.jsx/SharedView'
+import { useLocation } from 'react-router-dom';
 
 export default function ViewAll() {
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState("")
+    const location = useLocation();
+  const category = location.pathname.includes('series') ? 'Series' : 'Movies'; //determine the category from url
 
   return (
-    <div
-      className="min-vh-100 w-100 mb-5 mt-4"
-      style={{ backgroundColor: "#191919" }}
-    >
-      <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-      <MoviesDashboard
-        searchTerm={searchTerm}
-        category={"Movies"}
-      ></MoviesDashboard>
-    </div>
-  );
+    <SharedView searchTerm={searchTerm} setSearchTerm={setSearchTerm}>
+      <MoviesDashboard searchTerm={searchTerm} category={category}></MoviesDashboard>
+    </SharedView>
+  )
 }

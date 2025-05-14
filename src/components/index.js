@@ -14,6 +14,8 @@ import MovieCard from "./MovieCard";
 import MovieSection from "./MovieSection";
 import Sidebar from "./Sidebar";
 import Popular from "./Popular";
+import Actors from "./AdminView/Actors";
+import ActorsTable from "./AdminView/ActorsTable";
 import MediaList from "./MediaList";
 
 export {
@@ -33,5 +35,6 @@ export {
   Search,
   Sidebar,
   Statistics,
+  Actors,ActorsTable,
   MediaList,
 };
