@@ -6,7 +6,8 @@ import ViewAll from "./ViewAll";
 import MovieForm from "./MovieForm";
 import Series from "./Series";
 import SeriesDetails from "./SeriesDetails";
-
+import Login from "./login"
+import Register from "./Register";
 export {
   AdminView,
   Home,
@@ -16,4 +17,6 @@ export {
   Movies,
   Series,
   SeriesDetails,
+  Login,
+  Register
 };
