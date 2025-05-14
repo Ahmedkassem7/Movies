@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import {
   AdminView,
   Home,
@@ -33,16 +33,16 @@ export default function MainLayout() {
         </Route>
 
         {/* Admin Routes */}
+
         <Route path="/admin" element={<AdminLayout />}>
-          <Route path="dashboard" index element={<AdminView />} />
+          <Route index element={<Navigate to="dashboard" replace />} />
+          <Route path="dashboard" element={<AdminView />} />
           <Route path="movies/all" element={<ViewAll />} />
           <Route path="series/all" element={<ViewAll />} />
           <Route path="Actors" element={<ActorsPage />} />
-          {/* <Route path="movie/:id" element={<MovieForm />} /> */}
           <Route path="movie/:id/edit" element={<MovieForm />} />
           <Route path="series/:id/edit" element={<MovieForm />} />
         </Route>
-
         {/* Auth Routes
         <Route path="login" element={<LoginForm />} />
         <Route path="register" element={<RegisterForm />} /> */}
