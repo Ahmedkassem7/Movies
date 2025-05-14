@@ -73,7 +73,7 @@ export default function Actors({ searchTerm }) {
                                 className="alert w-75 fs-3 text-dark fw-medium"
                                 style={{ backgroundColor: '#3DD2CC' }}
                             >
-                                No movies found
+                                Actor name not found
                             </p>
                         </div>
                     )

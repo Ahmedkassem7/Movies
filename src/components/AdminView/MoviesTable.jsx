@@ -1,10 +1,15 @@
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { deleteMovieAction } from '../../store/movieSlice';
+import { deleteSeriesAction } from '../../store/serieSlice';
 export default function MoviesTable({ movie, category }) {
     const dispatch = useDispatch();
-    const deleteMovie = (movieId) => {
-        dispatch(deleteMovieAction(movieId));
+    const handleDelete = (movieId) => {
+        if (category === 'Movies') {
+            dispatch(deleteMovieAction(movieId));
+        } else if (category === 'Series') {
+            dispatch(deleteSeriesAction(movieId));
+        }
     };
     return (
         <tr
@@ -37,7 +42,7 @@ export default function MoviesTable({ movie, category }) {
                 </Link>
                 <i
                     className="bi bi-trash3 fs-4 mx-2"
-                    onClick={() => deleteMovie(movie.id)}
+                    onClick={() => deleteSeriesAction(movie.id)}
                     style={{ color: 'brown', cursor: 'pointer' }}
                 ></i>
             </td>
