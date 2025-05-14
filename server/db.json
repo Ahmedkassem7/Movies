@@ -19,6 +19,18 @@
       "email": "malek@gmail.com",
       "password": "Malek@12345",
       "role": "user"
+    },
+    {
+      "id": "2d26",
+      "userName": "Samy",
+      "email": "Samy@gmail.com",
+      "password": "Samy@123"
+    },
+    {
+      "id": "438a",
+      "name": "Sayed",
+      "email": "Sayed12@gmail.com",
+      "password": "Sayed@123"
     }
   ],
   "admin": [
@@ -44,7 +56,10 @@
       "vote_count": 233,
       "poster_url": "https://image.tmdb.org/t/p/original/jM2uqCZNKbiyStyzXOERpMqAbdx.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/bVm6udIB6iKsRqgMdQh6HywuEBj.jpg",
-      "genres": ["Thriller", "Action"],
+      "genres": [
+        "Thriller",
+        "Action"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=tlLsFEDHtWs",
       "cast": "Jeanne Goursaud, Dougray Scott, Lera Abova, Emanuel Fellmer, Annabelle Mandeng",
@@ -66,7 +81,10 @@
       "vote_count": 149,
       "poster_url": "https://image.tmdb.org/t/p/original/j8tqBXwH2PxBPzbtO19BTF9Ukbf.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/cJvUJEEQ86LSjl4gFLkYpdCJC96.jpg",
-      "genres": ["War", "Action"],
+      "genres": [
+        "War",
+        "Action"
+      ],
       "reviews": [
         {
           "author": "CinemaSerf",
@@ -145,7 +163,11 @@
       "vote_count": 634,
       "poster_url": "https://image.tmdb.org/t/p/original/m9EtP1Yrzv6v7dMaC9mRaGhd1um.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/rthMuZfFv4fqEU4JVbgSW9wQ8rs.jpg",
-      "genres": ["Action", "Adventure", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
       "reviews": [
         {
           "author": "Chris Sawin",
@@ -252,7 +274,11 @@
       "vote_count": 591,
       "poster_url": "https://image.tmdb.org/t/p/original/6FRFIogh3zFnVWn7Z6zcYnIbRcX.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/fTrQsdMS2MUw00RnzH0r3JWHhts.jpg",
-      "genres": ["Action", "Crime", "Thriller"],
+      "genres": [
+        "Action",
+        "Crime",
+        "Thriller"
+      ],
       "reviews": [
         {
           "author": "Manuel São Bento",
@@ -359,7 +385,11 @@
       "vote_count": 30,
       "poster_url": "https://image.tmdb.org/t/p/original/qycPITRqXgPai7zj1gKffjCdSB5.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/4A5HH9HkCPqAwyYL6CnA0mxbYjn.jpg",
-      "genres": ["Action", "Crime", "Thriller"],
+      "genres": [
+        "Action",
+        "Crime",
+        "Thriller"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=r2u9GifyDg0",
       "cast": "Alban Lenoir, Stéfi Celma, Nicolas Duvauchelle, Gérard Lanvin, Pascale Arbillot",
@@ -381,7 +411,9 @@
       "vote_count": 34,
       "poster_url": "https://image.tmdb.org/t/p/original/tbJ3RkA2s6X5qrBzrYHYTxvDBui.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/12tEzU0bNYKIjXXEwI5abuOotHF.jpg",
-      "genres": ["Western"],
+      "genres": [
+        "Western"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=q95B6Ys5h_8",
       "cast": "Alec Baldwin, Josh Hopkins, Patrick Scott McDermott, Travis Fimmel, Frances Fisher",
@@ -403,7 +435,12 @@
       "vote_count": 842,
       "poster_url": "https://image.tmdb.org/t/p/original/iPPTGh2OXuIv6d7cwuoPkw8govp.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/2Nti3gYAX513wvhp8IiLL6ZDyOm.jpg",
-      "genres": ["Family", "Comedy", "Adventure", "Fantasy"],
+      "genres": [
+        "Family",
+        "Comedy",
+        "Adventure",
+        "Fantasy"
+      ],
       "reviews": [
         {
           "author": "tmdb98094809",
@@ -468,7 +505,12 @@
       "vote_count": 6923,
       "poster_url": "https://image.tmdb.org/t/p/original/bTvHlcqiOjGa3lFtbrTLTM3zasY.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/86z1Yrwj7yN1xehSa0gIwHnR7xl.jpg",
-      "genres": ["Family", "Adventure", "Animation", "Drama"],
+      "genres": [
+        "Family",
+        "Adventure",
+        "Animation",
+        "Drama"
+      ],
       "reviews": [
         {
           "author": "The Movie Diorama",
@@ -547,7 +589,11 @@
       "vote_count": 549,
       "poster_url": "https://image.tmdb.org/t/p/original/r46leE6PSzLR3pnVzaxx5Q30yUF.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/65MVgDa6YjSdqzh7YOA04mYkioo.jpg",
-      "genres": ["Action", "Crime", "Thriller"],
+      "genres": [
+        "Action",
+        "Crime",
+        "Thriller"
+      ],
       "reviews": [
         {
           "author": "MovieGuys",
@@ -598,7 +644,11 @@
       "vote_count": 1763,
       "poster_url": "https://image.tmdb.org/t/p/original/pzIddUEMWhWzfvLI3TwxUG2wGoi.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/8eifdha9GQeZAkexgtD45546XKx.jpg",
-      "genres": ["Action", "Thriller", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Thriller",
+        "Science Fiction"
+      ],
       "reviews": [
         {
           "author": "r96sk",
@@ -705,7 +755,12 @@
       "vote_count": 173,
       "poster_url": "https://image.tmdb.org/t/p/original/lXR32JepFwD1UHkplWqtBP1K79z.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/eDBZN0TbWkxoAB0qIDFagVcPPTN.jpg",
-      "genres": ["Horror", "Fantasy", "Comedy", "Adventure"],
+      "genres": [
+        "Horror",
+        "Fantasy",
+        "Comedy",
+        "Adventure"
+      ],
       "reviews": [
         {
           "author": "r96sk",
@@ -756,7 +811,11 @@
       "vote_count": 340,
       "poster_url": "https://image.tmdb.org/t/p/original/dDlfjR7gllmr8HTeN6rfrYhTdwX.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/op3qmNhvwEvyT7UFyPbIfQmKriB.jpg",
-      "genres": ["Action", "Fantasy", "Adventure"],
+      "genres": [
+        "Action",
+        "Fantasy",
+        "Adventure"
+      ],
       "reviews": [
         {
           "author": "CinemaSerf",
@@ -821,8 +880,30 @@
       "vote_count": 35,
       "poster_url": "https://image.tmdb.org/t/p/original/eujLbO0kf1eqWC8XpHUJdtAVW2J.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/kFXtAwJYbRTqiyQpE9kDc8qEP3X.jpg",
-      "genres": ["Action", "Thriller"],
-      "reviews": [],
+      "genres": [
+        "Action",
+        "Thriller"
+      ],
+      "reviews": [
+        {
+          "id": "1747228656739",
+          "author": "Ali",
+          "author_details": {
+            "rating": 9
+          },
+          "content": "xsccccse",
+          "created_at": "2025-05-14T13:17:36.739Z"
+        },
+        {
+          "id": "1747228644595",
+          "author": "Ahmed",
+          "author_details": {
+            "rating": 9
+          },
+          "content": "Goood",
+          "created_at": "2025-05-14T13:17:24.595Z"
+        }
+      ],
       "trailer_url": "https://www.youtube.com/watch?v=gzN46jvgTck",
       "cast": "Saif Ali Khan, Jaideep Ahlawat, Nikita Dutta, Kunal Kapoor, Kulbhushan Kharbanda",
       "category": "popular",
@@ -843,7 +924,11 @@
       "vote_count": 189,
       "poster_url": "https://image.tmdb.org/t/p/original/zboCGZ4aIqPMd7VFI4HWnmc7KYJ.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/z3edlTX9YDBrVMoYupMsc8qdiUw.jpg",
-      "genres": ["Thriller", "Comedy", "Crime"],
+      "genres": [
+        "Thriller",
+        "Comedy",
+        "Crime"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=QWajCwdC_TM",
       "cast": "Anna Kendrick, Blake Lively, Michele Morrone, Henry Golding, Allison Janney",
@@ -865,7 +950,11 @@
       "vote_count": 621,
       "poster_url": "https://image.tmdb.org/t/p/original/jYfMTSiFFK7ffbY2lay4zyvTkEk.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/nAxGnGHOsfzufThz20zgmRwKur3.jpg",
-      "genres": ["Action", "Horror", "Thriller"],
+      "genres": [
+        "Action",
+        "Horror",
+        "Thriller"
+      ],
       "reviews": [
         {
           "author": "Chris Sawin",
@@ -944,7 +1033,9 @@
       "vote_count": 23,
       "poster_url": "https://image.tmdb.org/t/p/original/hBJdzKPeDaC96AzlrtMWBomYSZV.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/svLj9iyRmmeNVRsMreANn7DPPZE.jpg",
-      "genres": ["Horror"],
+      "genres": [
+        "Horror"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=nq1ReNQSSWg",
       "cast": "Raymond E. Lee, Pachi Lucas, Julia Kraiselburd, Emilia Mayo, Adriana Torrebejano",
@@ -966,7 +1057,9 @@
       "vote_count": 14,
       "poster_url": "https://image.tmdb.org/t/p/original/z73X4WKZghBh5fri31o8P6vBEB2.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/1AWjIUgbZYaKbwUH5qoJaKCcRkf.jpg",
-      "genres": ["Documentary"],
+      "genres": [
+        "Documentary"
+      ],
       "reviews": [],
       "trailer_url": null,
       "cast": "Zahra Ahmadi, Jack Etchells, Adam Woolley, Frances Christie, Neil Lebeter",
@@ -988,7 +1081,11 @@
       "vote_count": 10511,
       "poster_url": "https://image.tmdb.org/t/p/original/kwB7d51AIcyzPOBOHLCEZJkmPhQ.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/6azpBJGcLx9SKif8h9VMnflBfa.jpg",
-      "genres": ["Action", "Adventure", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
       "reviews": [
         {
           "author": "garethmb",
@@ -1207,7 +1304,10 @@
       "vote_count": 583,
       "poster_url": "https://image.tmdb.org/t/p/original/yYa8Onk9ow7ukcnfp2QWVvjWYel.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/6dC7ULfiutxwEAs7LjWHL2Tc7Zv.jpg",
-      "genres": ["Horror", "Comedy"],
+      "genres": [
+        "Horror",
+        "Comedy"
+      ],
       "reviews": [
         {
           "author": "r96sk",
@@ -1272,7 +1372,10 @@
       "vote_count": 17,
       "poster_url": "https://image.tmdb.org/t/p/original/cVSjSQryFUERYSdOmdgJ2m0eBte.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/1hBtO9tXP60IFBZD27OsbaBmxs5.jpg",
-      "genres": ["Western", "Action"],
+      "genres": [
+        "Western",
+        "Action"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=tZaje_sh97A",
       "cast": "Zach Roerig, Billy Zane, Cara Jade Myers, Scott Adkins, Trace Adkins",
@@ -1294,7 +1397,12 @@
       "vote_count": 0,
       "poster_url": "https://image.tmdb.org/t/p/original/S21BfLrJSD9njucBfY3CKqp8rD.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/bFmziv84NfEVEGTK8c6EVY3bxve.jpg",
-      "genres": ["Action", "Crime", "Mystery", "Thriller"],
+      "genres": [
+        "Action",
+        "Crime",
+        "Mystery",
+        "Thriller"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=yQCpGW7bZyo",
       "cast": "Kellan Lutz, Cam Gigandet, Chad Michael Collins, Texas Battle, Mike Ferguson",
@@ -1316,7 +1424,11 @@
       "vote_count": 139,
       "poster_url": "https://image.tmdb.org/t/p/original/kMDUS7VmFhb2coRfVBoGLR8ADBt.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/rdxdvXQGqCj2Vb7SvTL8gdxlSzI.jpg",
-      "genres": ["Crime", "Thriller", "Action"],
+      "genres": [
+        "Crime",
+        "Thriller",
+        "Action"
+      ],
       "reviews": [
         {
           "author": "Manuel São Bento",
@@ -1381,7 +1493,10 @@
       "vote_count": 9,
       "poster_url": "https://image.tmdb.org/t/p/original/cAoktVUBhGyULRoxV6mZ2LB3x7I.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/7wKnf6ILtRmKXV8eJWk0P6ZXnQ.jpg",
-      "genres": ["Horror", "Mystery"],
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=xitSoRbHJ50",
       "cast": "Kaitlyn Santa Juana, Teo Briones, Rya Kihlstedt, Richard Harmon, Owen Patrick Joyner",
@@ -1403,7 +1518,11 @@
       "vote_count": 0,
       "poster_url": "https://image.tmdb.org/t/p/original/z53D72EAOxGRqdr7KXXWp9dJiDe.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/7ONMDhnErvpkKvkZqM82ud7bzcT.jpg",
-      "genres": ["Action", "Adventure", "Thriller"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Thriller"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=G1VBfMCZVkw",
       "cast": "Tom Cruise, Hayley Atwell, Ving Rhames, Simon Pegg, Esai Morales",
@@ -1425,7 +1544,10 @@
       "vote_count": 143,
       "poster_url": "https://image.tmdb.org/t/p/original/n0WS2TsNcS6dtaZKzxipyO7LuCJ.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/3lEV4CoKoeT2cZ4fbKEJugZcw6Z.jpg",
-      "genres": ["Horror", "Mystery"],
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
       "reviews": [
         {
           "author": "CinemaSerf",
@@ -1476,7 +1598,10 @@
       "vote_count": 2,
       "poster_url": "https://image.tmdb.org/t/p/original/tB66c6dnu9dG60mta8TF8zmeGJn.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/kXxriYfAWtMJNHGHVYr09c37L07.jpg",
-      "genres": ["Thriller", "Science Fiction"],
+      "genres": [
+        "Thriller",
+        "Science Fiction"
+      ],
       "reviews": [],
       "trailer_url": null,
       "cast": "Aleksandr Kuznetsov, Anya Chipovskaya, Andrey Merzlikin",
@@ -1498,7 +1623,11 @@
       "vote_count": 3,
       "poster_url": "https://image.tmdb.org/t/p/original/ckI6bmQDvvGy20FPTIW1kfGKGRK.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/tGjo4L15aELqZGqQH3ThZQGMKmL.jpg",
-      "genres": ["Action", "Adventure", "Drama"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=LhRXf-yEQqA",
       "cast": "Ben Wang, Jackie Chan, Ralph Macchio, Joshua Jackson, Sadie Stanley",
@@ -1520,7 +1649,9 @@
       "vote_count": 115,
       "poster_url": "https://image.tmdb.org/t/p/original/hhkiqXpfpufwxVrdSftzeKIANl3.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/r4X2xRrWleVgx0kahP27xRmm3ia.jpg",
-      "genres": ["Thriller"],
+      "genres": [
+        "Thriller"
+      ],
       "reviews": [
         {
           "author": "Chris Sawin",
@@ -1557,7 +1688,11 @@
       "vote_count": 474,
       "poster_url": "https://image.tmdb.org/t/p/original/57AgZv1ITeBLShiNdchZ5153evs.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/jl2YIADk391yc6Qjy9JhgCRkHJk.jpg",
-      "genres": ["Animation", "Drama", "Comedy"],
+      "genres": [
+        "Animation",
+        "Drama",
+        "Comedy"
+      ],
       "reviews": [
         {
           "author": "good.film",
@@ -1636,7 +1771,11 @@
       "vote_count": 1904,
       "poster_url": "https://image.tmdb.org/t/p/original/imKSymKBK7o73sajciEmndJoVkR.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/b3mdmjYTEL70j7nuXATUAD9qgu4.jpg",
-      "genres": ["Animation", "Fantasy", "Adventure"],
+      "genres": [
+        "Animation",
+        "Fantasy",
+        "Adventure"
+      ],
       "reviews": [
         {
           "author": "Manuel São Bento",
@@ -1743,7 +1882,10 @@
       "vote_count": 0,
       "poster_url": "https://image.tmdb.org/t/p/original/lFFDrFLXywFhy6khHes1LCFVMsL.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/jRvhP4AfFnJ03lCQhp1fie7XPSd.jpg",
-      "genres": ["Action", "Thriller"],
+      "genres": [
+        "Action",
+        "Thriller"
+      ],
       "reviews": [],
       "trailer_url": null,
       "cast": "Scott Eastwood, Robert De Niro, Jamie Foxx, John Leguizamo, Nora Arnezeder",
@@ -1765,7 +1907,11 @@
       "vote_count": 11,
       "poster_url": "https://image.tmdb.org/t/p/original/AhmJOYdUn9katXqDk0ZpZanQ0xp.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/1nn7nCFRTKeWOXbtjrFxfSvf1EI.jpg",
-      "genres": ["Comedy", "Drama", "Music"],
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Music"
+      ],
       "reviews": [
         {
           "author": "Brent Marchant",
@@ -1802,7 +1948,11 @@
       "vote_count": 0,
       "poster_url": "https://image.tmdb.org/t/p/original/3bN675X0K2E5QiAZVChzB5wq90B.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/eCqIpFpYIcZpCBexU3y8BfZKR7f.jpg",
-      "genres": ["Family", "Comedy", "Science Fiction"],
+      "genres": [
+        "Family",
+        "Comedy",
+        "Science Fiction"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=VWqJifMMgZE",
       "cast": "Maia Kealoha, Sydney Agudong, Billy Magnussen, Hannah Waddingham, Chris Sanders",
@@ -1824,7 +1974,11 @@
       "vote_count": 69,
       "poster_url": "https://image.tmdb.org/t/p/original/x4nWnfgJvL045rcUCSJzfgIIY9i.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/3ExQ28MVRaBbJFI2br5NjLyXVO1.jpg",
-      "genres": ["Action", "Comedy", "Thriller"],
+      "genres": [
+        "Action",
+        "Comedy",
+        "Thriller"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=SdsHRpjfqEI",
       "cast": "Josh Hartnett, Katee Sackhoff, Marko Zaror, Julian Kostov, Charithra Chandran",
@@ -1846,7 +2000,10 @@
       "vote_count": 44,
       "poster_url": "https://image.tmdb.org/t/p/original/7NLY1jNwtZX1yVzwVoBeAhaBE8i.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/9OO6I25MHhCDd0XwNk4oZl0fpwB.jpg",
-      "genres": ["Action", "Drama"],
+      "genres": [
+        "Action",
+        "Drama"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=_LYIHKNLJTU",
       "cast": "Gustav Dyekjær Giese, Reda Kateb, Amanda Collin, Christopher Wagelin, Jens Hultén",
@@ -1868,7 +2025,11 @@
       "vote_count": 2101,
       "poster_url": "https://image.tmdb.org/t/p/original/xDGbZ0JJ3mYaGKy4Nzd9Kph6M9L.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/jTOeWjamUKGxWVUO1TMZXqQUarw.jpg",
-      "genres": ["Drama", "Romance", "Fantasy"],
+      "genres": [
+        "Drama",
+        "Romance",
+        "Fantasy"
+      ],
       "reviews": [
         {
           "author": "Chris Sawin",
@@ -2017,7 +2178,11 @@
       "vote_count": 164,
       "poster_url": "https://image.tmdb.org/t/p/original/5lUmWTGkEcYnXujixXn31o9q2T0.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/8btfz81bOJ2lC7cujYBTw03wzg3.jpg",
-      "genres": ["Animation", "Fantasy", "Adventure"],
+      "genres": [
+        "Animation",
+        "Fantasy",
+        "Adventure"
+      ],
       "reviews": [
         {
           "author": "CinemaSerf",
@@ -2054,7 +2219,11 @@
       "vote_count": 479,
       "poster_url": "https://image.tmdb.org/t/p/original/hHPovtU4b96LHcoeEwRkGHI5btw.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/wi2CEFSyoxoBWdFeVmTeqnlX3qI.jpg",
-      "genres": ["Thriller", "Mystery", "Drama"],
+      "genres": [
+        "Thriller",
+        "Mystery",
+        "Drama"
+      ],
       "reviews": [
         {
           "author": "Brent Marchant",
@@ -2133,7 +2302,10 @@
       "vote_count": 28254,
       "poster_url": "https://image.tmdb.org/t/p/original/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg",
-      "genres": ["Drama", "Crime"],
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
       "reviews": [
         {
           "author": "elshaarawy",
@@ -2394,7 +2566,10 @@
       "vote_count": 21414,
       "poster_url": "https://image.tmdb.org/t/p/original/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/tmU7GeKVybMWFButWEGl2M4GeiP.jpg",
-      "genres": ["Drama", "Crime"],
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
       "reviews": [
         {
           "author": "futuretv",
@@ -2501,7 +2676,10 @@
       "vote_count": 12936,
       "poster_url": "https://image.tmdb.org/t/p/original/hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/kGzFbGhp99zva6oZODW5atUtnqi.jpg",
-      "genres": ["Drama", "Crime"],
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
       "reviews": [
         {
           "author": "jkbbr549",
@@ -2580,7 +2758,11 @@
       "vote_count": 16415,
       "poster_url": "https://image.tmdb.org/t/p/original/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/zb6fM1CX41D9rF9hdgclu0peUmy.jpg",
-      "genres": ["Drama", "History", "War"],
+      "genres": [
+        "Drama",
+        "History",
+        "War"
+      ],
       "reviews": [
         {
           "author": "Mayurpanchamia",
@@ -2645,7 +2827,9 @@
       "vote_count": 9111,
       "poster_url": "https://image.tmdb.org/t/p/original/ow3wq89wM8qd5X7hWKxiRfsFf9C.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/bxgTSUenZDHNFerQ1whRKplrMKF.jpg",
-      "genres": ["Drama"],
+      "genres": [
+        "Drama"
+      ],
       "reviews": [
         {
           "author": "Andres Gomez",
@@ -2780,7 +2964,11 @@
       "vote_count": 17114,
       "poster_url": "https://image.tmdb.org/t/p/original/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/6oaL4DP75yABrd5EbC4H2zq5ghc.jpg",
-      "genres": ["Animation", "Family", "Fantasy"],
+      "genres": [
+        "Animation",
+        "Family",
+        "Fantasy"
+      ],
       "reviews": [
         {
           "author": "ZeBlah",
@@ -2831,7 +3019,12 @@
       "vote_count": 33805,
       "poster_url": "https://image.tmdb.org/t/p/original/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/oOv2oUXcAaNXakRqUPxYq5lJURz.jpg",
-      "genres": ["Drama", "Action", "Crime", "Thriller"],
+      "genres": [
+        "Drama",
+        "Action",
+        "Crime",
+        "Thriller"
+      ],
       "reviews": [
         {
           "author": "tricksy",
@@ -3064,7 +3257,11 @@
       "vote_count": 4484,
       "poster_url": "https://image.tmdb.org/t/p/original/rfcy6Gd3PbFIqwZX5U8xnbv7jOc.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/90ez6ArvpO8bvpyIngBuwXOqJm5.jpg",
-      "genres": ["Comedy", "Drama", "Romance"],
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
       "reviews": [
         {
           "author": "MohamedElsharkawy",
@@ -3101,7 +3298,11 @@
       "vote_count": 18069,
       "poster_url": "https://image.tmdb.org/t/p/original/8VG8fDNiy50H4FedGwdSVUPoaJe.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/amZavErrjrdgDwhsIdpWxHNenIx.jpg",
-      "genres": ["Fantasy", "Drama", "Crime"],
+      "genres": [
+        "Fantasy",
+        "Drama",
+        "Crime"
+      ],
       "reviews": [
         {
           "author": "Wuchak",
@@ -3166,7 +3367,11 @@
       "vote_count": 19011,
       "poster_url": "https://image.tmdb.org/t/p/original/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/hiKmpZMGZsrkA3cdce8a7Dpos1j.jpg",
-      "genres": ["Comedy", "Thriller", "Drama"],
+      "genres": [
+        "Comedy",
+        "Thriller",
+        "Drama"
+      ],
       "reviews": [
         {
           "author": "SWITCH.",
@@ -3399,7 +3604,10 @@
       "vote_count": 28636,
       "poster_url": "https://image.tmdb.org/t/p/original/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg",
-      "genres": ["Thriller", "Crime"],
+      "genres": [
+        "Thriller",
+        "Crime"
+      ],
       "reviews": [
         {
           "author": "Wuchak",
@@ -3506,7 +3714,11 @@
       "vote_count": 11749,
       "poster_url": "https://image.tmdb.org/t/p/original/8GJsy7w7frGquw1cy9jasOGNNI1.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/8x9iKH8kWA0zdkgNdpAew7OstYe.jpg",
-      "genres": ["Animation", "Romance", "Drama"],
+      "genres": [
+        "Animation",
+        "Romance",
+        "Drama"
+      ],
       "reviews": [
         {
           "author": "Gimly",
@@ -3627,7 +3839,11 @@
       "vote_count": 25040,
       "poster_url": "https://image.tmdb.org/t/p/original/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/2u7zbn8EudG6kLlBzUYqP8RyFU4.jpg",
-      "genres": ["Adventure", "Fantasy", "Action"],
+      "genres": [
+        "Adventure",
+        "Fantasy",
+        "Action"
+      ],
       "reviews": [
         {
           "author": "NeoBrowser",
@@ -3748,7 +3964,11 @@
       "vote_count": 28183,
       "poster_url": "https://image.tmdb.org/t/p/original/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/ghgfzbEV7kbpbi1O8eIILKVXEA8.jpg",
-      "genres": ["Comedy", "Drama", "Romance"],
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
       "reviews": [
         {
           "author": "llgolden",
@@ -3813,7 +4033,9 @@
       "vote_count": 8969,
       "poster_url": "https://image.tmdb.org/t/p/original/bX2xnavhMYjWDoZp1VM6VnU1xwe.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/x4biAVdPVCghBlsVIzB6NmbghIz.jpg",
-      "genres": ["Western"],
+      "genres": [
+        "Western"
+      ],
       "reviews": [
         {
           "author": "John Chard",
@@ -3976,7 +4198,10 @@
       "vote_count": 3885,
       "poster_url": "https://image.tmdb.org/t/p/original/8OKmBV5BUFzmozIC3pPWKHy17kx.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/sJNNMCc6B7KZIY3LH3JMYJJNH5j.jpg",
-      "genres": ["Action", "Drama"],
+      "genres": [
+        "Action",
+        "Drama"
+      ],
       "reviews": [
         {
           "author": "Andres Gomez",
@@ -4069,7 +4294,11 @@
       "vote_count": 37079,
       "poster_url": "https://image.tmdb.org/t/p/original/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/l33oR0mnvf20avWyIMxW02EtQxn.jpg",
-      "genres": ["Adventure", "Drama", "Science Fiction"],
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Science Fiction"
+      ],
       "reviews": [
         {
           "author": "Reno",
@@ -4330,7 +4559,10 @@
       "vote_count": 13347,
       "poster_url": "https://image.tmdb.org/t/p/original/aKuFiU82s5ISJpGZp7YkIr3kCUd.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/7TF4p86ZafnxFuNqWdhpHXFO244.jpg",
-      "genres": ["Drama", "Crime"],
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
       "reviews": [
         {
           "author": "John Chard",
@@ -4437,7 +4669,11 @@
       "vote_count": 5874,
       "poster_url": "https://image.tmdb.org/t/p/original/k9tv1rXZbOhH7eiCk378x61kNQ1.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/tDFvXn4tane9lUvFAFAUkMylwSr.jpg",
-      "genres": ["Animation", "Drama", "War"],
+      "genres": [
+        "Animation",
+        "Drama",
+        "War"
+      ],
       "reviews": [
         {
           "author": "Andres Gomez",
@@ -4488,7 +4724,10 @@
       "vote_count": 13357,
       "poster_url": "https://image.tmdb.org/t/p/original/74hLDKjD5aGYOotO6esUVaeISa2.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/6aNKD81RHR1DqUUa8kOZ1TBY1Lp.jpg",
-      "genres": ["Comedy", "Drama"],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
       "reviews": [
         {
           "author": "tubbs",
@@ -4525,7 +4764,11 @@
       "vote_count": 2361,
       "poster_url": "https://image.tmdb.org/t/p/original/l4WXg5oQPK6GVlISKQNIUGb8rKJ.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/1YMrOtrW7b4pL2lfD8UciZPOJGs.jpg",
-      "genres": ["Drama", "Thriller", "Mystery"],
+      "genres": [
+        "Drama",
+        "Thriller",
+        "Mystery"
+      ],
       "reviews": [
         {
           "author": "Brent Marchant",
@@ -4632,7 +4875,12 @@
       "vote_count": 151,
       "poster_url": "https://image.tmdb.org/t/p/original/jmzxlDBwgvRbpPJzNQwizyn9UEn.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/Zes06xI18u47pblwRGTtqRm0R8.jpg",
-      "genres": ["Action", "Thriller", "Crime", "Drama"],
+      "genres": [
+        "Action",
+        "Thriller",
+        "Crime",
+        "Drama"
+      ],
       "reviews": [
         {
           "author": "Manuel São Bento",
@@ -4683,7 +4931,10 @@
       "vote_count": 266,
       "poster_url": "https://image.tmdb.org/t/p/original/dS2S5lpfgRIRQOb7LDCjNsQqKjp.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/2CcMG34v4PCynvxwmBUwVtNqsKL.jpg",
-      "genres": ["Mystery", "Thriller"],
+      "genres": [
+        "Mystery",
+        "Thriller"
+      ],
       "reviews": [
         {
           "author": "Chris Sawin",
@@ -4748,7 +4999,9 @@
       "vote_count": 13,
       "poster_url": "https://image.tmdb.org/t/p/original/wgUmsekYPOt9ZQ8ero91qRnmhQY.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/iznPd7PLnCBA1G50M4DuA9wvCIy.jpg",
-      "genres": ["Comedy"],
+      "genres": [
+        "Comedy"
+      ],
       "reviews": [],
       "trailer_url": null,
       "cast": "Kate del Castillo, Diana Bovio, Daniel Raymont, Gabriel Nuncio, Hugo Catalán",
@@ -4770,7 +5023,11 @@
       "vote_count": 702,
       "poster_url": "https://image.tmdb.org/t/p/original/xmMHGz9dVRaMY6rRAlEX4W0Wdhm.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/sNx1A3822kEbqeUxvo5A08o4N7o.jpg",
-      "genres": ["Action", "Comedy", "Thriller"],
+      "genres": [
+        "Action",
+        "Comedy",
+        "Thriller"
+      ],
       "reviews": [
         {
           "author": "Brent Marchant",
@@ -4835,7 +5092,11 @@
       "vote_count": 459,
       "poster_url": "https://image.tmdb.org/t/p/original/wv6oWAleCJZUk5htrGg413t3GCy.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/k32XKMjmXMGeydykD32jfER3BVI.jpg",
-      "genres": ["Action", "Mystery", "Drama"],
+      "genres": [
+        "Action",
+        "Mystery",
+        "Drama"
+      ],
       "reviews": [
         {
           "author": "Manuel São Bento",
@@ -4887,41 +5148,65 @@
       "id": "053d",
       "Type": "",
       "title": "Cast Awayغ",
-      "genres": ["Adventure", "Romance"],
+      "genres": [
+        "Adventure",
+        "Romance"
+      ],
       "release_date": "2000-12-22",
       "vote_average": 7.8,
       "poster_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ2X1KEh1TNxvf9IGVFM6JNhEKTjBodyzHvB1Ije7Oxu6j7iHxI-QMGcXotnw_8lJuBhwJC",
       "trailer_url": "https://youtu.be/xrpNv3XzTvY",
       "overview": "A FedEx executive undergoes a physical and emotional transformation after crash landing on a deserted island.",
-      "cast": ["Tom Hanks", "Helen Hunt", "Paul Sanchez"]
+      "cast": [
+        "Tom Hanks",
+        "Helen Hunt",
+        "Paul Sanchez"
+      ]
     },
     {
       "id": "93b7",
       "title": "The Pursuit of Happynesssssss",
-      "genres": ["Drama", "Biography"],
+      "genres": [
+        "Drama",
+        "Biography"
+      ],
       "release_date": "2005-12-15",
       "vote_average": 8,
       "poster_url": "data:image/jpeg;base64,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",
       "trailer_url": "https://www.youtube.com/watch?v=DMOBlEcRuw8",
       "overview": "A struggling salesman takes custody of his son as he's poised to begin a life-changing professional career.",
-      "cast": ["Will Smith", "Thandiwe Newton", "Jaden Smith", "nnnnnnn"],
+      "cast": [
+        "Will Smith",
+        "Thandiwe Newton",
+        "Jaden Smith",
+        "nnnnnnn"
+      ],
       "poster": "data:image/jpeg;base64,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"
     },
     {
       "id": "a4da",
       "title": "The Pursuit of Happyness",
-      "genres": ["Drama", "Biography"],
+      "genres": [
+        "Drama",
+        "Biography"
+      ],
       "release_date": "2005-12-15",
       "vote_average": 8,
       "poster_url": "https://image.tmdb.org/t/p/original/jM2uqCZNKbiyStyzXOERpMqAbdx.jpg",
       "trailer_url": "https://www.youtube.com/watch?v=tlLsFEDHtWs",
       "overview": "A struggling salesman takes custody of his son as he's poised to begin a life-changing professional career.",
-      "cast": ["Will Smith", "Thandiwe Newton", "Jaden Smith"]
+      "cast": [
+        "Will Smith",
+        "Thandiwe Newton",
+        "Jaden Smith"
+      ]
     },
     {
       "id": "6dd2",
       "title": "Ass",
-      "genres": ["Action"],
+      "genres": [
+        "Action"
+      ],
       "release_date": "2020-02-23",
       "vote_average": 3,
       "poster": "dwdw",
@@ -5415,7 +5700,11 @@
           "vote_count": 9037,
           "poster_url": "https://image.tmdb.org/t/p/original/9PFonBhy4cQy7Jz20NpMygczOkv.jpg",
           "backdrop_url": "https://image.tmdb.org/t/p/original/iHSwvRVsRyxpX7FE7GbviaDvgGZ.jpg",
-          "genres": ["Sci-Fi & Fantasy", "Mystery", "Comedy"],
+          "genres": [
+            "Sci-Fi & Fantasy",
+            "Mystery",
+            "Comedy"
+          ],
           "reviews": [
             {
               "author": "UtileDulci",
@@ -6826,7 +7115,9 @@
           "vote_count": 10027,
           "poster_url": "https://image.tmdb.org/t/p/original/3Q0hd3heuWwDWpwcDkhQOA6TYWI.jpg",
           "backdrop_url": "https://image.tmdb.org/t/p/original/9KnIzPCv9XpWA0MqmwiKBZvV1Sj.jpg",
-          "genres": ["Drama"],
+          "genres": [
+            "Drama"
+          ],
           "reviews": [
             {
               "author": "tmdb15214618",
@@ -7803,7 +8094,11 @@
           "vote_count": 10327,
           "poster_url": "https://image.tmdb.org/t/p/original/eU1i6eHXlzMOlEq0ku1Rzq7Y4wA.jpg",
           "backdrop_url": "https://image.tmdb.org/t/p/original/9zcbqSxdsRMZWHYtyCd1nXPr2xq.jpg",
-          "genres": ["Sci-Fi & Fantasy", "Action & Adventure", "Drama"],
+          "genres": [
+            "Sci-Fi & Fantasy",
+            "Action & Adventure",
+            "Drama"
+          ],
           "reviews": [
             {
               "author": "avidrunner",
@@ -7896,7 +8191,9 @@
           "vote_count": 5875,
           "poster_url": "https://image.tmdb.org/t/p/original/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg",
           "backdrop_url": "https://image.tmdb.org/t/p/original/lY2DhbA7Hy44fAKddr06UrXWWaQ.jpg",
-          "genres": ["Drama"],
+          "genres": [
+            "Drama"
+          ],
           "reviews": [
             {
               "author": "JacobMars",
@@ -9953,7 +10250,10 @@
           "vote_count": 3057,
           "poster_url": "https://image.tmdb.org/t/p/original/bE71f9A3eztjcd5JT3MmHB8MbzA.jpg",
           "backdrop_url": "https://image.tmdb.org/t/p/original/9qq8LpOoBLYq8MxiMugn0gf9qJd.jpg",
-          "genres": ["Drama", "Comedy"],
+          "genres": [
+            "Drama",
+            "Comedy"
+          ],
           "reviews": [],
           "trailer_url": null,
           "cast": "Hande Erçel, Kerem Bürsin, Evrim Doğan, Anıl İlter, Elçin Afacan",
@@ -9975,7 +10275,10 @@
           "vote_count": 34,
           "poster_url": "https://image.tmdb.org/t/p/original/krSdiuUrsqka7FFtaqjxEqC0bE9.jpg",
           "backdrop_url": "https://image.tmdb.org/t/p/original/nWNH4OTbiZTxqfPOgSYI2U17aCJ.jpg",
-          "genres": ["Comedy", "Drama"],
+          "genres": [
+            "Comedy",
+            "Drama"
+          ],
           "reviews": [],
           "trailer_url": "https://www.youtube.com/watch?v=oco6xbjAjGs",
           "cast": "Hande Erçel, Burak Deniz, Özcan Tekdemir, Merve Çağıran, Oğuzhan Karbi",
@@ -12192,7 +12495,10 @@
       "vote_count": 15507,
       "poster_url": "https://image.tmdb.org/t/p/original/ineLOBPG8AZsluYwnkMpHRyu7L.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/9faGSFi5jam6pDWGNd0p8JcJgXQ.jpg",
-      "genres": ["Drama", "Crime"],
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
       "reviews": [
         {
           "author": "slyone10001",
@@ -12272,7 +12578,9 @@
       "vote_count": 250,
       "poster_url": "https://image.tmdb.org/t/p/original/Afrz3QAcQcsT6w4S5wrKUxmYPWM.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/5yk3QwnQxzwKfhU1tlDkV2PSIBz.jpg",
-      "genres": ["Drama"],
+      "genres": [
+        "Drama"
+      ],
       "reviews": [
         {
           "author": "iam.biplob",
@@ -12310,7 +12618,12 @@
       "vote_count": 229,
       "poster_url": "https://image.tmdb.org/t/p/original/fi1b6U1kp73xheECzqwzMn8u3mX.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/7BzmK4MWc0cj4hCxwWURt6TS6UR.jpg",
-      "genres": ["Animation", "Unknown", "Unknown", "Comedy"],
+      "genres": [
+        "Animation",
+        "Unknown",
+        "Unknown",
+        "Comedy"
+      ],
       "reviews": [
         {
           "author": "a7med 3tef",
@@ -12348,7 +12661,12 @@
       "vote_count": 5110,
       "poster_url": "https://image.tmdb.org/t/p/original/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/wQEW3xLrQAThu1GvqpsKQyejrYS.jpg",
-      "genres": ["Animation", "Unknown", "Drama", "Unknown"],
+      "genres": [
+        "Animation",
+        "Unknown",
+        "Drama",
+        "Unknown"
+      ],
       "reviews": [
         {
           "author": "Folio Swami",
@@ -12428,7 +12746,12 @@
       "vote_count": 429,
       "poster_url": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/96RT2A47UdzWlUfvIERFyBsLhL2.jpg",
-      "genres": ["Animation", "Unknown", "Unknown", "Drama"],
+      "genres": [
+        "Animation",
+        "Unknown",
+        "Unknown",
+        "Drama"
+      ],
       "reviews": [
         {
           "author": "Zak_Jaggs",
@@ -12466,7 +12789,11 @@
       "vote_count": 4334,
       "poster_url": "https://image.tmdb.org/t/p/original/v2vn1coUMPKw0GI1KGC5J4IXtqp.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/kU98MbVVgi72wzceyrEbClZmMFe.jpg",
-      "genres": ["Animation", "Unknown", "Unknown"],
+      "genres": [
+        "Animation",
+        "Unknown",
+        "Unknown"
+      ],
       "reviews": [
         {
           "author": "The_1st_Avatar",
@@ -12532,7 +12859,11 @@
       "vote_count": 1269,
       "poster_url": "https://image.tmdb.org/t/p/original/rXojaQcxVUubPLSrFV8PD4xdjrs.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/tuCU2yVRM2iZxFkpqlPUyvd6tSu.jpg",
-      "genres": ["Animation", "Comedy", "Unknown"],
+      "genres": [
+        "Animation",
+        "Comedy",
+        "Unknown"
+      ],
       "reviews": [
         {
           "author": "Bilal Ahmed Mirza",
@@ -12570,7 +12901,11 @@
       "vote_count": 4864,
       "poster_url": "https://image.tmdb.org/t/p/original/cMD9Ygz11zjJzAovURpO75Qg7rT.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
-      "genres": ["Unknown", "Comedy", "Animation"],
+      "genres": [
+        "Unknown",
+        "Comedy",
+        "Animation"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=1KMcoJBMWE4",
       "cast": "Mayumi Tanaka, Kazuya Nakai, Akemi Okamura, Kappei Yamaguchi, Hiroaki Hirata",
@@ -12593,7 +12928,12 @@
       "vote_count": 478,
       "poster_url": "https://image.tmdb.org/t/p/original/6qfZAOEUFIrbUH3JvePclx1nXzz.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/jlbUx0aHJupDVDlCo0R7UxSaUUd.jpg",
-      "genres": ["Animation", "Unknown", "Comedy", "Unknown"],
+      "genres": [
+        "Animation",
+        "Unknown",
+        "Comedy",
+        "Unknown"
+      ],
       "reviews": [
         {
           "author": "Bilal Ahmed Mirza",
@@ -12645,7 +12985,12 @@
       "vote_count": 2175,
       "poster_url": "https://image.tmdb.org/t/p/original/5ZFUEOULaVml7pQuXxhpR2SmVUw.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/A6tMQAo6t6eRFCPhsrShmxZLqFB.jpg",
-      "genres": ["Unknown", "Animation", "Unknown", "Comedy"],
+      "genres": [
+        "Unknown",
+        "Animation",
+        "Unknown",
+        "Comedy"
+      ],
       "reviews": [],
       "trailer_url": null,
       "cast": "Romi Park, Rie Kugimiya, Shin-ichiro Miki, Fumiko Orikasa, Megumi Takamoto",
@@ -12668,7 +13013,10 @@
       "vote_count": 5624,
       "poster_url": "https://image.tmdb.org/t/p/original/zjg4jpK1Wp2kiRvtt5ND0kznako.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/hPea3Qy5Gd6z4kJLUruBbwAH8Rm.jpg",
-      "genres": ["Crime", "Drama"],
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
       "reviews": [
         {
           "author": "Isaac Alan McIntyre",
@@ -12706,7 +13054,12 @@
       "vote_count": 10134,
       "poster_url": "https://image.tmdb.org/t/p/original/WGRQ8FpjkDTzivQJ43t94bOuY0.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/rBF8wVQN8hTWHspVZBlI3h7HZJ.jpg",
-      "genres": ["Animation", "Comedy", "Unknown", "Unknown"],
+      "genres": [
+        "Animation",
+        "Comedy",
+        "Unknown",
+        "Unknown"
+      ],
       "reviews": [
         {
           "author": "Adishake",
@@ -12758,7 +13111,9 @@
       "vote_count": 6807,
       "poster_url": "https://image.tmdb.org/t/p/original/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/20eIP9o5ebArmu2HxJutaBjhLf4.jpg",
-      "genres": ["Drama"],
+      "genres": [
+        "Drama"
+      ],
       "reviews": [
         {
           "author": "Peter McGinn",
@@ -12838,7 +13193,11 @@
       "vote_count": 323,
       "poster_url": "https://image.tmdb.org/t/p/original/e3ojpANrFnmJCyeBNTinYwyBCIN.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/gffVOVZ2Y9cmVIZ26Gt9ByMGCYH.jpg",
-      "genres": ["Animation", "Drama", "Mystery"],
+      "genres": [
+        "Animation",
+        "Drama",
+        "Mystery"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=3lfb_KeqdEM",
       "cast": "Aoi Yuki, Takeo Otsuka, Katsuyuki Konishi",
@@ -12861,7 +13220,11 @@
       "vote_count": 6735,
       "poster_url": "https://image.tmdb.org/t/p/original/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/aok7IhrbA83josNz9Dqh8tNA0Ao.jpg",
-      "genres": ["Animation", "Unknown", "Unknown"],
+      "genres": [
+        "Animation",
+        "Unknown",
+        "Unknown"
+      ],
       "reviews": [
         {
           "author": "veller",
@@ -12944,7 +13307,10 @@
       "vote_count": 4740,
       "poster_url": "https://image.tmdb.org/t/p/original/6P6tXhjT5tK3qOXzxF9OMLlG7iz.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/ywQtHG17LZhAFZyZtBflhtFMtJ7.jpg",
-      "genres": ["Drama", "Family"],
+      "genres": [
+        "Drama",
+        "Family"
+      ],
       "reviews": [
         {
           "author": "Olivergbyrne",
@@ -12982,7 +13348,11 @@
       "vote_count": 1866,
       "poster_url": "https://image.tmdb.org/t/p/original/i2EEr2uBvRlAwJ8d8zTG2Y19mIa.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/6U0e6OHklJAcMAuIoGXjTBS5zsI.jpg",
-      "genres": ["Animation", "Unknown", "Unknown"],
+      "genres": [
+        "Animation",
+        "Unknown",
+        "Unknown"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=d6kBeJjTGnY",
       "cast": "Megumi Han, Mariya Ise, Issei Futamata, Miyuki Sawashiro, Keiji Fujiwara",
@@ -13005,7 +13375,12 @@
       "vote_count": 1111,
       "poster_url": "https://image.tmdb.org/t/p/original/1LApB9C9kEkh2ZU2vzAhurNDipl.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/2w8FaLwwJTWr6ExUMeVgT2Th5YT.jpg",
-      "genres": ["Animation", "Comedy", "Drama", "Unknown"],
+      "genres": [
+        "Animation",
+        "Comedy",
+        "Drama",
+        "Unknown"
+      ],
       "reviews": [],
       "trailer_url": "https://www.youtube.com/watch?v=xR7yBVLj5jc",
       "cast": "Kohei Kiyasu, Rikiya Koyama, Wataru Takagi, Keiji Fujiwara, Jurota Kosugi",
@@ -13028,7 +13403,9 @@
       "vote_count": 2956,
       "poster_url": "https://image.tmdb.org/t/p/original/rTc7ZXdroqjkKivFPvCPX0Ru7uw.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/lNpkvX2s8LGB0mjGODMT4o6Up7j.jpg",
-      "genres": ["Drama"],
+      "genres": [
+        "Drama"
+      ],
       "reviews": [
         {
           "author": "GenerationofSwine",
