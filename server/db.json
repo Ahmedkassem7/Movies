@@ -19,6 +19,18 @@
       "email": "malek@gmail.com",
       "password": "Malek@12345",
       "role": "user"
+    },
+    {
+      "id": "2d26",
+      "userName": "Samy",
+      "email": "Samy@gmail.com",
+      "password": "Samy@123"
+    },
+    {
+      "id": "438a",
+      "name": "Sayed",
+      "email": "Sayed12@gmail.com",
+      "password": "Sayed@123"
     }
   ],
   "admin": [
