@@ -1,22 +1,23 @@
 import { useForm } from "react-hook-form";
-import { Button, Form } from "react-bootstrap";
-import { useNavigate, useParams ,useLocation } from "react-router-dom";
-import { getMovieById } from "../Api/MovieApi";
+import { Button, Form, Toast } from "react-bootstrap";
+import { useNavigate, useParams, useLocation } from "react-router-dom";
+import { getMovieById, updateMovie, addNewMovie } from "../Api/MovieApi";
 import { useDispatch } from "react-redux";
 import { addMovieAction, editMovieAction } from "../store/movieSlice";
 import { useEffect, useState } from "react";
-// import logoImg from "../../public/Vector.png";
+import { getSerieById, updateSerie, addNewSerie } from "../Api/SeriesApi";
+import { AddSeriesAction, UpdateSeriesAction } from "../store/serieSlice";
 import BasicInfo from "../components/Add&Edit/BasicInfo";
 import MediaInputs from "../components/Add&Edit/MediaInputs";
 import Cast from "../components/Add&Edit/Cast";
-import { Type } from "react-bootstrap-icons";
 
 export default function MovieForm() {
   const { id } = useParams();
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const {pathname} = useLocation();
+  const { pathname } = useLocation();
   const [initialCastData, setInitialCastData] = useState([]);
+  const [showToast, setShowToast] = useState(false);
 
   const {
     register,
@@ -25,53 +26,60 @@ export default function MovieForm() {
     reset,
     watch,
     setValue,
+    control,
   } = useForm();
   const type = watch("Type") || "Movie";
 
   useEffect(() => {
-    if (id !== "0") {
-      getMovieById(id).then((response) => {
-        const movie = response.data;
-        console.log("Full movie data:", movie);
-        console.log("Loaded poster_url:", movie.poster_url);
+    const fetchData = async () => {
+      if (id !== "0") {
+        let response;
+        if (pathname.includes("movie")) {
+          response = await getMovieById(id);
+        } else if (pathname.includes("series")) {
+          response = await getSerieById(id);
+        }
 
-        const castArray = Array.isArray(movie.cast)
-          ? movie.cast
-          : movie.cast
-              ?.split(", ")
-              .map((c) => c.trim())
-              .filter(Boolean) || [];
+        if (response?.data) {
+          const item = response.data;
+          const castArray = Array.isArray(item.cast)
+            ? item.cast
+            : item.cast
+                ?.split(",")
+                .map((c) => c.trim())
+                .filter(Boolean) || [];
 
-        const formattedMovie = {
-          ...movie,
-          genres: Array.isArray(movie.genres)
-            ? movie.genres.join(", ")
-            : movie.genres
-                ?.split(", ")
-                .map((g) => g.trim())
-                .join(", "),
+          const formattedItem = {
+            ...item,
+            genres: Array.isArray(item.genres)
+              ? item.genres.join(",")
+              : item.genres
+                  ?.split(",")
+                  .map((g) => g.trim())
+                  .join(","),
+            cast: castArray,
+            vote_average: item.vote_average || 0,
+            Type: pathname.includes("movie") ? "Movie" : "Series",
+          };
+          reset({
+            ...formattedItem,
+            cast: castArray,
+          });
+          setInitialCastData(castArray);
+        }
+      } else {
+        setInitialCastData([]);
+        reset({
+          vote_average: "",
+          Type: pathname.includes("movie") ? "Movie" : "Series",
+        });
+      }
+    };
 
-          cast: castArray.join(", "),
-          vote_average: movie.vote_average || 0,
+    fetchData();
+  }, [id, reset, pathname, setValue]);
 
-        };
-
-        reset(formattedMovie);
-        setInitialCastData(castArray);
-
-        const isMovie = pathname.includes("movie");
-        setValue("Type", isMovie ? "Movie" : "Series");
-      });
-    } else {
-      setInitialCastData([]);
-      reset({
-        vote_average: "",
-        Type: "Movie",
-      });
-    }
-  }, [id, reset,pathname, setValue]);
-
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     const processedData = {
       ...data,
       vote_average: parseFloat(data.vote_average),
@@ -81,49 +89,88 @@ export default function MovieForm() {
             ?.split(",")
             .map((c) => c.trim())
             .filter(Boolean) || [],
-
       genres: data.genres
         .split(",")
         .map((g) => g.trim())
         .filter(Boolean),
     };
 
-    // console.log("Processed data:", processedData);
+    console.log("Processed data:", processedData);
 
     if (id === "0") {
-      dispatch(addMovieAction(processedData));
-      navigate("/admin/dashboard/all");
+      let response;
+      if (data.Type === "Movie") {
+        response = await addNewMovie(processedData);
+        if (response?.data?.id) {
+          setShowToast(true);
+          setTimeout(() => {
+            navigate("/admin/movies/all");
+          }, 2000);
+          dispatch(addMovieAction(processedData));
+        } else {
+          console.error("Failed to add movie");
+        }
+      } else if (data.Type === "Series") {
+        response = await addNewSerie(processedData);
+        if (response?.data?.id) {
+          setShowToast(true);
+          setTimeout(() => {
+            navigate("/admin/series/all");
+          }, 2000);
+          dispatch(AddSeriesAction(processedData));
+        } else {
+          console.error("Failed to add series");
+        }
+      }
     } else {
-      dispatch(editMovieAction({ id, movie: processedData }));
-      navigate(`/movie/${id}`);
+      if (data.Type === "Movie") {
+        await updateMovie(id, processedData);
+        navigate(`/movie/${id}`);
+        dispatch(editMovieAction({ id, movie: processedData }));
+      } else if (data.Type === "Series") {
+        console.log(id, processedData);
+        await updateSerie(id, processedData);
+        const updatedData = await getSerieById(id); 
+        dispatch(UpdateSeriesAction({ id, serie: updatedData.data }));
+        navigate(`/series/${id}`);
+      }
     }
   };
 
   return (
     <div className="movie-form-wrapper">
       <div className="movie-form-container text-light">
-        {/* <img src={logoImg} alt="Logo" className="mb-4" /> */}
-        <h1 className="form-title  mb-3">
+        <h1 className="form-title mb-3">
           {id === "0"
             ? `Add New ${type.charAt(0).toUpperCase() + type.slice(1)}`
             : `Update ${type.charAt(0).toUpperCase() + type.slice(1)}`}
         </h1>
         <Form onSubmit={handleSubmit(onSubmit)}>
-          <BasicInfo register={register} errors={errors} watch={watch} setValue={setValue} />
-          <MediaInputs register={register} errors={errors} watch={watch} setValue={setValue} />
+          <BasicInfo
+            register={register}
+            errors={errors}
+            watch={watch}
+            setValue={setValue}
+          />
+          <MediaInputs
+            register={register}
+            errors={errors}
+            watch={watch}
+            setValue={setValue}
+          />
           <Cast
             register={register}
             errors={errors}
             watch={watch}
             setValue={setValue}
+            control={control}
             initialCast={initialCastData}
           />
 
-          {/* You can also add extra fields directly here if needed */}
-
           <div className="d-flex justify-content-between">
             <Button className="form-btn1" type="submit">
-              {id === "0" ? "Add Movie" : "Update Movie"}
+              {id === "0" ? "Add" : "Update"}{" "}
+              {type.charAt(0).toUpperCase() + type.slice(1)}
             </Button>
             <Button
               className="form-btn2 bg-danger ms-2"
@@ -133,6 +180,21 @@ export default function MovieForm() {
             </Button>
           </div>
         </Form>
+
+        <Toast
+          show={showToast}
+          onClose={() => setShowToast(false)}
+          delay={3000}
+          autohide
+          bg="success"
+          className="custom-toast"
+        >
+          <Toast.Body>
+            <strong>
+              {type.charAt(0).toUpperCase() + type.slice(1)} Added Successfully!
+            </strong>
+          </Toast.Body>
+        </Toast>
       </div>
     </div>
   );

@@ -96,6 +96,30 @@ hr {
   margin: 0;
 }
 
+.custom-toast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1050; /* Ensure it's above other content */
+  min-width: 300px; /* You can adjust the width */
+  font-size: 18px; /* Adjust font size */
+}
+
+.custom-toast .toast-body {
+  font-size: 20px; /* Increase text size */
+  padding: 20px; /* Increase padding for larger Toast */
+}
+
+.custom-toast.bg-success {
+  background-color: #3dd2cc !important; /* Green color */
+}
+
+.custom-toast.bg-success .toast-body {
+  color: #fff; /* Set text color to white */
+}
+
+
 /* .banner {
     /* .btn-light-play {
         border-radius: 15px;
