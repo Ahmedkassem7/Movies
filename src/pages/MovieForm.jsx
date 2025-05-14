@@ -100,24 +100,32 @@ export default function MovieForm() {
     if (id === "0") {
       let response;
       if (data.Type === "Movie") {
+        console.log("Adding new movie...");
+
         response = await addNewMovie(processedData);
         if (response?.data?.id) {
+          console.log("Dispatching addMovieAction...");
+          dispatch(addMovieAction(response.data));
+
           setShowToast(true);
           setTimeout(() => {
             navigate("/admin/movies/all");
           }, 2000);
-          dispatch(addMovieAction(processedData));
         } else {
           console.error("Failed to add movie");
         }
       } else if (data.Type === "Series") {
+        console.log("Adding new series...");
+
         response = await addNewSerie(processedData);
         if (response?.data?.id) {
+          console.log("Dispatching AddSeriesAction...");
+          dispatch(AddSeriesAction(response.data));
+
           setShowToast(true);
           setTimeout(() => {
             navigate("/admin/series/all");
           }, 2000);
-          dispatch(AddSeriesAction(processedData));
         } else {
           console.error("Failed to add series");
         }
@@ -130,7 +138,7 @@ export default function MovieForm() {
       } else if (data.Type === "Series") {
         console.log(id, processedData);
         await updateSerie(id, processedData);
-        const updatedData = await getSerieById(id); 
+        const updatedData = await getSerieById(id);
         dispatch(UpdateSeriesAction({ id, serie: updatedData.data }));
         navigate(`/series/${id}`);
       }
@@ -145,7 +153,7 @@ export default function MovieForm() {
             ? `Add New ${type.charAt(0).toUpperCase() + type.slice(1)}`
             : `Update ${type.charAt(0).toUpperCase() + type.slice(1)}`}
         </h1>
-        <Form onSubmit={handleSubmit(onSubmit)}>
+        <Form onSubmit={handleSubmit(onSubmit)} noValidate>
           <BasicInfo
             register={register}
             errors={errors}
