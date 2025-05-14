@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { Form } from "react-bootstrap";
 import { Controller } from "react-hook-form";
 
@@ -11,20 +11,19 @@ export default function Cast({
   register,
 }) {
   const rawCast = watch("cast");
-  const hasInitialized = useRef(false);
+  // const hasInitialized = useRef(false);
 
   useEffect(() => {
-    if (!hasInitialized.current) {
-      if (Array.isArray(initialCast) && initialCast.length > 0) {
-        setValue("cast", initialCast);
-      } else {
-        setValue("cast", [""]);
-      }
-      hasInitialized.current = true;
+    if (initialCast) {
+      const formattedCast = Array.isArray(initialCast)
+        ? initialCast
+        : initialCast.split(",").map((actor) => actor.trim());
+      setValue("cast", formattedCast.length > 0 ? formattedCast : [""]);
     }
   }, [initialCast, setValue]);
 
-  const castList = Array.isArray(rawCast) && rawCast.length > 0 ? rawCast : [""];
+  const castList =
+    Array.isArray(rawCast) && rawCast.length > 0 ? rawCast : [""];
 
   const handleAddInput = () => {
     setValue("cast", [...castList, ""]);
@@ -96,6 +95,7 @@ export default function Cast({
         type="hidden"
         {...register("cast", {
           validate: (value) => {
+            if (!Array.isArray(value)) return "Invalid cast format";
             const filled = value.filter((name) => name.trim() !== "");
             return (
               filled.length >= 3 || "At least three cast names are required"
