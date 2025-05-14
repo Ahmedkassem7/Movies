@@ -1,7 +1,7 @@
 import { Form } from "react-bootstrap";
 
 export default function MediaInputs({ register, errors, watch }) {
-  const poster = watch("poster");
+  const poster = watch("poster_url");
   const trailer = watch("trailer_url");
 
 
@@ -14,10 +14,10 @@ export default function MediaInputs({ register, errors, watch }) {
             <Form.Control
               type="text"
               placeholder="https://example.com/image.jpg"
-              {...register("poster", {
+              {...register("poster_url", {
                 required: "Poster link is required",
               })}
-              isInvalid={!!errors.poster}
+              isInvalid={!!errors.poster_url}
               className="pe-4"
               style={{ paddingRight: "2.5rem" }}
             />
@@ -29,12 +29,9 @@ export default function MediaInputs({ register, errors, watch }) {
             )}
           </div>
           <Form.Control.Feedback type="invalid" className="d-block">
-            {errors.poster?.message}
+            {errors.poster_url?.message}
           </Form.Control.Feedback>
         </Form.Group>
-
-
-        
 
         <Form.Group controlId="formTrailer" className="col-md-6">
           <Form.Label>Trailer</Form.Label>
