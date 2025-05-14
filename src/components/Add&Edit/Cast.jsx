@@ -1,23 +1,30 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { Form } from "react-bootstrap";
+import { Controller } from "react-hook-form";
 
-export default function Cast({ register, errors, watch, setValue, initialCast }) {
+export default function Cast({
+  control,
+  errors,
+  watch,
+  setValue,
+  initialCast,
+  register,
+}) {
   const rawCast = watch("cast");
-  const castList = Array.isArray(rawCast) ? rawCast : (Array.isArray(initialCast) && initialCast.length > 0 ? initialCast : [""]);
+  const hasInitialized = useRef(false);
 
   useEffect(() => {
-    if (Array.isArray(initialCast) && initialCast.length > 0 && !Array.isArray(rawCast)) {
-      setValue("cast", initialCast);
-    } else if (!Array.isArray(rawCast)) {
-      setValue("cast", [""]);
+    if (!hasInitialized.current) {
+      if (Array.isArray(initialCast) && initialCast.length > 0) {
+        setValue("cast", initialCast);
+      } else {
+        setValue("cast", [""]);
+      }
+      hasInitialized.current = true;
     }
-  }, [initialCast, rawCast, setValue]);
+  }, [initialCast, setValue]);
 
-  const handleChange = (index, value) => {
-    const updatedList = [...castList];
-    updatedList[index] = value;
-    setValue("cast", updatedList);
-  };
+  const castList = Array.isArray(rawCast) && rawCast.length > 0 ? rawCast : [""];
 
   const handleAddInput = () => {
     setValue("cast", [...castList, ""]);
@@ -29,25 +36,29 @@ export default function Cast({ register, errors, watch, setValue, initialCast })
   };
 
   return (
-    <Form.Group controlId="formActors" className="col-md-12 justify-content-center">
+    <Form.Group className="col-md-12 justify-content-center">
       <Form.Label>Cast</Form.Label>
       <div className="d-flex flex-wrap" style={{ gap: "8px" }}>
-        {castList.map((name, index) => (
+        {castList.map((_, index) => (
           <div
-            key={`${name}-${index}`}
+            key={`cast-${index}`}
             className="mb-2 d-flex align-items-center"
-            style={{ gap: "8px", width: 'calc(33% - 4px)' }}  
+            style={{ gap: "8px", width: "calc(33% - 4px)" }}
           >
             <div style={{ position: "relative", flex: 1 }}>
-              <Form.Control
-                type="text"
-                placeholder={`Actor ${index + 1}`}
-                value={name}
-                onChange={(e) => handleChange(index, e.target.value)}
-                style={{
-                  paddingRight: "2.5rem",
-                  height: "40px",
-                }}
+              <Controller
+                control={control}
+                name={`cast.${index}`}
+                defaultValue=""
+                render={({ field }) => (
+                  <Form.Control
+                    {...field}
+                    id={`cast-${index}`}
+                    type="text"
+                    placeholder={`Actor ${index + 1}`}
+                    style={{ paddingRight: "2.5rem", height: "40px" }}
+                  />
+                )}
               />
               <span
                 onClick={() => handleRemoveInput(index)}
@@ -76,7 +87,6 @@ export default function Cast({ register, errors, watch, setValue, initialCast })
                 + Add Actor
               </button>
             )}
-            {index !== castList.length - 1 && <div style={{ width: 'auto' }}></div>}
           </div>
         ))}
       </div>
@@ -87,7 +97,9 @@ export default function Cast({ register, errors, watch, setValue, initialCast })
         {...register("cast", {
           validate: (value) => {
             const filled = value.filter((name) => name.trim() !== "");
-            return filled.length >= 3 || "At least three cast names are required";
+            return (
+              filled.length >= 3 || "At least three cast names are required"
+            );
           },
         })}
       />
