@@ -8,6 +8,7 @@ export default function MediaList({
   //   title,
   enableFilters = true,
   enableSearch = true,
+  type,
 }) {
   const dispatch = useDispatch();
   const { data, loading, error } = useSelector(mediaSelector);
@@ -36,13 +37,13 @@ export default function MediaList({
         {enableSearch && <Header onSearch={setSearchTerm} />}
         <div className="content p-0 col-lg-9">
           <div className="row m-0 p-0">
-            {loading && <Loading />}
+            {loading && <p>loading..</p>}
             {error && <div className="text-white text-center">{error}</div>}
             {!loading && filteredData?.length === 0 && (
               <div className="text-white text-center">No results found.</div>
             )}
             {filteredData?.map((item) => (
-              <MovieCard key={item.id} movies={item} />
+              <MovieCard key={item.id} movies={item} type={type} />
             ))}
           </div>
         </div>
@@ -52,7 +53,6 @@ export default function MediaList({
             selectedLanguages={selectedLanguages}
             onGenreChange={setSelectedGenres}
             onLanguageChange={setSelectedLanguages}
-           
           />
         )}
       </div>

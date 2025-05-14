@@ -15,6 +15,7 @@ export default function Series() {
       })}
       title="Series"
       enableFilters={false} // if no filters needed
+      type="series"
     />
   );
 }
