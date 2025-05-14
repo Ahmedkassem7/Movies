@@ -4927,19 +4927,11 @@
       "poster": "dwdw",
       "trailer_url": "dwdw",
       "overview": "ddcdvedv",
-      "cast": ["Ali", "Ahmed", "Samy"]
-    },
-    {
-      "id": "a240",
-      "vote_average": 2,
-      "Type": "Movie",
-      "cast": ["ssswwwd", "dfvv", "rrvv"],
-      "title": "scsc",
-      "genres": ["cec"],
-      "release_date": "2020-02-2",
-      "poster_url": "333",
-      "trailer_url": "333",
-      "overview": "333"
+      "cast": [
+        "Ali",
+        "Ahmed",
+        "Samy"
+      ]
     }
   ],
   "actors": [
