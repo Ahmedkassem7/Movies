@@ -18,7 +18,11 @@ export default function Login() {
       const user = await authenticateUser(values.email, values.password);
       console.log("User logged in:", user);
       localStorage.setItem("user", JSON.stringify(user));
-      navigate("/home");
+      if (user.role === "admin") {
+        navigate("/admin");
+      } else {
+        navigate("/home");
+      }
     } catch (error) {
       setErrorMessage("Email or password is incorrect.");
     } finally {

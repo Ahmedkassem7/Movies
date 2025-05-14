@@ -17,7 +17,7 @@ import Popular from "./Popular";
 import Actors from "./AdminView/Actors";
 import ActorsTable from "./AdminView/ActorsTable";
 import MediaList from "./MediaList";
-
+import ProtectedRoute from "./ProtectedRoute";
 export {
   Banner,
   DashboardSidebar,
@@ -35,6 +35,8 @@ export {
   Search,
   Sidebar,
   Statistics,
-  Actors,ActorsTable,
+  Actors,
+  ActorsTable,
   MediaList,
+  ProtectedRoute,
 };
