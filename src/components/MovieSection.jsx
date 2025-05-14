@@ -16,6 +16,7 @@ export default function MovieSection({
   useEffect(() => {
     dispatch(getAllMoviesAction());
   }, [dispatch]);
+
   return (
     <section className="TrendingMovies">
       <div className="row m-0 p-0 justify-content-between by-4">
@@ -25,12 +26,15 @@ export default function MovieSection({
         </Link>
       </div>
       <div className="row m-0 p-0 mt-3">
-        {loading && <Loading />}
+        {/* {loading && <Loading />} */}
+        {loading && <p className="text-light text-center">Loading...</p>}
         {error && <div className="text-center">{error}</div>}
         {movies &&
           movies
             .slice(sliceStart, sliceEnd)
-            .map((movie) => <MovieCard key={movie.id} movies={movie} />)}
+            .map((movie) => (
+              <MovieCard key={movie.id} movies={movie} type="movie" />
+            ))}
       </div>
     </section>
   );

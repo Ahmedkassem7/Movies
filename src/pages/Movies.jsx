@@ -13,6 +13,7 @@ export default function Movies() {
         error: store.movieSlice.error,
       })}
       title="Movies"
+      type="movie"
     />
   );
 }

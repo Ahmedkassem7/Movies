@@ -5,5 +5,15 @@ import Movies from "./Movies";
 import ViewAll from "./ViewAll";
 import MovieForm from "./MovieForm";
 import Series from "./Series";
+import SeriesDetails from "./SeriesDetails";
 
-export { AdminView, Home, NotFound, ViewAll, MovieForm, Movies, Series };
+export {
+  AdminView,
+  Home,
+  NotFound,
+  ViewAll,
+  MovieForm,
+  Movies,
+  Series,
+  SeriesDetails,
+};

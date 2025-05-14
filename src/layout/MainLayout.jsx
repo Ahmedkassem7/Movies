@@ -6,6 +6,7 @@ import {
   MovieForm,
   NotFound,
   Series,
+  SeriesDetails,
   ViewAll,
 } from "../pages/index";
 import MovieDetails from "../pages/MovieDetails";
@@ -17,7 +18,7 @@ import ActorsPage from "../pages/ActorsPage";
 // import RegisterForm from "../components/Form/RegisterForm/RegisterForm";
 // import LoginForm from "../components/Form/LoginForm/LoginForm";
 
-export default function MianLayout() {
+export default function MainLayout() {
   return (
     <BrowserRouter>
       <Routes>
@@ -28,9 +29,8 @@ export default function MianLayout() {
           <Route path="Movies" element={<Movies />} />
           <Route path="Series" element={<Series />} />
           <Route path="movie/:id" element={<MovieDetails />} />
-          <Route path="series/:id" element={<MovieDetails />} />
+          <Route path="series/:id" element={<SeriesDetails />} />
         </Route>
-
 
         {/* Admin Routes */}
         <Route path="/admin" element={<AdminLayout />}>
