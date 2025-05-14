@@ -90,6 +90,12 @@ hr {
     box-shadow: 0 0 0 .25rem rgb(0 54 134 / 20%) !important;
 }
 
+.no-spin::-webkit-outer-spin-button,
+.no-spin::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 /* .banner {
     /* .btn-light-play {
         border-radius: 15px;

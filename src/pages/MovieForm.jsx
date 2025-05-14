@@ -1,19 +1,22 @@
 import { useForm } from "react-hook-form";
 import { Button, Form } from "react-bootstrap";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams ,useLocation } from "react-router-dom";
 import { getMovieById } from "../Api/MovieApi";
 import { useDispatch } from "react-redux";
 import { addMovieAction, editMovieAction } from "../store/movieSlice";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 // import logoImg from "../../public/Vector.png";
-import BasicInfo from "../components/Add/Edit/BasicInfo";
-import MediaInputs from "../components/Add/Edit/MediaInputs";
-import Cast from "../components/Add/Edit/Cast";
+import BasicInfo from "../components/Add&Edit/BasicInfo";
+import MediaInputs from "../components/Add&Edit/MediaInputs";
+import Cast from "../components/Add&Edit/Cast";
+import { Type } from "react-bootstrap-icons";
 
 export default function MovieForm() {
   const { id } = useParams();
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const {pathname} = useLocation();
+  const [initialCastData, setInitialCastData] = useState([]);
 
   const {
     register,
@@ -21,64 +24,64 @@ export default function MovieForm() {
     formState: { errors },
     reset,
     watch,
+    setValue,
   } = useForm();
+  const type = watch("Type") || "Movie";
 
   useEffect(() => {
     if (id !== "0") {
       getMovieById(id).then((response) => {
         const movie = response.data;
         console.log("Full movie data:", movie);
-console.log("Loaded poster_url:", movie.poster_url);
+        console.log("Loaded poster_url:", movie.poster_url);
+
+        const castArray = Array.isArray(movie.cast)
+          ? movie.cast
+          : movie.cast
+              ?.split(", ")
+              .map((c) => c.trim())
+              .filter(Boolean) || [];
 
         const formattedMovie = {
           ...movie,
           genres: Array.isArray(movie.genres)
             ? movie.genres.join(", ")
             : movie.genres
-                ?.split(",")
+                ?.split(", ")
                 .map((g) => g.trim())
                 .join(", "),
 
-          cast: Array.isArray(movie.cast)
-            ? movie.cast.join(", ")
-            : movie.cast
-                ?.split(",")
-                .map((c) => c.trim())
-                .join(", "),
-
-          // writer: Array.isArray(movie.writer)
-          //   ? movie.writer.join(", ")
-          //   : movie.writer
-          //       ?.split(",")
-          //       .map((w) => w.trim())
-          //       .join(", "),
-
-          // director: Array.isArray(movie.director)
-          //   ? movie.director.join(", ")
-          //   : movie.director
-          //       ?.split(",")
-          //       .map((d) => d.trim())
-          //       .join(", "),
+          cast: castArray.join(", "),
           vote_average: movie.vote_average || 0,
+
         };
 
         reset(formattedMovie);
+        setInitialCastData(castArray);
+
+        const isMovie = pathname.includes("movie");
+        setValue("Type", isMovie ? "Movie" : "Series");
+      });
+    } else {
+      setInitialCastData([]);
+      reset({
+        vote_average: "",
+        Type: "Movie",
       });
     }
-  }, [id, reset]);
-
+  }, [id, reset,pathname, setValue]);
 
   const onSubmit = (data) => {
     const processedData = {
       ...data,
       vote_average: parseFloat(data.vote_average),
-      cast: data.cast
-        .split(",")
-        .map((c) => c.trim())
-        .filter(Boolean),
-      // Writer: data.Writer.split(", ")
-      //   .map((writer) => writer.trim())
-      //   .filter(Boolean),
+      cast: Array.isArray(data.cast)
+        ? data.cast.filter(Boolean)
+        : data.cast
+            ?.split(",")
+            .map((c) => c.trim())
+            .filter(Boolean) || [],
+
       genres: data.genres
         .split(",")
         .map((g) => g.trim())
@@ -101,12 +104,20 @@ console.log("Loaded poster_url:", movie.poster_url);
       <div className="movie-form-container text-light">
         {/* <img src={logoImg} alt="Logo" className="mb-4" /> */}
         <h1 className="form-title  mb-3">
-          {id === "0" ? "Add Movie" : "Update Movie"}
+          {id === "0"
+            ? `Add New ${type.charAt(0).toUpperCase() + type.slice(1)}`
+            : `Update ${type.charAt(0).toUpperCase() + type.slice(1)}`}
         </h1>
         <Form onSubmit={handleSubmit(onSubmit)}>
-          <BasicInfo register={register} errors={errors} watch={watch} />
-          <MediaInputs register={register} errors={errors} watch={watch} />
-          <Cast register={register} errors={errors} />
+          <BasicInfo register={register} errors={errors} watch={watch} setValue={setValue} />
+          <MediaInputs register={register} errors={errors} watch={watch} setValue={setValue} />
+          <Cast
+            register={register}
+            errors={errors}
+            watch={watch}
+            setValue={setValue}
+            initialCast={initialCastData}
+          />
 
           {/* You can also add extra fields directly here if needed */}
 

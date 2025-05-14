@@ -1,11 +1,34 @@
 import { Form } from "react-bootstrap";
 
-export default function BasicInfo({ register, errors }) {
+export default function BasicInfo({ register, errors, watch , setValue }) {
+  const type = watch("Type") || "Movie";
+  const titleLabel = type === "Movie" ? "Movie Title" : "Series Title";
+
   return (
     <>
       <div className="row">
+        <Form.Group controlId="formSelectType" className="col-md-6">
+          <Form.Label>Select Type</Form.Label>
+          <Form.Select
+            {...register("Type", {
+              required: "Please select a type", 
+            })}
+            isInvalid={!!errors.Type}  
+            onChange={(e) => {
+              setValue("Type", e.target.value);
+            }}
+          >
+            <option value="">Select Type</option>  
+            <option value="Movie">Movie</option>
+            <option value="Series">Series</option>
+          </Form.Select>
+          <Form.Control.Feedback type="invalid">
+            {errors.Type?.message}  
+          </Form.Control.Feedback>
+        </Form.Group>
+
         <Form.Group controlId="formTitle" className="col-md-6">
-          <Form.Label>Movie Title</Form.Label>
+          <Form.Label>{titleLabel}</Form.Label>
           <Form.Control
             type="text"
             placeholder="Enter title"
@@ -17,7 +40,6 @@ export default function BasicInfo({ register, errors }) {
           </Form.Control.Feedback>
         </Form.Group>
       </div>
-
 
       <div className="row">
         <Form.Group controlId="formgenre" className="col-md-4">
@@ -44,7 +66,6 @@ export default function BasicInfo({ register, errors }) {
           </Form.Control.Feedback>
         </Form.Group>
 
-
         <Form.Group controlId="formYear" className="col-md-4">
           <Form.Label>Release Date</Form.Label>
           <div className="position-relative">
@@ -69,7 +90,6 @@ export default function BasicInfo({ register, errors }) {
           </Form.Control.Feedback>
         </Form.Group>
 
-
         <Form.Group controlId="formRating" className="col-md-4">
           <Form.Label>Rating</Form.Label>
           <div className="position-relative">
@@ -88,7 +108,7 @@ export default function BasicInfo({ register, errors }) {
                 valueAsNumber: true,
               })}
               isInvalid={!!errors.vote_average}
-              className="pe-4"
+              className="pe-4 no-spin"
               style={{ paddingRight: "2.5rem" }}
             />
           </div>
