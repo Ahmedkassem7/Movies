@@ -21,7 +21,10 @@ const getSerieBySearch = async (search) => {
     throw error;
   }
 };
-
+const getSeriesCount = async () => {
+  const response = await getAllSeries();
+  return response.data.length;
+};
 // // get getGenresFromData
 // const getGenresFromData = async () => {
 //   const response = await getAllSeries();
@@ -71,4 +74,5 @@ export {
   getSerieBySearch,
   // getGenresFromData,
   // getLanguageFromData,
+  getSeriesCount,
 };

@@ -12,7 +12,7 @@ export default function Header({ onSearch }) {
         <FormControl
           type="text"
           placeholder="Search for movies, TV shows..."
-          className="w-100 border-0 rounded-pill text-white py-3 px-4"
+          className="w-100 border-0 rounded-pill text-white py-2 px-4"
           style={{
             backgroundColor: "#2b2b2b",
             color: "rgba(102, 102, 102, 1)",

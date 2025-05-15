@@ -13,6 +13,8 @@ import { NavLink, Link } from "react-router-dom";
 export default function Sidebar() {
   const logOut = () => {
     localStorage.removeItem("user");
+    console.log("Logout");
+
     window.location.href = "/login";
   };
   const getNavLinkClass = ({ isActive }) =>
@@ -46,14 +48,16 @@ export default function Sidebar() {
               <Calendar3 className="me-2 fs-4" style={{ color: "#3DD2CC" }} />
               <span className="d-none d-lg-inline">Upcoming</span>
             </NavLink>
-            <Link className="Nav_Link p-3 m-1 text-decoration-none">
+            <Link
+              className="Nav_Link p-3 m-1 text-decoration-none"
+              onClick={logOut}
+              to="/login"
+            >
               <BoxArrowLeft
                 className="me-2 fs-4"
                 style={{ color: "#3DD2CC" }}
               />
-              <span className="d-none d-lg-inline" onClick={logOut}>
-                Log out
-              </span>
+              <span className="d-none d-lg-inline">Log out</span>
             </Link>
           </Nav>
         </div>

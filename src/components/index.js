@@ -18,6 +18,7 @@ import Actors from "./AdminView/Actors";
 import ActorsTable from "./AdminView/ActorsTable";
 import MediaList from "./MediaList";
 import ProtectedRoute from "./ProtectedRoute";
+import LoadingLineReveal from "./LoadingLineReveal";
 export {
   Banner,
   DashboardSidebar,
@@ -39,4 +40,5 @@ export {
   ActorsTable,
   MediaList,
   ProtectedRoute,
+  LoadingLineReveal,
 };

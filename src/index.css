@@ -92,31 +92,38 @@ hr {
 
 .no-spin::-webkit-outer-spin-button,
 .no-spin::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .custom-toast {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1050; /* Ensure it's above other content */
-  min-width: 300px; /* You can adjust the width */
-  font-size: 18px; /* Adjust font size */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1050;
+    /* Ensure it's above other content */
+    min-width: 300px;
+    /* You can adjust the width */
+    font-size: 18px;
+    /* Adjust font size */
 }
 
 .custom-toast .toast-body {
-  font-size: 20px; /* Increase text size */
-  padding: 20px; /* Increase padding for larger Toast */
+    font-size: 20px;
+    /* Increase text size */
+    padding: 20px;
+    /* Increase padding for larger Toast */
 }
 
 .custom-toast.bg-success {
-  background-color: #3dd2cc !important; /* Green color */
+    background-color: #3dd2cc !important;
+    /* Green color */
 }
 
 .custom-toast.bg-success .toast-body {
-  color: #fff; /* Set text color to white */
+    color: #fff;
+    /* Set text color to white */
 }
 
 
@@ -365,3 +372,112 @@ input::placeholder {
     }
 }
 
+
+
+
+
+
+/* ////////////////////Sta */
+
+.stat-card {
+    width: 170px;
+    background: #fff;
+    overflow: hidden;
+    z-index: 0;
+    position: relative;
+    border: 2px solid white;
+}
+
+.stat-card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(180deg, #00eeff, transparent, #02e6f6, transparent);
+    animation: rotateBorder 2s linear infinite;
+    z-index: -1;
+}
+
+@keyframes rotateBorder {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.stat-card::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    background: rgb(0, 0, 0);
+    z-index: -1;
+    border-radius: 1rem;
+
+}
+
+/* ///////////////////*/
+
+
+.dash-top {
+    position: relative;
+    background-color: #212121;
+    height: fit-content;
+    margin: 0;
+    overflow: hidden;
+    z-index: 0;
+    /* padding: 1rem; */
+    border-radius: 2rem;
+}
+
+/* Animated rotating border */
+.dash-top::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(180deg,
+            #3dd2cc,
+            transparent,
+            #3dd2cc,
+            transparent);
+    animation: rotateBorder 6s ease-in-out infinite;
+    z-index: -1;
+}
+
+.dash-top::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background: #212121;
+    border-radius: 2rem;
+    z-index: -1;
+}
+
+.dash-title {
+    margin-top: 5px;
+    color: #3dd2cc;
+    letter-spacing: 2px;
+}
+
+@keyframes rotateBorder {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

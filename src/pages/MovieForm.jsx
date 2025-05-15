@@ -1,12 +1,12 @@
 import { useForm } from "react-hook-form";
 import { Button, Form, Toast } from "react-bootstrap";
 import { useNavigate, useParams, useLocation } from "react-router-dom";
-import { getMovieById, updateMovie, addNewMovie } from "../Api/MovieApi";
+import { getMovieById } from "../Api/MovieApi";
 import { useDispatch } from "react-redux";
 import { addMovieAction, editMovieAction } from "../store/movieSlice";
 import { useEffect, useState } from "react";
-import { getSerieById, updateSerie, addNewSerie } from "../Api/SeriesApi";
-import { AddSeriesAction, UpdateSeriesAction } from "../store/serieSlice";
+import { getSerieById } from "../Api/SeriesApi";
+import { UpdateSeriesAction } from "../store/serieSlice";
 import BasicInfo from "../components/Add&Edit/BasicInfo";
 import MediaInputs from "../components/Add&Edit/MediaInputs";
 import Cast from "../components/Add&Edit/Cast";
@@ -95,58 +95,56 @@ export default function MovieForm() {
         .filter(Boolean),
     };
 
-    console.log("Processed data:", processedData);
-
     if (id === "0") {
-      let response;
       if (data.Type === "Movie") {
         console.log("Adding new movie...");
-
-        response = await addNewMovie(processedData);
-        if (response?.data?.id) {
-          console.log("Dispatching addMovieAction...");
-          dispatch(addMovieAction(response.data));
-
+        const resultAction = await dispatch(addMovieAction(processedData));
+        if (addMovieAction.fulfilled.match(resultAction)) {
+          console.log("Movie added successfully");
           setShowToast(true);
           setTimeout(() => {
             navigate("/admin/movies/all");
           }, 2000);
         } else {
-          console.error("Failed to add movie");
-        }
-      } else if (data.Type === "Series") {
-        console.log("Adding new series...");
-
-        response = await addNewSerie(processedData);
-        if (response?.data?.id) {
-          console.log("Dispatching AddSeriesAction...");
-          dispatch(AddSeriesAction(response.data));
-
-          setShowToast(true);
-          setTimeout(() => {
-            navigate("/admin/series/all");
-          }, 2000);
-        } else {
-          console.error("Failed to add series");
+          console.error(
+            "Failed to add movie:",
+            resultAction.payload || resultAction.error.message
+          );
         }
       }
     } else {
       if (data.Type === "Movie") {
-        await updateMovie(id, processedData);
-        navigate(`/movie/${id}`);
-        dispatch(editMovieAction({ id, movie: processedData }));
+        const resultAction = await dispatch(
+          editMovieAction({ id, movie: processedData })
+        );
+
+        if (editMovieAction.fulfilled.match(resultAction)) {
+          navigate("/admin/movies/all");
+        } else {
+          console.error(
+            "Failed to update movie:",
+            resultAction.payload || resultAction.error.message
+          );
+        }
       } else if (data.Type === "Series") {
-        console.log(id, processedData);
-        await updateSerie(id, processedData);
-        const updatedData = await getSerieById(id);
-        dispatch(UpdateSeriesAction({ id, serie: updatedData.data }));
-        navigate(`/series/${id}`);
+        const resultAction = await dispatch(
+          UpdateSeriesAction({ id, serie: processedData })
+        );
+
+        if (UpdateSeriesAction.fulfilled.match(resultAction)) {
+          navigate("/admin/movies/all");
+        } else {
+          console.error(
+            "Failed to update series:",
+            resultAction.payload || resultAction.error.message
+          );
+        }
       }
     }
   };
 
   return (
-    <div className="movie-form-wrapper">
+    <div className="movie-form-wrapper mt-3">
       <div className="movie-form-container text-light">
         <h1 className="form-title mb-3">
           {id === "0"

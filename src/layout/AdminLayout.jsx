@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import { DashboardSidebar } from "../components";
+import { DashboardSidebar, DashTop } from "../components";
 export default function adminLayout() {
   return (
     <>
@@ -11,6 +11,7 @@ export default function adminLayout() {
         <div className="col-12 col-lg-9 col-xl-10 px-1 px-xl-4 pt-2">
           <div className="row m-0 p-0">
             <div className="content  p-0 w-100">
+              <DashTop />
               <Outlet />
             </div>
           </div>
