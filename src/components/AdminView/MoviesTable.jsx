@@ -42,7 +42,7 @@ export default function MoviesTable({ movie, category }) {
                 </Link>
                 <i
                     className="bi bi-trash3 fs-4 mx-2"
-                    onClick={() => deleteSeriesAction(movie.id)}
+                    onClick={() => handleDelete(movie.id)}
                     style={{ color: 'brown', cursor: 'pointer' }}
                 ></i>
             </td>
