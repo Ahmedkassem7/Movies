@@ -14,7 +14,7 @@ export default function Series() {
         error: store.seriesSlice.error,
       })}
       title="Series"
-      enableFilters={false} // if no filters needed
+      enableFilters={true} // if no filters needed
       type="series"
     />
   );

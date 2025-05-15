@@ -1,7 +1,6 @@
 export default function Search({ searchTerm, setSearchTerm }) {
   return (
     <>
-      {/* <div className=" container-md d-flex justify-content-between w-100"> */}
       <div className="row justify-content-between p-0 m-3">
         <div className="col-lg-4 ">
           <input

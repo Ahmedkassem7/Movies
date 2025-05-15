@@ -1,16 +1,24 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { MoviesTable } from "../../components";
 import { getAllMoviesAction } from "../../store/movieSlice";
-import Loading from "../Loading";
 import { getAllSeriesAction } from "../../store/serieSlice";
+import Loading from "../Loading";
+import MoviesTable from "./MoviesTable";
+import MovieModal from "./MovieModal";
 
-// export default function MoviesDashboard({ searchTerm, category }) {
 export default function MoviesDashboard({ searchTerm, category }) {
-  const { movies = [], series = [], loading, error } = useSelector((store) =>
+  const {
+    movies = [],
+    series = [],
+    loading,
+    error,
+  } = useSelector((store) =>
     category === "Movies" ? store.movieSlice : store.seriesSlice
   );
+
   const dispatch = useDispatch();
+  const [selectedItem, setSelectedItem] = useState(null);
+
   const data = category === "Movies" ? movies : series;
 
   useEffect(() => {
@@ -19,13 +27,16 @@ export default function MoviesDashboard({ searchTerm, category }) {
     } else {
       dispatch(getAllSeriesAction());
     }
-  }, [dispatch, category])
+  }, [dispatch, category]);
 
-const filteredData = searchTerm
-  ? data.filter((item) =>
-      item.title?.toLowerCase().includes(searchTerm?.toLowerCase())
-    )
-  : data;
+  const handleView = (item) => setSelectedItem(item);
+  const handleClose = () => setSelectedItem(null);
+
+  const filteredData = searchTerm
+    ? data.filter((item) =>
+        item.title?.toLowerCase().includes(searchTerm?.toLowerCase())
+      )
+    : data;
 
   return (
     <div>
@@ -34,15 +45,6 @@ const filteredData = searchTerm
         {error && <div className="text-center">{error}</div>}
         {!loading && !error && filteredData.length > 0 ? (
           <>
-            {/* <div
-              className="my-sm-0 mt-md-4  mx-3 mb-0"
-              style={{ width: 'fit-content' }}
-            >
-              <p className="font text-light sec-color fs-1 fw-bold">
-                {category}
-              </p>
-            </div> */}
-
             <table
               className="view-table"
               style={{ borderCollapse: "separate", borderSpacing: "0 20px" }}
@@ -58,7 +60,6 @@ const filteredData = searchTerm
                   <th className="font sec-color fs-5 mb-0 px-4 pt-4 pb-3 d-none d-sm-table-cell">
                     Genre
                   </th>
-                  {/* <th className='font sec-color fs-5 mb-0 px-4 pt-4 pb-3 d-none d-lg-table-cell'>Country</th> */}
                   <th className="font sec-color fs-5 mb-0 px-4 pt-4 pb-3 d-none d-xl-table-cell">
                     imdbRating
                   </th>
@@ -69,7 +70,12 @@ const filteredData = searchTerm
               </thead>
               <tbody>
                 {filteredData.map((item) => (
-                  <MoviesTable key={item.id} movie={item} category={category}/>
+                  <MoviesTable
+                    key={item.id}
+                    movie={item}
+                    category={category}
+                    onView={handleView}
+                  />
                 ))}
               </tbody>
             </table>
@@ -92,6 +98,8 @@ const filteredData = searchTerm
           )
         )}
       </div>
+
+      {selectedItem && <MovieModal item={selectedItem} onClose={handleClose} />}
     </div>
   );
 }
