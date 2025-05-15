@@ -2,6 +2,7 @@ import MediaList from "../components/MediaList";
 import { getAllSeriesAction, searchSeriesAction } from "../store/serieSlice";
 
 export default function Series() {
+  // test git
   return (
     <MediaList
       // fetchAction={getAllSeriesAction}
